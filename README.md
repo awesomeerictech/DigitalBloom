@@ -2,7 +2,7 @@
 
 # DigitalBloom
 
-**DigitalBloom** is a **cross-platform marketing and communication platform** for anyone who sells products or services.
+*DigitalBloom* is a **cross-platform marketing and communication platform** for anyone who sells products or services.
 It enables businesses to attract customers, present value clearly, and sustain growth through **QR-driven digital experiences** that work online, offline, and at the edge.
 
 DigitalBloom is **not an ERP**. It does not manage accounting, inventory, or internal enterprise workflows.
