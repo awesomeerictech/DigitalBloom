@@ -7,7 +7,7 @@ DigitalBloom supports multiple deployment models depending on business needs.
 ## Local Device Deployment
 
 - Run directly on Android, Windows, or embedded hardware
-- Ideal for small shops, cafés, and events
+- Ideal for SMEs, retailers, wholesalers, service providers, cafés, and events
 - No internet required for customer access
 
 ---
