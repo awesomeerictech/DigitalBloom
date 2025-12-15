@@ -30,7 +30,7 @@ This release includes compiled, signed binaries located under:
 * **Android**
 
   * `android-build-DigitalBloom-release-signed-arm32.apk` for older android phones
-  * `android-build-DigitalBloom-release-signed-arm64.apk`  for latest phones
+  * `android-build-DigitalBloom-release-signed-arm64.apk`  for latest android phones
 * **Windows**
 
   * `DigitalBloom-27.10-win64.exe` for 64 bit windows
