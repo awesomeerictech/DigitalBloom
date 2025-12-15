@@ -8,7 +8,7 @@ This guide helps you run DigitalBloom quickly using the provided binaries.
 
 Download the appropriate binary from:
 - GitHub Releases, or
-- The `/binaries/` directory in this repository
+- The `/releases/` directory in this repository
 
 Verify the checksum using the provided `checksums.txt`.
 
