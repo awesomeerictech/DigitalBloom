@@ -22,7 +22,7 @@ This release emphasizes **stability, performance improvements, and deployment re
 This release includes compiled, signed binaries located under:
 
 ```
-/binaries/
+/releases/
 ```
 
 ### Platforms
