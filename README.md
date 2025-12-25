@@ -133,7 +133,7 @@ DigitalBloom is open in spirit and community-driven.
 
 If the platform creates value for you or your organisation, you can support its continued development through:
 
-* Full project Sponsorships via paypal https://www.paypal.com/ncp/payment/4MJZ65WKJVHXG
+* Full project Sponsorships via paypal https://www.paypal.com/ncp/payment/L5RMGYMNXYCRG
 * Grants via paypal https://www.paypal.com/ncp/payment/8ZABR9A9BC5GQ
 * Paid pilots and commercial engagements via paypal https://www.paypal.com/ncp/payment/4MJZ65WKJVHXG
 
