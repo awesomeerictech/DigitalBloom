@@ -7,6 +7,8 @@ It enables businesses to attract customers, present value clearly, and sustain g
 DigitalBloom is **not an ERP**. It does not manage accounting, inventory, or internal enterprise workflows.
 Its sole focus is **customer-facing marketing, communication, and engagement**.
 
+DigitalBloom is a modern replacement for legacy marketing websites, it offers more tools than a website.
+
 ---
 
 ## What DigitalBloom Does
