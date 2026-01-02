@@ -48,7 +48,7 @@ It runs consistently on:
 * **Windows**
 * **Linux**
 * **macOS**
-* **Embedded systems** (e.g. Raspberry Pi)
+* **Embedded systems** (e.g. Raspberry Pi) as a digital signage system — with Dimetron plugin
 * **Cloud VPS environments**
 
 Deployment options include:
