@@ -139,6 +139,8 @@ If the platform creates value for you or your organisation, you can support its 
 * Grants via paypal https://www.paypal.com/ncp/payment/8ZABR9A9BC5GQ
 * Paid pilots via paypal https://www.paypal.com/ncp/payment/4MJZ65WKJVHXG
 
+* Locally in Kenya any funding via Lipa na MPESA Paybill 880100 and account number 1002892619
+
 Support helps fund:
 
 * Development and maintenance
