@@ -7,7 +7,8 @@ It enables businesses to attract customers, present value clearly, and sustain g
 DigitalBloom is **not an ERP**. It does not manage accounting, inventory, or internal enterprise workflows.
 Its sole focus is **customer-facing marketing, communication, and engagement**.
 
-DigitalBloom is a modern replacement for legacy marketing websites, it offers more tools than a website, it uses advanced Artificial Intelligence, social media marketing strategies and digital marketing skills to bring value to the business.
+DigitalBloom is a next-generation marketing platform that goes beyond a traditional website, using advanced artificial intelligence, social media marketing strategies, and digital marketing expertise to create real value for businesses.
+
 
 Through strategic planning and advanced social media marketing, we help you increase sales and cultivate a strong, loyal customer base.
 
