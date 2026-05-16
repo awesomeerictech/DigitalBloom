@@ -138,6 +138,14 @@ DigitalBloom is open in spirit and community-driven.
 
 If the platform creates value for you or your organisation, you can support its continued development through:
 
+Swift transfer for NCBA Bank Kenya PLC (account 1002892619, Swift code CBAFKENX, Bank code is 07 and branch code 000)
+PayPal (Grant/Support): https://www.paypal.com/ncp/payment/8ZABR9A9BC5GQ
+PayPal (Full Sponsorship): https://www.paypal.com/ncp/payment/L5RMGYMNXYCRG
+PayPal (Paid Pilot): https://www.paypal.com/ncp/payment/4MJZ65WKJVHXG
+
+M-PESA Paybill: 880100
+Account Number: 1002892619
+
 * Full project Sponsorships via paypal https://www.paypal.com/ncp/payment/L5RMGYMNXYCRG
 * Grants via paypal https://www.paypal.com/ncp/payment/8ZABR9A9BC5GQ
 * Paid pilots via paypal https://www.paypal.com/ncp/payment/4MJZ65WKJVHXG
