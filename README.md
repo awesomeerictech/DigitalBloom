@@ -12,7 +12,6 @@
 <a href="https://github.com/awesomeerictech/DigitalBloom/releases"><img src="https://img.shields.io/badge/Platform-Active-2E7D5A?style=for-the-badge" alt="Active"/></a>
 <a href="./SUPPORT.md"><img src="https://img.shields.io/badge/Support-Welcome-C9A84C?style=for-the-badge" alt="Support"/></a>
 <a href="https://github.com/awesomeerictech/DigitalBloom/releases"><img src="https://img.shields.io/badge/Download-Binaries-0D2240?style=for-the-badge" alt="Download"/></a>
-<a href=""><img src="https://img.shields.io/badge/Made%20in-Kenya%20🇰🇪-006600?style=for-the-badge" alt="Made in Kenya"/></a>
 
 ---
 
