@@ -1,0 +1,44 @@
+import QtQuick
+import QtQuick.Controls
+import QtQuick.Layouts
+
+Item {
+    id: control
+
+    implicitHeight: 36
+    implicitWidth: parent.width
+
+    property alias text: _label.text
+    property alias iconUrl: _icon.source
+    property alias textColor: _label.color
+    property bool iconAlignLeft: false
+
+    Label {
+        id: _label
+        height: parent.height
+        width: parent.width - _icon.width - 16
+        verticalAlignment: Text.AlignVCenter
+
+        anchors.left: control.left
+        anchors.leftMargin: control.iconAlignLeft
+                            && control.iconUrl != "" ? 36 : 16
+
+        elide: Text.ElideRight
+        wrapMode: Text.Wrap
+        font.pixelSize: 18
+        font.letterSpacing: 0
+    }
+
+    Image {
+        id: _icon
+        anchors.left: control.iconAlignLeft ? control.left : _label.right
+        anchors.leftMargin: control.iconAlignLeft ? 8 : 0
+        anchors.verticalCenter: parent.verticalCenter
+
+        width: 24
+        height: 16
+        fillMode: Image.PreserveAspectFit
+        sourceSize.width: 16
+        sourceSize.height: 16
+    }
+}

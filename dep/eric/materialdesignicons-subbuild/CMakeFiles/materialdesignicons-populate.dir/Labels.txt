@@ -1,0 +1,14 @@
+# Target labels
+ materialdesignicons-populate
+# Source files and their labels
+C:/Qt/dev/qaterialdev/build/Desktop_Qt_6_9_3_MSVC2022_64bit-Release/_deps/materialdesignicons-subbuild/CMakeFiles/materialdesignicons-populate
+C:/Qt/dev/qaterialdev/build/Desktop_Qt_6_9_3_MSVC2022_64bit-Release/_deps/materialdesignicons-subbuild/CMakeFiles/materialdesignicons-populate.rule
+C:/Qt/dev/qaterialdev/build/Desktop_Qt_6_9_3_MSVC2022_64bit-Release/_deps/materialdesignicons-subbuild/CMakeFiles/materialdesignicons-populate-complete.rule
+C:/Qt/dev/qaterialdev/build/Desktop_Qt_6_9_3_MSVC2022_64bit-Release/_deps/materialdesignicons-subbuild/materialdesignicons-populate-prefix/src/materialdesignicons-populate-stamp/materialdesignicons-populate-build.rule
+C:/Qt/dev/qaterialdev/build/Desktop_Qt_6_9_3_MSVC2022_64bit-Release/_deps/materialdesignicons-subbuild/materialdesignicons-populate-prefix/src/materialdesignicons-populate-stamp/materialdesignicons-populate-configure.rule
+C:/Qt/dev/qaterialdev/build/Desktop_Qt_6_9_3_MSVC2022_64bit-Release/_deps/materialdesignicons-subbuild/materialdesignicons-populate-prefix/src/materialdesignicons-populate-stamp/materialdesignicons-populate-download.rule
+C:/Qt/dev/qaterialdev/build/Desktop_Qt_6_9_3_MSVC2022_64bit-Release/_deps/materialdesignicons-subbuild/materialdesignicons-populate-prefix/src/materialdesignicons-populate-stamp/materialdesignicons-populate-install.rule
+C:/Qt/dev/qaterialdev/build/Desktop_Qt_6_9_3_MSVC2022_64bit-Release/_deps/materialdesignicons-subbuild/materialdesignicons-populate-prefix/src/materialdesignicons-populate-stamp/materialdesignicons-populate-mkdir.rule
+C:/Qt/dev/qaterialdev/build/Desktop_Qt_6_9_3_MSVC2022_64bit-Release/_deps/materialdesignicons-subbuild/materialdesignicons-populate-prefix/src/materialdesignicons-populate-stamp/materialdesignicons-populate-patch.rule
+C:/Qt/dev/qaterialdev/build/Desktop_Qt_6_9_3_MSVC2022_64bit-Release/_deps/materialdesignicons-subbuild/materialdesignicons-populate-prefix/src/materialdesignicons-populate-stamp/materialdesignicons-populate-test.rule
+C:/Qt/dev/qaterialdev/build/Desktop_Qt_6_9_3_MSVC2022_64bit-Release/_deps/materialdesignicons-subbuild/materialdesignicons-populate-prefix/src/materialdesignicons-populate-stamp/materialdesignicons-populate-update.rule

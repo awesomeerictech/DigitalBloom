@@ -1,0 +1,21 @@
+# ninja log v7
+2	80	7825884873070892	fetchgooglefontcmake-populate-prefix/src/fetchgooglefontcmake-populate-stamp/fetchgooglefontcmake-populate-mkdir	2db88e917633a92f
+2	80	7825884873070892	C:/Qt/dev/qaterialdev/build/Desktop_Qt_6_9_3_MSVC2022_64bit-Release/_deps/fetchgooglefontcmake-subbuild/fetchgooglefontcmake-populate-prefix/src/fetchgooglefontcmake-populate-stamp/fetchgooglefontcmake-populate-mkdir	2db88e917633a92f
+80	3603	7825884908157469	fetchgooglefontcmake-populate-prefix/src/fetchgooglefontcmake-populate-stamp/fetchgooglefontcmake-populate-download	4f45ba349e27642e
+80	3603	7825884908157469	C:/Qt/dev/qaterialdev/build/Desktop_Qt_6_9_3_MSVC2022_64bit-Release/_deps/fetchgooglefontcmake-subbuild/fetchgooglefontcmake-populate-prefix/src/fetchgooglefontcmake-populate-stamp/fetchgooglefontcmake-populate-download	4f45ba349e27642e
+3604	3829	7825884908317150	fetchgooglefontcmake-populate-prefix/src/fetchgooglefontcmake-populate-stamp/fetchgooglefontcmake-populate-update	9d38fa0edf57adaf
+3604	3829	7825884908317150	C:/Qt/dev/qaterialdev/build/Desktop_Qt_6_9_3_MSVC2022_64bit-Release/_deps/fetchgooglefontcmake-subbuild/fetchgooglefontcmake-populate-prefix/src/fetchgooglefontcmake-populate-stamp/fetchgooglefontcmake-populate-update	9d38fa0edf57adaf
+3829	3962	7825884911807498	fetchgooglefontcmake-populate-prefix/src/fetchgooglefontcmake-populate-stamp/fetchgooglefontcmake-populate-patch	b5b35d89f9e48cac
+3829	3962	7825884911807498	C:/Qt/dev/qaterialdev/build/Desktop_Qt_6_9_3_MSVC2022_64bit-Release/_deps/fetchgooglefontcmake-subbuild/fetchgooglefontcmake-populate-prefix/src/fetchgooglefontcmake-populate-stamp/fetchgooglefontcmake-populate-patch	b5b35d89f9e48cac
+3962	4033	7825884912597744	fetchgooglefontcmake-populate-prefix/src/fetchgooglefontcmake-populate-stamp/fetchgooglefontcmake-populate-configure	25529c238568e509
+3962	4033	7825884912597744	C:/Qt/dev/qaterialdev/build/Desktop_Qt_6_9_3_MSVC2022_64bit-Release/_deps/fetchgooglefontcmake-subbuild/fetchgooglefontcmake-populate-prefix/src/fetchgooglefontcmake-populate-stamp/fetchgooglefontcmake-populate-configure	25529c238568e509
+4033	4106	7825884913226633	fetchgooglefontcmake-populate-prefix/src/fetchgooglefontcmake-populate-stamp/fetchgooglefontcmake-populate-build	231f5763ce1b602c
+4033	4106	7825884913226633	C:/Qt/dev/qaterialdev/build/Desktop_Qt_6_9_3_MSVC2022_64bit-Release/_deps/fetchgooglefontcmake-subbuild/fetchgooglefontcmake-populate-prefix/src/fetchgooglefontcmake-populate-stamp/fetchgooglefontcmake-populate-build	231f5763ce1b602c
+4106	4179	7825884914021970	fetchgooglefontcmake-populate-prefix/src/fetchgooglefontcmake-populate-stamp/fetchgooglefontcmake-populate-install	d5353ee1e6911f1
+4106	4179	7825884914021970	C:/Qt/dev/qaterialdev/build/Desktop_Qt_6_9_3_MSVC2022_64bit-Release/_deps/fetchgooglefontcmake-subbuild/fetchgooglefontcmake-populate-prefix/src/fetchgooglefontcmake-populate-stamp/fetchgooglefontcmake-populate-install	d5353ee1e6911f1
+4179	4249	7825884914753053	fetchgooglefontcmake-populate-prefix/src/fetchgooglefontcmake-populate-stamp/fetchgooglefontcmake-populate-test	4b83be0aeb5d6eaa
+4179	4249	7825884914753053	C:/Qt/dev/qaterialdev/build/Desktop_Qt_6_9_3_MSVC2022_64bit-Release/_deps/fetchgooglefontcmake-subbuild/fetchgooglefontcmake-populate-prefix/src/fetchgooglefontcmake-populate-stamp/fetchgooglefontcmake-populate-test	4b83be0aeb5d6eaa
+4249	4347	7825884915771084	CMakeFiles/fetchgooglefontcmake-populate-complete	7619541c287ac96
+4249	4347	7825884915771084	fetchgooglefontcmake-populate-prefix/src/fetchgooglefontcmake-populate-stamp/fetchgooglefontcmake-populate-done	7619541c287ac96
+4249	4347	7825884915771084	C:/Qt/dev/qaterialdev/build/Desktop_Qt_6_9_3_MSVC2022_64bit-Release/_deps/fetchgooglefontcmake-subbuild/CMakeFiles/fetchgooglefontcmake-populate-complete	7619541c287ac96
+4249	4347	7825884915771084	C:/Qt/dev/qaterialdev/build/Desktop_Qt_6_9_3_MSVC2022_64bit-Release/_deps/fetchgooglefontcmake-subbuild/fetchgooglefontcmake-populate-prefix/src/fetchgooglefontcmake-populate-stamp/fetchgooglefontcmake-populate-done	7619541c287ac96

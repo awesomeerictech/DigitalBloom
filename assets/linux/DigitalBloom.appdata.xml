@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<component type="desktop-application">
+  <id>org.stllimited.DigitalBloom</id>
+  <name>DigitalBloom</name>
+  <launchable type="desktop-id">DigitalBloom.desktop</launchable>
+
+  <summary>Application for Digital Bloom Programme</summary>
+  <description>
+    <p></p>
+    <ul>
+      <li></li>
+    </ul>
+  </description>
+
+  <releases>
+    <release version="6.0" date="2025-10-10"> <url type="details">https://web.facebook.com/profile.php?id=61576898255121</url> </release>
+  </releases>
+
+  <project_license>GPL-3.0+</project_license>
+  <metadata_license>CC0-1.0</metadata_license>
+  <content_rating type="oars-1.1" />
+
+  <developer id="org.stllimited">
+    <name>STL LIMITED</name>
+  </developer>
+
+  <url type="homepage">https://web.facebook.com/profile.php?id=61576898255121</url>
+  
+
+  <requires>
+    <display_length>360</display_length>
+  </requires>
+  <supports>
+    <control>keyboard</control>
+    <control>pointing</control>
+    <control>touch</control>
+  </supports>
+
+  <categories>
+    <category>Utility</category>
+    <category>DataVisualization</category>
+  </categories>
+
+  
+</component>

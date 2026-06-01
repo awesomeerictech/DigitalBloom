@@ -1,0 +1,137 @@
+{
+    "eric": [
+        {
+
+            "ptype":"Laundry",
+            "name":"Jamaa",
+            "size":"null",
+            "weight":"null",
+            "price": "950",
+            "ad":"please compose your ad",
+            "info":"your info here",
+            "company":"null",
+            "brand":"null",
+            "image": "null"
+        },
+        {
+
+            "ptype":"Food",
+            "name":"Crispy",
+            "size":"null",
+            "weight":"null",
+            "price": "350",
+            "ad":"please compose your ad",
+            "info":"your info here",
+            "company":"null",
+            "brand":"null",
+            "image": "null"
+
+        },
+        {
+
+            "ptype":"Cloth",
+            "name":"Jeans",
+            "size":"null",
+            "weight":"null",
+            "price": "750",
+            "ad":"please compose your ad",
+            "info":"your info here",
+            "company":"null",
+            "brand":"null",
+            "image": "null"
+
+        },
+        {
+            "ptype":"Love",
+            "name":"Trust Condom",
+            "size":"null",
+            "weight":"null",
+            "price": "250",
+            "ad":"please compose your ad",
+            "info":"your info here",
+            "company":"null",
+            "brand":"null",
+            "image": "null"
+
+        },
+        {
+
+            "ptype":"Parenting",
+            "name":"Parent Magazine",
+            "size":"null",
+            "weight":"null",
+            "price": "800",
+            "ad":"please compose your ad",
+            "info":"your info here",
+            "company":"null",
+            "brand":"null",
+            "image": "null"
+
+        },
+        {
+
+            "ptype":"Transport",
+            "name":"Honda Bikes",
+            "size":"null",
+            "weight":"null",
+            "price": "9000",
+            "ad":"please compose your ad",
+            "info":"your info here",
+            "company":"null",
+            "brand":"null",
+            "image": "null"
+        },
+        {
+
+            "ptype":"Lifestyle",
+            "name":"Real Vibes",
+            "size":"null",
+            "weight":"null",
+            "price": "3000",
+            "ad":"please compose your ad",
+            "info":"your info here",
+            "company":"null",
+            "brand":"null",
+            "image": "null"
+        },
+        {
+
+            "ptype":"Electronics",
+            "name":"Sony Xperia",
+            "size":"null",
+            "weight":"null",
+            "price": "17000",
+            "ad":"please compose your ad",
+            "info":"your info here",
+            "company":"null",
+            "brand":"null",
+            "image": "null"
+        },
+        {
+
+            "ptype":"Fashion",
+            "name":"Luku",
+            "size":"null",
+            "weight":"null",
+            "price": "1700",
+            "ad":"please compose your ad",
+            "info":"your info here",
+            "company":"null",
+            "brand":"null",
+            "image": "null"
+        },
+        {
+
+            "ptype":"Fashion",
+            "name":"Camera Pants",
+            "size":"null",
+            "weight":"null",
+            "price": "2000",
+            "ad":"please compose your ad",
+            "info":"your info here",
+            "company":"null",
+            "brand":"null",
+            "image": "null"
+        }
+    ]
+}

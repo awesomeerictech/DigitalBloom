@@ -1,0 +1,416 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<messages xmlns:if="Wt.WTemplate.conditions">
+
+<message id="uiux1-view1">
+
+    <header>
+        <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+          <div class="container-fluid">
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+              <ul class="navbar-nav me-auto mb-2 mb-md-0">
+                <li class="nav-item">
+                    ${AnchorBexitupdatePage}
+                </li>
+              </ul>
+            </div>
+            <a class="navbar-brand" href="#">Item update page</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          </div>
+        </nav>
+      </header>
+  
+
+
+</message>
+
+<message id="uiux1-view2">
+
+  <body>
+
+    <header>
+      <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+        <div class="container-fluid">
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav me-auto mb-2 mb-md-0">
+              <li class="nav-item">
+                  ${AnchorBItemsPage}
+              </li>
+            </ul>
+          </div>
+          <a class="navbar-brand" href="#">${whichpage1}</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        </div>
+      </nav>
+    </header>
+
+    <section class="h-100" style="margin-top: 4rem;">
+
+  
+    <form>
+      
+      
+       <div class="form-outline mb-4">
+          <label class="form-label" for="${id:category}">Category</label>
+          ${category}
+       </div>
+
+        <div class="form-outline mb-4">
+          <label class="form-label" for="${id:item-name}">Item Name</label>
+              ${item-name}
+            <div class="form-text">
+                ${item-name-info}
+            </div>
+        </div>
+
+        <div class="form-outline mb-4">
+          <label class="form-label" for="${id:quantity}">Quantity</label>
+              ${quantity}
+            <div class="form-text">
+               ${quantity-info}
+            </div>
+        </div>
+
+        <div class="form-outline mb-4">
+          <label class="form-label" for="${id:price}">Price</label>
+              ${price}
+            <div class="form-text">
+               ${price-info}
+            </div>
+        </div>
+
+        <div class="form-outline mb-4">
+          <label class="form-label" for="${id:description}">Description</label>
+              ${description}
+            <div class="form-text">
+               ${description-info}
+            </div>
+        </div>
+
+            <div class="form-outline mb-4">
+               <label class="form-label" for="${id:standardized}">Standardized?</label>
+                    ${standardized}
+                <div class="form-text">
+                 ${standardized-info}
+                </div>
+             </div>
+
+              <div class="form-outline mb-4">
+                     <label class="form-label" for="${id:standardized-media}">Standardized media</label>
+                          ${standardized-media}
+                   <div class="form-text">
+                       ${standardized-media-info}
+                      </div>
+               </div>
+
+
+              <div class="form-outline mb-4">
+                  <label class="form-label" for="${id:item-uuid}">Item Uuid</label>
+                       ${item-uuid}
+                <div class="form-text">
+                    ${item-uuid-info}
+                   </div>
+              </div>
+
+              <div class="form-outline mb-4">
+                <label class="form-label" for="${id:manufacturer}">Manufacturer</label>
+                     ${manufacturer}
+               <div class="form-text">
+                  ${manufacturer-info}
+                 </div>
+            </div>
+
+            <div class="form-outline mb-4">
+              ${submit-button} <!--  <span class="help-inline">${submit-info}</span> -->
+          </div>
+    
+    </form>
+
+    </section>
+
+
+  </body>
+    
+              
+
+
+</message>
+
+<message id="uiux1-view3">
+  
+
+  <body>
+  
+        <header>
+          <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+            <div class="container-fluid">
+              <div class="collapse navbar-collapse" id="navbarCollapse">
+                <ul class="navbar-nav me-auto mb-2 mb-md-0">
+                  <li class="nav-item">
+                      ${AnchorAllItems}
+                  </li>
+                </ul>
+              </div>
+              <a class="navbar-brand" href="#">Settings page</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+            </div>
+          </nav>
+        </header>
+    
+       
+        <main style="margin-top: 7rem;">
+        
+          <section class="py-5 text-center container">
+            <div class="row py-lg-5">
+              <div class="col-lg-6 col-md-8 mx-auto">
+                <h1 class="fw-light">Disclaimer!</h1>
+                <p class="lead text-muted">You can add a category or delete an existing one here,update password or your phone number.</p>
+              </div>
+            </div>
+          </section>
+
+          <div >
+            <section class="py-5 container">
+            <div class="row py-lg-5">
+              <div class="col-lg-6 col-md-8 mx-auto">
+                ${mypassformview}
+                ${myphoneview}
+                ${mycatformview}
+               
+              </div>
+            </div>
+          </section>
+            <div>
+            <table class="table table-hover">
+              <thead>
+              <tr>
+                <th scope="col">Category</th>
+                <th scope="col">Delete category</th>
+              </tr>
+              </thead>
+              <tbody>
+               ${mycategoriesaction}
+              </tbody>
+            </table>
+            </div>
+          </div>
+    
+        
+          
+        
+        </main>
+        
+        <footer class="text-muted blog-footer">
+          <p class="float-end mb-1">
+            <a href="#">Back to top</a>
+          </p>
+          <p class="mb-0">Need help? <a href="/">Visit the helppage</a> .</p>
+          <p>
+            <p class="mb-1">Deliva &copy; Stratetactical</p>
+          </p>
+        </footer>
+        
+        
+           
+              
+      </body>
+      
+  </message>
+
+
+<message id="uiux1-view4">
+
+<body>
+
+      <header>
+        <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+          <div class="container-fluid">
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+              <ul class="navbar-nav me-auto mb-2 mb-md-0">
+                <li class="nav-item">
+                    ${AnchorAllItems}
+                </li>
+              </ul>
+            </div>
+            <a class="navbar-brand" href="#">Requests page</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          </div>
+        </nav>
+      </header>
+  
+  
+      <main style="margin-top: 7rem;">
+      
+        <section class="py-5 text-center container">
+          <div class="row py-lg-5">
+            <div class="col-lg-6 col-md-8 mx-auto">
+              <h1 class="fw-light">Disclaimer!</h1>
+              <p class="lead text-muted">The requests will appear here, delete or obtain information about your requests.</p>
+            </div>
+          </div>
+        </section>
+
+        <div >
+          ${myexecutebtn}   
+         <div class="table-responsive" style="margin-top: 3rem;">
+         <table class="table table-hover table-success table-striped table-bordered border-success caption-top">
+          <caption>All requests</caption>
+           <thead>
+           <tr>
+             <th scope="col">Request id.</th>
+             <th scope="col">Customer id.</th>
+             <th scope="col">Customer info.</th>
+             <th scope="col">Item id.</th>
+             <th scope="col">Item info.</th>
+             <th scope="col">Business id.</th>
+             <th scope="col">Date requested.</th>
+             <th scope="col">Delete request.</th>
+           </tr>
+           </thead>
+           <tbody>
+            ${myrequestsaction}
+           </tbody>
+         </table>
+         </div>
+       </div>
+ 
+      
+        
+      
+      </main>
+      
+      <footer class="text-muted blog-footer">
+        <p class="float-end mb-1">
+          <a href="#">Back to top</a>
+        </p>
+        <p class="mb-0">Need help? <a href="/">Visit the helppage</a> .</p>
+        <p>
+          <p class="mb-1">Deliva &copy; Stratetactical</p>
+        </p>
+      </footer>
+      
+      
+         
+            
+    </body>
+    
+</message>
+
+<message id="uiux1-view5">
+
+  <tr class="table-success">
+    <th scope="row">${categorydata}</th>
+    <td>${actiondelete}</td>
+  </tr>
+
+</message>
+
+<message  id="uiux1-view6">
+
+
+  <body>
+
+  
+    <section class="h-100" style="margin-top: 0.4rem;">
+
+  
+    <form>
+      
+      
+      <div class="form-outline mb-4">
+          <label class="form-label" for="${id:category}">Category</label>
+          ${category}
+       </div>
+          <div class="form-outline mb-4">
+              ${submit-button} <!--  <span class="help-inline">${submit-info}</span> -->
+           </div>
+    
+    </form>
+
+    </section>
+
+
+  </body>
+    
+</message>
+
+<message id="uiux1-view7">
+
+  <tr class="table-secondary">
+    <th scope="row">${reqid}</th>
+    <td>${custid}</td>
+    <td>${custinfo}</td>
+    <td>${itemid}</td>
+    <td>${iteminfo}</td>
+    <td>${businessid}</td>
+    <td>${datereq}</td>
+    <td>${deleteaction}</td>
+  </tr>
+
+</message>
+
+
+<message  id="uiux1-view8">
+
+
+  <body>
+
+  
+    <section class="h-100" style="margin-top: 0.4rem;">
+
+  
+    <form>
+      
+      
+      <div class="form-outline mb-4">
+          <label class="form-label" for="${id:password}">Password</label>
+          ${password}
+       </div>
+          <div class="form-outline mb-4">
+              ${submit-password-button} <!--  <span class="help-inline">${submit-info}</span> -->
+           </div>
+    
+    </form>
+
+    </section>
+
+
+  </body>
+    
+</message>
+
+<message  id="uiux1-view9">
+
+
+ <body>
+    <section class="h-100" style="margin-top: 0.4rem;">
+
+  
+    <form> 
+        <div class="form-outline mb-4">
+            <label class="form-label" for="${id:phone-number}">Phone Number</label>
+            ${phone-number}
+         </div>
+             <div class="form-outline mb-4">
+                 ${submit-phone-button} <!--  <span class="help-inline">${submit-info}</span> -->
+               </div>
+    
+      </form>
+
+    </section>
+
+
+  </body>
+    
+</message>
+
+
+
+</messages>

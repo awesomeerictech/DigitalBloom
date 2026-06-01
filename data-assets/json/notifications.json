@@ -1,0 +1,45 @@
+{
+    "eric": [
+        {
+
+            "username":"Eric",
+            "name": "hi"
+        },
+        {
+
+           "username":"Ann",
+           "name": "hi too"
+        },
+        {
+
+             "username":"Eric",
+             "name": "welcome to dosai"
+        },
+        {
+             "username":"Eric",
+              "name": "dosai is a wonderful initiative to increase blood supply to our blood banks in Kenya"
+        },
+        {
+          "username":"Ann",
+          "name": "i have seen the app and i am impressed"
+        },
+        {
+          "username":"Ann",
+          "name": "how may i donate"
+        },
+        {
+          "username":"Eric",
+          "name": "create account and then just click donate button or contact us and we shall give you further instructions on where and how to do it"
+        },
+        {
+
+         "username":"Ann",
+         "name": "Thankyou Eric i love you"
+        },
+        {
+
+           "username":"Eric",
+           "name": "aww"
+        }
+    ]
+}

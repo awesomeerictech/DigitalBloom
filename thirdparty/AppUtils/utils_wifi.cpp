@@ -1,0 +1,110 @@
+#include "utils_wifi.h"
+
+#if defined(Q_OS_ANDROID)
+#include "utils_os_android.h"
+#elif defined(Q_OS_IOS) && defined(UTILS_WIFI_ENABLED)
+#include "utils_os_ios_wifi.h"
+#endif
+
+#if QT_CONFIG(permissions)
+#include <QCoreApplication>
+#include <QPermission>
+#endif
+
+#include <QDebug>
+
+/* ************************************************************************** */
+
+UtilsWiFi *UtilsWiFi::instance = nullptr;
+
+UtilsWiFi *UtilsWiFi::getInstance()
+{
+    if (instance == nullptr)
+    {
+        instance = new UtilsWiFi();
+    }
+
+    return instance;
+}
+
+UtilsWiFi::UtilsWiFi()
+{
+    //
+}
+
+UtilsWiFi::~UtilsWiFi()
+{
+    //
+}
+
+/* ************************************************************************** */
+
+bool UtilsWiFi::checkLocationPermissions()
+{
+    //qDebug() << "UtilsWiFi::checkLocationPermissions()";
+    bool permOS_was = m_permOS;
+
+#if QT_CONFIG(permissions)
+    m_permOS = (qApp->checkPermission(QLocationPermission{}) == Qt::PermissionStatus::Granted);
+
+    if (permOS_was != m_permOS)
+    {
+        Q_EMIT permissionsChanged();
+    }
+#endif
+
+    return m_permOS;
+}
+
+void UtilsWiFi::requestLocationPermissions()
+{
+    //qDebug() << "UtilsWiFi::requestLocationPermissions()";
+
+#if QT_CONFIG(permissions)
+    qApp->requestPermission(QBluetoothPermission{},
+                            this, &UtilsWiFi::requestLocationPermissions_results);
+#endif
+}
+
+void UtilsWiFi::requestLocationPermissions_results()
+{
+    // evaluate the results
+    if (checkLocationPermissions())
+    {
+        refreshWiFi_internal();
+    }
+    else
+    {
+        // try again?
+        //requestLocationPermissions();
+    }
+}
+
+/* ************************************************************************** */
+
+void UtilsWiFi::refreshWiFi()
+{
+    if (checkLocationPermissions())
+    {
+        refreshWiFi_internal();
+    }
+    else
+    {
+        requestLocationPermissions();
+    }
+}
+
+void UtilsWiFi::refreshWiFi_internal()
+{
+#if defined(Q_OS_ANDROID)
+    m_currentSSID = UtilsAndroid::getWifiSSID();
+    Q_EMIT wifiChanged();
+#elif defined(Q_OS_IOS) && defined(UTILS_WIFI_ENABLED)
+    m_currentSSID = UtilsIOSWiFi::getWifiSSID();
+    Q_EMIT wifiChanged();
+#else
+    m_currentSSID = "";
+#endif
+}
+
+/* ************************************************************************** */

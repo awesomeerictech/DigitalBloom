@@ -1,0 +1,958 @@
+2025-11-20 21:56:32.219 I [test_server.exe] [17948-996] config.cpp:37 loadIniConfig | dump ini file to:C:/Qt/dev/orderserver/DigitalBloom/opensslwin/bin/test_server.exe.ini
+2025-11-20 21:56:32.222 D [test_server.exe] [17948-stamp thread] util.cpp:439 operator () | Stamp thread started
+2025-11-20 21:56:32.235 I [test_server.exe] [17948-996] EventPoller.cpp:626 EventPollerPool | EventPoller created size: 8
+2025-11-20 21:56:32.236 D [test_server.exe] [17948-996] RtspPlayer.cpp:92 play | rtsp://192.168.1.64:554/cam/realmonitor?channel=1&subtype=1 admin admin123 0
+2025-11-20 21:56:32.237 T [test_server.exe] [17948-996] TcpClient.cpp:84 startConnect | class mediakit::RtspPlayerImp-1 start connect 192.168.1.64:554
+2025-11-20 21:56:32.237 D [test_server.exe] [17948-996] test_server.cpp:288 main | 
+ PlayerProxy构造函数前两个参数分别为应用名（app）,流id（streamId）
+ 比如说应用为live，流id为0，那么直播地址为:
+ hls地址 : http://127.0.0.1/live/0/hls.m3u8
+ http-flv地址 : http://127.0.0.1/live/0.flv
+ rtsp地址 : rtsp://127.0.0.1/live/0
+ rtmp地址 : rtmp://127.0.0.1/live/0
+2025-11-20 21:56:32.251 W [test_server.exe] [17948-996] SSLUtil.cpp:104 loadPublicKey | BIO_new_file failed: error:80000002:system library::No such file or directory
+2025-11-20 21:56:32.251 W [test_server.exe] [17948-996] SSLUtil.cpp:132 loadPrivateKey | BIO_new_file failed: error:10000080:BIO routines::no such file
+2025-11-20 21:56:32.251 W [test_server.exe] [17948-996] SSLUtil.cpp:213 makeSSLContext | SSL_CTX_check_private_key failed: error:80000002:system library::No such file or directory
+2025-11-20 21:56:32.251 W [test_server.exe] [17948-996] SSLUtil.cpp:104 loadPublicKey | BIO_new_file failed: error:10000080:BIO routines::no such file
+2025-11-20 21:56:32.253 I [test_server.exe] [17948-996] TcpServer.cpp:260 start_l | TCP server listening on [::]: 9000
+2025-11-20 21:56:32.254 I [test_server.exe] [17948-996] TcpServer.cpp:260 start_l | TCP server listening on [::]: 554
+2025-11-20 21:56:32.255 I [test_server.exe] [17948-996] TcpServer.cpp:260 start_l | TCP server listening on [::]: 1935
+2025-11-20 21:56:32.256 I [test_server.exe] [17948-996] TcpServer.cpp:260 start_l | TCP server listening on [::]: 80
+2025-11-20 21:56:32.257 I [test_server.exe] [17948-996] TcpServer.cpp:260 start_l | TCP server listening on [::]: 443
+2025-11-20 21:56:32.258 I [test_server.exe] [17948-996] TcpServer.cpp:260 start_l | TCP server listening on [::]: 322
+2025-11-20 21:56:42.233 W [test_server.exe] [17948-event poller 1] RtspPlayer.cpp:762 onPlayResult_l | 2 play rtsp timeout
+2025-11-20 21:56:42.233 T [test_server.exe] [17948-event poller 1] TcpClient.cpp:80 operator () | class mediakit::RtspPlayerImp-1 on err: 6(teardown)
+2025-11-20 21:56:44.257 W [test_server.exe] [17948-event poller 1] PlayerProxy.cpp:246 operator () | 重试播放[0]:rtsp://admin:admin123@192.168.1.64:554/cam/realmonitor?channel=1&subtype=1
+2025-11-20 21:56:44.257 D [test_server.exe] [17948-event poller 1] RtspPlayerImp.h:31 ~RtspPlayerImp | 
+2025-11-20 21:56:44.257 D [test_server.exe] [17948-event poller 1] RtspPlayer.cpp:37 ~RtspPlayer | 
+2025-11-20 21:56:44.257 T [test_server.exe] [17948-event poller 1] TcpClient.cpp:29 ~TcpClient | ~class mediakit::RtspPlayerImp-1
+2025-11-20 21:56:44.258 D [test_server.exe] [17948-event poller 1] RtspPlayer.cpp:92 play | rtsp://192.168.1.64:554/cam/realmonitor?channel=1&subtype=1 admin admin123 0
+2025-11-20 21:56:44.258 T [test_server.exe] [17948-event poller 1] TcpClient.cpp:84 startConnect | class mediakit::RtspPlayerImp-2 start connect 192.168.1.64:554
+2025-11-20 21:56:54.268 W [test_server.exe] [17948-event poller 1] RtspPlayer.cpp:762 onPlayResult_l | 2 play rtsp timeout
+2025-11-20 21:56:54.268 T [test_server.exe] [17948-event poller 1] TcpClient.cpp:80 operator () | class mediakit::RtspPlayerImp-2 on err: 6(teardown)
+2025-11-20 21:56:57.291 W [test_server.exe] [17948-event poller 1] PlayerProxy.cpp:246 operator () | 重试播放[1]:rtsp://admin:admin123@192.168.1.64:554/cam/realmonitor?channel=1&subtype=1
+2025-11-20 21:56:57.291 D [test_server.exe] [17948-event poller 1] RtspPlayerImp.h:31 ~RtspPlayerImp | 
+2025-11-20 21:56:57.291 D [test_server.exe] [17948-event poller 1] RtspPlayer.cpp:37 ~RtspPlayer | 
+2025-11-20 21:56:57.291 T [test_server.exe] [17948-event poller 1] TcpClient.cpp:29 ~TcpClient | ~class mediakit::RtspPlayerImp-2
+2025-11-20 21:56:57.291 D [test_server.exe] [17948-event poller 1] RtspPlayer.cpp:92 play | rtsp://192.168.1.64:554/cam/realmonitor?channel=1&subtype=1 admin admin123 0
+2025-11-20 21:56:57.291 T [test_server.exe] [17948-event poller 1] TcpClient.cpp:84 startConnect | class mediakit::RtspPlayerImp-3 start connect 192.168.1.64:554
+2025-11-20 21:57:07.311 W [test_server.exe] [17948-event poller 1] RtspPlayer.cpp:762 onPlayResult_l | 2 play rtsp timeout
+2025-11-20 21:57:07.311 T [test_server.exe] [17948-event poller 1] TcpClient.cpp:80 operator () | class mediakit::RtspPlayerImp-3 on err: 6(teardown)
+2025-11-20 21:57:13.315 W [test_server.exe] [17948-event poller 1] PlayerProxy.cpp:246 operator () | 重试播放[2]:rtsp://admin:admin123@192.168.1.64:554/cam/realmonitor?channel=1&subtype=1
+2025-11-20 21:57:13.315 D [test_server.exe] [17948-event poller 1] RtspPlayerImp.h:31 ~RtspPlayerImp | 
+2025-11-20 21:57:13.315 D [test_server.exe] [17948-event poller 1] RtspPlayer.cpp:37 ~RtspPlayer | 
+2025-11-20 21:57:13.315 T [test_server.exe] [17948-event poller 1] TcpClient.cpp:29 ~TcpClient | ~class mediakit::RtspPlayerImp-3
+2025-11-20 21:57:13.315 D [test_server.exe] [17948-event poller 1] RtspPlayer.cpp:92 play | rtsp://192.168.1.64:554/cam/realmonitor?channel=1&subtype=1 admin admin123 0
+2025-11-20 21:57:13.316 T [test_server.exe] [17948-event poller 1] TcpClient.cpp:84 startConnect | class mediakit::RtspPlayerImp-4 start connect 192.168.1.64:554
+2025-11-20 21:57:23.325 W [test_server.exe] [17948-event poller 1] RtspPlayer.cpp:762 onPlayResult_l | 2 play rtsp timeout
+2025-11-20 21:57:23.326 T [test_server.exe] [17948-event poller 1] TcpClient.cpp:80 operator () | class mediakit::RtspPlayerImp-4 on err: 6(teardown)
+2025-11-20 21:57:32.332 W [test_server.exe] [17948-event poller 1] PlayerProxy.cpp:246 operator () | 重试播放[3]:rtsp://admin:admin123@192.168.1.64:554/cam/realmonitor?channel=1&subtype=1
+2025-11-20 21:57:32.332 D [test_server.exe] [17948-event poller 1] RtspPlayerImp.h:31 ~RtspPlayerImp | 
+2025-11-20 21:57:32.332 D [test_server.exe] [17948-event poller 1] RtspPlayer.cpp:37 ~RtspPlayer | 
+2025-11-20 21:57:32.332 T [test_server.exe] [17948-event poller 1] TcpClient.cpp:29 ~TcpClient | ~class mediakit::RtspPlayerImp-4
+2025-11-20 21:57:32.333 D [test_server.exe] [17948-event poller 1] RtspPlayer.cpp:92 play | rtsp://192.168.1.64:554/cam/realmonitor?channel=1&subtype=1 admin admin123 0
+2025-11-20 21:57:32.333 T [test_server.exe] [17948-event poller 1] TcpClient.cpp:84 startConnect | class mediakit::RtspPlayerImp-5 start connect 192.168.1.64:554
+2025-11-20 21:57:37.217 T [test_server.exe] [17948-event poller 7] TcpServer.h:72 operator () | 1-648(127.0.0.1:54359) class mediakit::HttpSession
+2025-11-20 21:57:37.217 T [test_server.exe] [17948-event poller 0] TcpServer.h:72 operator () | 2-652(127.0.0.1:64134) class mediakit::HttpSession
+2025-11-20 21:57:42.333 W [test_server.exe] [17948-event poller 1] RtspPlayer.cpp:762 onPlayResult_l | 2 play rtsp timeout
+2025-11-20 21:57:42.333 T [test_server.exe] [17948-event poller 1] TcpClient.cpp:80 operator () | class mediakit::RtspPlayerImp-5 on err: 6(teardown)
+2025-11-20 21:57:52.748 T [test_server.exe] [17948-event poller 0] TcpServer.cpp:210 operator () | 2-652(127.0.0.1:64134) class mediakit::HttpSession on err: 2(session timeout)
+2025-11-20 21:57:52.749 T [test_server.exe] [17948-event poller 0] TcpServer.h:66 operator () | 2-652(127.0.0.1:64134) ~class mediakit::HttpSession
+2025-11-20 21:57:54.352 W [test_server.exe] [17948-event poller 1] PlayerProxy.cpp:246 operator () | 重试播放[4]:rtsp://admin:admin123@192.168.1.64:554/cam/realmonitor?channel=1&subtype=1
+2025-11-20 21:57:54.352 D [test_server.exe] [17948-event poller 1] RtspPlayerImp.h:31 ~RtspPlayerImp | 
+2025-11-20 21:57:54.352 D [test_server.exe] [17948-event poller 1] RtspPlayer.cpp:37 ~RtspPlayer | 
+2025-11-20 21:57:54.352 T [test_server.exe] [17948-event poller 1] TcpClient.cpp:29 ~TcpClient | ~class mediakit::RtspPlayerImp-5
+2025-11-20 21:57:54.352 D [test_server.exe] [17948-event poller 1] RtspPlayer.cpp:92 play | rtsp://192.168.1.64:554/cam/realmonitor?channel=1&subtype=1 admin admin123 0
+2025-11-20 21:57:54.352 T [test_server.exe] [17948-event poller 1] TcpClient.cpp:84 startConnect | class mediakit::RtspPlayerImp-6 start connect 192.168.1.64:554
+2025-11-20 21:58:00.885 T [test_server.exe] [17948-event poller 7] TcpServer.cpp:210 operator () | 1-648(127.0.0.1:54359) class mediakit::HttpSession on err: 2(session timeout)
+2025-11-20 21:58:00.885 T [test_server.exe] [17948-event poller 7] TcpServer.h:66 operator () | 1-648(127.0.0.1:54359) ~class mediakit::HttpSession
+2025-11-20 21:58:04.372 W [test_server.exe] [17948-event poller 1] RtspPlayer.cpp:762 onPlayResult_l | 2 play rtsp timeout
+2025-11-20 21:58:04.372 T [test_server.exe] [17948-event poller 1] TcpClient.cpp:80 operator () | class mediakit::RtspPlayerImp-6 on err: 6(teardown)
+2025-11-20 21:58:11.499 T [test_server.exe] [17948-event poller 1] TcpServer.h:72 operator () | 3-656(127.0.0.1:54585) class mediakit::HttpSession
+2025-11-20 21:58:11.500 T [test_server.exe] [17948-event poller 2] TcpServer.h:72 operator () | 4-648(127.0.0.1:62458) class mediakit::HttpSession
+2025-11-20 21:58:19.389 W [test_server.exe] [17948-event poller 1] PlayerProxy.cpp:246 operator () | 重试播放[5]:rtsp://admin:admin123@192.168.1.64:554/cam/realmonitor?channel=1&subtype=1
+2025-11-20 21:58:19.389 D [test_server.exe] [17948-event poller 1] RtspPlayerImp.h:31 ~RtspPlayerImp | 
+2025-11-20 21:58:19.389 D [test_server.exe] [17948-event poller 1] RtspPlayer.cpp:37 ~RtspPlayer | 
+2025-11-20 21:58:19.389 T [test_server.exe] [17948-event poller 1] TcpClient.cpp:29 ~TcpClient | ~class mediakit::RtspPlayerImp-6
+2025-11-20 21:58:19.389 D [test_server.exe] [17948-event poller 1] RtspPlayer.cpp:92 play | rtsp://192.168.1.64:554/cam/realmonitor?channel=1&subtype=1 admin admin123 0
+2025-11-20 21:58:19.389 T [test_server.exe] [17948-event poller 1] TcpClient.cpp:84 startConnect | class mediakit::RtspPlayerImp-7 start connect 192.168.1.64:554
+2025-11-20 21:58:26.917 T [test_server.exe] [17948-event poller 1] TcpServer.cpp:210 operator () | 3-656(127.0.0.1:54585) class mediakit::HttpSession on err: 2(session timeout)
+2025-11-20 21:58:26.917 T [test_server.exe] [17948-event poller 1] TcpServer.h:66 operator () | 3-656(127.0.0.1:54585) ~class mediakit::HttpSession
+2025-11-20 21:58:27.061 T [test_server.exe] [17948-event poller 2] TcpServer.cpp:210 operator () | 4-648(127.0.0.1:62458) class mediakit::HttpSession on err: 2(session timeout)
+2025-11-20 21:58:27.061 T [test_server.exe] [17948-event poller 2] TcpServer.h:66 operator () | 4-648(127.0.0.1:62458) ~class mediakit::HttpSession
+2025-11-20 21:58:29.405 W [test_server.exe] [17948-event poller 1] RtspPlayer.cpp:762 onPlayResult_l | 2 play rtsp timeout
+2025-11-20 21:58:29.405 T [test_server.exe] [17948-event poller 1] TcpClient.cpp:80 operator () | class mediakit::RtspPlayerImp-7 on err: 6(teardown)
+2025-11-20 21:58:47.409 W [test_server.exe] [17948-event poller 1] PlayerProxy.cpp:246 operator () | 重试播放[6]:rtsp://admin:admin123@192.168.1.64:554/cam/realmonitor?channel=1&subtype=1
+2025-11-20 21:58:47.410 D [test_server.exe] [17948-event poller 1] RtspPlayerImp.h:31 ~RtspPlayerImp | 
+2025-11-20 21:58:47.410 D [test_server.exe] [17948-event poller 1] RtspPlayer.cpp:37 ~RtspPlayer | 
+2025-11-20 21:58:47.410 T [test_server.exe] [17948-event poller 1] TcpClient.cpp:29 ~TcpClient | ~class mediakit::RtspPlayerImp-7
+2025-11-20 21:58:47.410 D [test_server.exe] [17948-event poller 1] RtspPlayer.cpp:92 play | rtsp://192.168.1.64:554/cam/realmonitor?channel=1&subtype=1 admin admin123 0
+2025-11-20 21:58:47.410 T [test_server.exe] [17948-event poller 1] TcpClient.cpp:84 startConnect | class mediakit::RtspPlayerImp-8 start connect 192.168.1.64:554
+2025-11-20 21:58:57.427 W [test_server.exe] [17948-event poller 1] RtspPlayer.cpp:762 onPlayResult_l | 2 play rtsp timeout
+2025-11-20 21:58:57.427 T [test_server.exe] [17948-event poller 1] TcpClient.cpp:80 operator () | class mediakit::RtspPlayerImp-8 on err: 6(teardown)
+2025-11-20 21:59:18.446 W [test_server.exe] [17948-event poller 1] PlayerProxy.cpp:246 operator () | 重试播放[7]:rtsp://admin:admin123@192.168.1.64:554/cam/realmonitor?channel=1&subtype=1
+2025-11-20 21:59:18.447 D [test_server.exe] [17948-event poller 1] RtspPlayerImp.h:31 ~RtspPlayerImp | 
+2025-11-20 21:59:18.447 D [test_server.exe] [17948-event poller 1] RtspPlayer.cpp:37 ~RtspPlayer | 
+2025-11-20 21:59:18.447 T [test_server.exe] [17948-event poller 1] TcpClient.cpp:29 ~TcpClient | ~class mediakit::RtspPlayerImp-8
+2025-11-20 21:59:18.447 D [test_server.exe] [17948-event poller 1] RtspPlayer.cpp:92 play | rtsp://192.168.1.64:554/cam/realmonitor?channel=1&subtype=1 admin admin123 0
+2025-11-20 21:59:18.447 T [test_server.exe] [17948-event poller 1] TcpClient.cpp:84 startConnect | class mediakit::RtspPlayerImp-9 start connect 192.168.1.64:554
+2025-11-20 21:59:28.448 W [test_server.exe] [17948-event poller 1] RtspPlayer.cpp:762 onPlayResult_l | 2 play rtsp timeout
+2025-11-20 21:59:28.448 T [test_server.exe] [17948-event poller 1] TcpClient.cpp:80 operator () | class mediakit::RtspPlayerImp-9 on err: 6(teardown)
+2025-11-20 21:59:52.463 W [test_server.exe] [17948-event poller 1] PlayerProxy.cpp:246 operator () | 重试播放[8]:rtsp://admin:admin123@192.168.1.64:554/cam/realmonitor?channel=1&subtype=1
+2025-11-20 21:59:52.463 D [test_server.exe] [17948-event poller 1] RtspPlayerImp.h:31 ~RtspPlayerImp | 
+2025-11-20 21:59:52.463 D [test_server.exe] [17948-event poller 1] RtspPlayer.cpp:37 ~RtspPlayer | 
+2025-11-20 21:59:52.463 T [test_server.exe] [17948-event poller 1] TcpClient.cpp:29 ~TcpClient | ~class mediakit::RtspPlayerImp-9
+2025-11-20 21:59:52.463 D [test_server.exe] [17948-event poller 1] RtspPlayer.cpp:92 play | rtsp://192.168.1.64:554/cam/realmonitor?channel=1&subtype=1 admin admin123 0
+2025-11-20 21:59:52.463 T [test_server.exe] [17948-event poller 1] TcpClient.cpp:84 startConnect | class mediakit::RtspPlayerImp-10 start connect 192.168.1.64:554
+2025-11-20 22:00:02.465 W [test_server.exe] [17948-event poller 1] RtspPlayer.cpp:762 onPlayResult_l | 2 play rtsp timeout
+2025-11-20 22:00:02.466 T [test_server.exe] [17948-event poller 1] TcpClient.cpp:80 operator () | class mediakit::RtspPlayerImp-10 on err: 6(teardown)
+2025-11-20 22:00:29.491 W [test_server.exe] [17948-event poller 1] PlayerProxy.cpp:246 operator () | 重试播放[9]:rtsp://admin:admin123@192.168.1.64:554/cam/realmonitor?channel=1&subtype=1
+2025-11-20 22:00:29.491 D [test_server.exe] [17948-event poller 1] RtspPlayerImp.h:31 ~RtspPlayerImp | 
+2025-11-20 22:00:29.491 D [test_server.exe] [17948-event poller 1] RtspPlayer.cpp:37 ~RtspPlayer | 
+2025-11-20 22:00:29.491 T [test_server.exe] [17948-event poller 1] TcpClient.cpp:29 ~TcpClient | ~class mediakit::RtspPlayerImp-10
+2025-11-20 22:00:29.491 D [test_server.exe] [17948-event poller 1] RtspPlayer.cpp:92 play | rtsp://192.168.1.64:554/cam/realmonitor?channel=1&subtype=1 admin admin123 0
+2025-11-20 22:00:29.491 T [test_server.exe] [17948-event poller 1] TcpClient.cpp:84 startConnect | class mediakit::RtspPlayerImp-11 start connect 192.168.1.64:554
+2025-11-20 22:00:39.511 W [test_server.exe] [17948-event poller 1] RtspPlayer.cpp:762 onPlayResult_l | 2 play rtsp timeout
+2025-11-20 22:00:39.512 T [test_server.exe] [17948-event poller 1] TcpClient.cpp:80 operator () | class mediakit::RtspPlayerImp-11 on err: 6(teardown)
+2025-11-20 22:01:09.538 W [test_server.exe] [17948-event poller 1] PlayerProxy.cpp:246 operator () | 重试播放[10]:rtsp://admin:admin123@192.168.1.64:554/cam/realmonitor?channel=1&subtype=1
+2025-11-20 22:01:09.538 D [test_server.exe] [17948-event poller 1] RtspPlayerImp.h:31 ~RtspPlayerImp | 
+2025-11-20 22:01:09.538 D [test_server.exe] [17948-event poller 1] RtspPlayer.cpp:37 ~RtspPlayer | 
+2025-11-20 22:01:09.538 T [test_server.exe] [17948-event poller 1] TcpClient.cpp:29 ~TcpClient | ~class mediakit::RtspPlayerImp-11
+2025-11-20 22:01:09.538 D [test_server.exe] [17948-event poller 1] RtspPlayer.cpp:92 play | rtsp://192.168.1.64:554/cam/realmonitor?channel=1&subtype=1 admin admin123 0
+2025-11-20 22:01:09.539 T [test_server.exe] [17948-event poller 1] TcpClient.cpp:84 startConnect | class mediakit::RtspPlayerImp-12 start connect 192.168.1.64:554
+2025-11-20 22:01:19.557 W [test_server.exe] [17948-event poller 1] RtspPlayer.cpp:762 onPlayResult_l | 2 play rtsp timeout
+2025-11-20 22:01:19.557 T [test_server.exe] [17948-event poller 1] TcpClient.cpp:80 operator () | class mediakit::RtspPlayerImp-12 on err: 6(teardown)
+2025-11-20 22:01:52.571 W [test_server.exe] [17948-event poller 1] PlayerProxy.cpp:246 operator () | 重试播放[11]:rtsp://admin:admin123@192.168.1.64:554/cam/realmonitor?channel=1&subtype=1
+2025-11-20 22:01:52.571 D [test_server.exe] [17948-event poller 1] RtspPlayerImp.h:31 ~RtspPlayerImp | 
+2025-11-20 22:01:52.571 D [test_server.exe] [17948-event poller 1] RtspPlayer.cpp:37 ~RtspPlayer | 
+2025-11-20 22:01:52.571 T [test_server.exe] [17948-event poller 1] TcpClient.cpp:29 ~TcpClient | ~class mediakit::RtspPlayerImp-12
+2025-11-20 22:01:52.572 D [test_server.exe] [17948-event poller 1] RtspPlayer.cpp:92 play | rtsp://192.168.1.64:554/cam/realmonitor?channel=1&subtype=1 admin admin123 0
+2025-11-20 22:01:52.572 T [test_server.exe] [17948-event poller 1] TcpClient.cpp:84 startConnect | class mediakit::RtspPlayerImp-13 start connect 192.168.1.64:554
+2025-11-20 22:02:02.575 W [test_server.exe] [17948-event poller 1] RtspPlayer.cpp:762 onPlayResult_l | 2 play rtsp timeout
+2025-11-20 22:02:02.576 T [test_server.exe] [17948-event poller 1] TcpClient.cpp:80 operator () | class mediakit::RtspPlayerImp-13 on err: 6(teardown)
+2025-11-20 22:02:38.605 W [test_server.exe] [17948-event poller 1] PlayerProxy.cpp:246 operator () | 重试播放[12]:rtsp://admin:admin123@192.168.1.64:554/cam/realmonitor?channel=1&subtype=1
+2025-11-20 22:02:38.605 D [test_server.exe] [17948-event poller 1] RtspPlayerImp.h:31 ~RtspPlayerImp | 
+2025-11-20 22:02:38.605 D [test_server.exe] [17948-event poller 1] RtspPlayer.cpp:37 ~RtspPlayer | 
+2025-11-20 22:02:38.605 T [test_server.exe] [17948-event poller 1] TcpClient.cpp:29 ~TcpClient | ~class mediakit::RtspPlayerImp-13
+2025-11-20 22:02:38.605 D [test_server.exe] [17948-event poller 1] RtspPlayer.cpp:92 play | rtsp://192.168.1.64:554/cam/realmonitor?channel=1&subtype=1 admin admin123 0
+2025-11-20 22:02:38.605 T [test_server.exe] [17948-event poller 1] TcpClient.cpp:84 startConnect | class mediakit::RtspPlayerImp-14 start connect 192.168.1.64:554
+2025-11-20 22:02:48.626 W [test_server.exe] [17948-event poller 1] RtspPlayer.cpp:762 onPlayResult_l | 2 play rtsp timeout
+2025-11-20 22:02:48.626 T [test_server.exe] [17948-event poller 1] TcpClient.cpp:80 operator () | class mediakit::RtspPlayerImp-14 on err: 6(teardown)
+2025-11-20 22:03:27.643 W [test_server.exe] [17948-event poller 1] PlayerProxy.cpp:246 operator () | 重试播放[13]:rtsp://admin:admin123@192.168.1.64:554/cam/realmonitor?channel=1&subtype=1
+2025-11-20 22:03:27.644 D [test_server.exe] [17948-event poller 1] RtspPlayerImp.h:31 ~RtspPlayerImp | 
+2025-11-20 22:03:27.644 D [test_server.exe] [17948-event poller 1] RtspPlayer.cpp:37 ~RtspPlayer | 
+2025-11-20 22:03:27.644 T [test_server.exe] [17948-event poller 1] TcpClient.cpp:29 ~TcpClient | ~class mediakit::RtspPlayerImp-14
+2025-11-20 22:03:27.644 D [test_server.exe] [17948-event poller 1] RtspPlayer.cpp:92 play | rtsp://192.168.1.64:554/cam/realmonitor?channel=1&subtype=1 admin admin123 0
+2025-11-20 22:03:27.644 T [test_server.exe] [17948-event poller 1] TcpClient.cpp:84 startConnect | class mediakit::RtspPlayerImp-15 start connect 192.168.1.64:554
+2025-11-20 22:03:37.660 W [test_server.exe] [17948-event poller 1] RtspPlayer.cpp:762 onPlayResult_l | 2 play rtsp timeout
+2025-11-20 22:03:37.660 T [test_server.exe] [17948-event poller 1] TcpClient.cpp:80 operator () | class mediakit::RtspPlayerImp-15 on err: 6(teardown)
+2025-11-20 22:04:19.687 W [test_server.exe] [17948-event poller 1] PlayerProxy.cpp:246 operator () | 重试播放[14]:rtsp://admin:admin123@192.168.1.64:554/cam/realmonitor?channel=1&subtype=1
+2025-11-20 22:04:19.687 D [test_server.exe] [17948-event poller 1] RtspPlayerImp.h:31 ~RtspPlayerImp | 
+2025-11-20 22:04:19.687 D [test_server.exe] [17948-event poller 1] RtspPlayer.cpp:37 ~RtspPlayer | 
+2025-11-20 22:04:19.687 T [test_server.exe] [17948-event poller 1] TcpClient.cpp:29 ~TcpClient | ~class mediakit::RtspPlayerImp-15
+2025-11-20 22:04:19.687 D [test_server.exe] [17948-event poller 1] RtspPlayer.cpp:92 play | rtsp://192.168.1.64:554/cam/realmonitor?channel=1&subtype=1 admin admin123 0
+2025-11-20 22:04:19.687 T [test_server.exe] [17948-event poller 1] TcpClient.cpp:84 startConnect | class mediakit::RtspPlayerImp-16 start connect 192.168.1.64:554
+2025-11-20 22:04:29.688 W [test_server.exe] [17948-event poller 1] RtspPlayer.cpp:762 onPlayResult_l | 2 play rtsp timeout
+2025-11-20 22:04:29.689 T [test_server.exe] [17948-event poller 1] TcpClient.cpp:80 operator () | class mediakit::RtspPlayerImp-16 on err: 6(teardown)
+2025-11-20 22:05:14.707 W [test_server.exe] [17948-event poller 1] PlayerProxy.cpp:246 operator () | 重试播放[15]:rtsp://admin:admin123@192.168.1.64:554/cam/realmonitor?channel=1&subtype=1
+2025-11-20 22:05:14.707 D [test_server.exe] [17948-event poller 1] RtspPlayerImp.h:31 ~RtspPlayerImp | 
+2025-11-20 22:05:14.707 D [test_server.exe] [17948-event poller 1] RtspPlayer.cpp:37 ~RtspPlayer | 
+2025-11-20 22:05:14.707 T [test_server.exe] [17948-event poller 1] TcpClient.cpp:29 ~TcpClient | ~class mediakit::RtspPlayerImp-16
+2025-11-20 22:05:14.707 D [test_server.exe] [17948-event poller 1] RtspPlayer.cpp:92 play | rtsp://192.168.1.64:554/cam/realmonitor?channel=1&subtype=1 admin admin123 0
+2025-11-20 22:05:14.707 T [test_server.exe] [17948-event poller 1] TcpClient.cpp:84 startConnect | class mediakit::RtspPlayerImp-17 start connect 192.168.1.64:554
+2025-11-20 22:05:24.721 W [test_server.exe] [17948-event poller 1] RtspPlayer.cpp:762 onPlayResult_l | 2 play rtsp timeout
+2025-11-20 22:05:24.721 T [test_server.exe] [17948-event poller 1] TcpClient.cpp:80 operator () | class mediakit::RtspPlayerImp-17 on err: 6(teardown)
+2025-11-20 22:06:12.741 W [test_server.exe] [17948-event poller 1] PlayerProxy.cpp:246 operator () | 重试播放[16]:rtsp://admin:admin123@192.168.1.64:554/cam/realmonitor?channel=1&subtype=1
+2025-11-20 22:06:12.742 D [test_server.exe] [17948-event poller 1] RtspPlayerImp.h:31 ~RtspPlayerImp | 
+2025-11-20 22:06:12.742 D [test_server.exe] [17948-event poller 1] RtspPlayer.cpp:37 ~RtspPlayer | 
+2025-11-20 22:06:12.742 T [test_server.exe] [17948-event poller 1] TcpClient.cpp:29 ~TcpClient | ~class mediakit::RtspPlayerImp-17
+2025-11-20 22:06:12.742 D [test_server.exe] [17948-event poller 1] RtspPlayer.cpp:92 play | rtsp://192.168.1.64:554/cam/realmonitor?channel=1&subtype=1 admin admin123 0
+2025-11-20 22:06:12.742 T [test_server.exe] [17948-event poller 1] TcpClient.cpp:84 startConnect | class mediakit::RtspPlayerImp-18 start connect 192.168.1.64:554
+2025-11-20 22:06:22.742 W [test_server.exe] [17948-event poller 1] RtspPlayer.cpp:762 onPlayResult_l | 2 play rtsp timeout
+2025-11-20 22:06:22.743 T [test_server.exe] [17948-event poller 1] TcpClient.cpp:80 operator () | class mediakit::RtspPlayerImp-18 on err: 6(teardown)
+2025-11-20 22:07:13.772 W [test_server.exe] [17948-event poller 1] PlayerProxy.cpp:246 operator () | 重试播放[17]:rtsp://admin:admin123@192.168.1.64:554/cam/realmonitor?channel=1&subtype=1
+2025-11-20 22:07:13.773 D [test_server.exe] [17948-event poller 1] RtspPlayerImp.h:31 ~RtspPlayerImp | 
+2025-11-20 22:07:13.773 D [test_server.exe] [17948-event poller 1] RtspPlayer.cpp:37 ~RtspPlayer | 
+2025-11-20 22:07:13.773 T [test_server.exe] [17948-event poller 1] TcpClient.cpp:29 ~TcpClient | ~class mediakit::RtspPlayerImp-18
+2025-11-20 22:07:13.773 D [test_server.exe] [17948-event poller 1] RtspPlayer.cpp:92 play | rtsp://192.168.1.64:554/cam/realmonitor?channel=1&subtype=1 admin admin123 0
+2025-11-20 22:07:13.773 T [test_server.exe] [17948-event poller 1] TcpClient.cpp:84 startConnect | class mediakit::RtspPlayerImp-19 start connect 192.168.1.64:554
+2025-11-20 22:07:23.775 W [test_server.exe] [17948-event poller 1] RtspPlayer.cpp:762 onPlayResult_l | 2 play rtsp timeout
+2025-11-20 22:07:23.775 T [test_server.exe] [17948-event poller 1] TcpClient.cpp:80 operator () | class mediakit::RtspPlayerImp-19 on err: 6(teardown)
+2025-11-20 22:08:17.780 W [test_server.exe] [17948-event poller 1] PlayerProxy.cpp:246 operator () | 重试播放[18]:rtsp://admin:admin123@192.168.1.64:554/cam/realmonitor?channel=1&subtype=1
+2025-11-20 22:08:17.780 D [test_server.exe] [17948-event poller 1] RtspPlayerImp.h:31 ~RtspPlayerImp | 
+2025-11-20 22:08:17.780 D [test_server.exe] [17948-event poller 1] RtspPlayer.cpp:37 ~RtspPlayer | 
+2025-11-20 22:08:17.780 T [test_server.exe] [17948-event poller 1] TcpClient.cpp:29 ~TcpClient | ~class mediakit::RtspPlayerImp-19
+2025-11-20 22:08:17.781 D [test_server.exe] [17948-event poller 1] RtspPlayer.cpp:92 play | rtsp://192.168.1.64:554/cam/realmonitor?channel=1&subtype=1 admin admin123 0
+2025-11-20 22:08:17.781 T [test_server.exe] [17948-event poller 1] TcpClient.cpp:84 startConnect | class mediakit::RtspPlayerImp-20 start connect 192.168.1.64:554
+2025-11-20 22:08:27.788 W [test_server.exe] [17948-event poller 1] RtspPlayer.cpp:762 onPlayResult_l | 2 play rtsp timeout
+2025-11-20 22:08:27.788 T [test_server.exe] [17948-event poller 1] TcpClient.cpp:80 operator () | class mediakit::RtspPlayerImp-20 on err: 6(teardown)
+2025-11-20 22:09:24.800 W [test_server.exe] [17948-event poller 1] PlayerProxy.cpp:246 operator () | 重试播放[19]:rtsp://admin:admin123@192.168.1.64:554/cam/realmonitor?channel=1&subtype=1
+2025-11-20 22:09:24.800 D [test_server.exe] [17948-event poller 1] RtspPlayerImp.h:31 ~RtspPlayerImp | 
+2025-11-20 22:09:24.800 D [test_server.exe] [17948-event poller 1] RtspPlayer.cpp:37 ~RtspPlayer | 
+2025-11-20 22:09:24.800 T [test_server.exe] [17948-event poller 1] TcpClient.cpp:29 ~TcpClient | ~class mediakit::RtspPlayerImp-20
+2025-11-20 22:09:24.800 D [test_server.exe] [17948-event poller 1] RtspPlayer.cpp:92 play | rtsp://192.168.1.64:554/cam/realmonitor?channel=1&subtype=1 admin admin123 0
+2025-11-20 22:09:24.800 T [test_server.exe] [17948-event poller 1] TcpClient.cpp:84 startConnect | class mediakit::RtspPlayerImp-21 start connect 192.168.1.64:554
+2025-11-20 22:09:34.826 W [test_server.exe] [17948-event poller 1] RtspPlayer.cpp:762 onPlayResult_l | 2 play rtsp timeout
+2025-11-20 22:09:34.826 T [test_server.exe] [17948-event poller 1] TcpClient.cpp:80 operator () | class mediakit::RtspPlayerImp-21 on err: 6(teardown)
+2025-11-20 22:10:34.850 W [test_server.exe] [17948-event poller 1] PlayerProxy.cpp:246 operator () | 重试播放[20]:rtsp://admin:admin123@192.168.1.64:554/cam/realmonitor?channel=1&subtype=1
+2025-11-20 22:10:34.850 D [test_server.exe] [17948-event poller 1] RtspPlayerImp.h:31 ~RtspPlayerImp | 
+2025-11-20 22:10:34.850 D [test_server.exe] [17948-event poller 1] RtspPlayer.cpp:37 ~RtspPlayer | 
+2025-11-20 22:10:34.850 T [test_server.exe] [17948-event poller 1] TcpClient.cpp:29 ~TcpClient | ~class mediakit::RtspPlayerImp-21
+2025-11-20 22:10:34.850 D [test_server.exe] [17948-event poller 1] RtspPlayer.cpp:92 play | rtsp://192.168.1.64:554/cam/realmonitor?channel=1&subtype=1 admin admin123 0
+2025-11-20 22:10:34.850 T [test_server.exe] [17948-event poller 1] TcpClient.cpp:84 startConnect | class mediakit::RtspPlayerImp-22 start connect 192.168.1.64:554
+2025-11-20 22:10:44.877 W [test_server.exe] [17948-event poller 1] RtspPlayer.cpp:762 onPlayResult_l | 2 play rtsp timeout
+2025-11-20 22:10:44.877 T [test_server.exe] [17948-event poller 1] TcpClient.cpp:80 operator () | class mediakit::RtspPlayerImp-22 on err: 6(teardown)
+2025-11-20 22:11:44.898 W [test_server.exe] [17948-event poller 1] PlayerProxy.cpp:246 operator () | 重试播放[21]:rtsp://admin:admin123@192.168.1.64:554/cam/realmonitor?channel=1&subtype=1
+2025-11-20 22:11:44.898 D [test_server.exe] [17948-event poller 1] RtspPlayerImp.h:31 ~RtspPlayerImp | 
+2025-11-20 22:11:44.898 D [test_server.exe] [17948-event poller 1] RtspPlayer.cpp:37 ~RtspPlayer | 
+2025-11-20 22:11:44.898 T [test_server.exe] [17948-event poller 1] TcpClient.cpp:29 ~TcpClient | ~class mediakit::RtspPlayerImp-22
+2025-11-20 22:11:44.898 D [test_server.exe] [17948-event poller 1] RtspPlayer.cpp:92 play | rtsp://192.168.1.64:554/cam/realmonitor?channel=1&subtype=1 admin admin123 0
+2025-11-20 22:11:44.898 T [test_server.exe] [17948-event poller 1] TcpClient.cpp:84 startConnect | class mediakit::RtspPlayerImp-23 start connect 192.168.1.64:554
+2025-11-20 22:11:54.926 W [test_server.exe] [17948-event poller 1] RtspPlayer.cpp:762 onPlayResult_l | 2 play rtsp timeout
+2025-11-20 22:11:54.926 T [test_server.exe] [17948-event poller 1] TcpClient.cpp:80 operator () | class mediakit::RtspPlayerImp-23 on err: 6(teardown)
+2025-11-20 22:12:54.942 W [test_server.exe] [17948-event poller 1] PlayerProxy.cpp:246 operator () | 重试播放[22]:rtsp://admin:admin123@192.168.1.64:554/cam/realmonitor?channel=1&subtype=1
+2025-11-20 22:12:54.943 D [test_server.exe] [17948-event poller 1] RtspPlayerImp.h:31 ~RtspPlayerImp | 
+2025-11-20 22:12:54.943 D [test_server.exe] [17948-event poller 1] RtspPlayer.cpp:37 ~RtspPlayer | 
+2025-11-20 22:12:54.943 T [test_server.exe] [17948-event poller 1] TcpClient.cpp:29 ~TcpClient | ~class mediakit::RtspPlayerImp-23
+2025-11-20 22:12:54.943 D [test_server.exe] [17948-event poller 1] RtspPlayer.cpp:92 play | rtsp://192.168.1.64:554/cam/realmonitor?channel=1&subtype=1 admin admin123 0
+2025-11-20 22:12:54.943 T [test_server.exe] [17948-event poller 1] TcpClient.cpp:84 startConnect | class mediakit::RtspPlayerImp-24 start connect 192.168.1.64:554
+2025-11-20 22:13:04.949 W [test_server.exe] [17948-event poller 1] RtspPlayer.cpp:762 onPlayResult_l | 2 play rtsp timeout
+2025-11-20 22:13:04.949 T [test_server.exe] [17948-event poller 1] TcpClient.cpp:80 operator () | class mediakit::RtspPlayerImp-24 on err: 6(teardown)
+2025-11-20 22:14:04.968 W [test_server.exe] [17948-event poller 1] PlayerProxy.cpp:246 operator () | 重试播放[23]:rtsp://admin:admin123@192.168.1.64:554/cam/realmonitor?channel=1&subtype=1
+2025-11-20 22:14:04.968 D [test_server.exe] [17948-event poller 1] RtspPlayerImp.h:31 ~RtspPlayerImp | 
+2025-11-20 22:14:04.968 D [test_server.exe] [17948-event poller 1] RtspPlayer.cpp:37 ~RtspPlayer | 
+2025-11-20 22:14:04.968 T [test_server.exe] [17948-event poller 1] TcpClient.cpp:29 ~TcpClient | ~class mediakit::RtspPlayerImp-24
+2025-11-20 22:14:04.968 D [test_server.exe] [17948-event poller 1] RtspPlayer.cpp:92 play | rtsp://192.168.1.64:554/cam/realmonitor?channel=1&subtype=1 admin admin123 0
+2025-11-20 22:14:04.968 T [test_server.exe] [17948-event poller 1] TcpClient.cpp:84 startConnect | class mediakit::RtspPlayerImp-25 start connect 192.168.1.64:554
+2025-11-20 22:14:14.976 W [test_server.exe] [17948-event poller 1] RtspPlayer.cpp:762 onPlayResult_l | 2 play rtsp timeout
+2025-11-20 22:14:14.976 T [test_server.exe] [17948-event poller 1] TcpClient.cpp:80 operator () | class mediakit::RtspPlayerImp-25 on err: 6(teardown)
+2025-11-20 22:15:15.001 W [test_server.exe] [17948-event poller 1] PlayerProxy.cpp:246 operator () | 重试播放[24]:rtsp://admin:admin123@192.168.1.64:554/cam/realmonitor?channel=1&subtype=1
+2025-11-20 22:15:15.002 D [test_server.exe] [17948-event poller 1] RtspPlayerImp.h:31 ~RtspPlayerImp | 
+2025-11-20 22:15:15.002 D [test_server.exe] [17948-event poller 1] RtspPlayer.cpp:37 ~RtspPlayer | 
+2025-11-20 22:15:15.002 T [test_server.exe] [17948-event poller 1] TcpClient.cpp:29 ~TcpClient | ~class mediakit::RtspPlayerImp-25
+2025-11-20 22:15:15.002 D [test_server.exe] [17948-event poller 1] RtspPlayer.cpp:92 play | rtsp://192.168.1.64:554/cam/realmonitor?channel=1&subtype=1 admin admin123 0
+2025-11-20 22:15:15.002 T [test_server.exe] [17948-event poller 1] TcpClient.cpp:84 startConnect | class mediakit::RtspPlayerImp-26 start connect 192.168.1.64:554
+2025-11-20 22:15:25.022 W [test_server.exe] [17948-event poller 1] RtspPlayer.cpp:762 onPlayResult_l | 2 play rtsp timeout
+2025-11-20 22:15:25.022 T [test_server.exe] [17948-event poller 1] TcpClient.cpp:80 operator () | class mediakit::RtspPlayerImp-26 on err: 6(teardown)
+2025-11-20 22:16:25.025 W [test_server.exe] [17948-event poller 1] PlayerProxy.cpp:246 operator () | 重试播放[25]:rtsp://admin:admin123@192.168.1.64:554/cam/realmonitor?channel=1&subtype=1
+2025-11-20 22:16:25.025 D [test_server.exe] [17948-event poller 1] RtspPlayerImp.h:31 ~RtspPlayerImp | 
+2025-11-20 22:16:25.025 D [test_server.exe] [17948-event poller 1] RtspPlayer.cpp:37 ~RtspPlayer | 
+2025-11-20 22:16:25.025 T [test_server.exe] [17948-event poller 1] TcpClient.cpp:29 ~TcpClient | ~class mediakit::RtspPlayerImp-26
+2025-11-20 22:16:25.025 D [test_server.exe] [17948-event poller 1] RtspPlayer.cpp:92 play | rtsp://192.168.1.64:554/cam/realmonitor?channel=1&subtype=1 admin admin123 0
+2025-11-20 22:16:25.025 T [test_server.exe] [17948-event poller 1] TcpClient.cpp:84 startConnect | class mediakit::RtspPlayerImp-27 start connect 192.168.1.64:554
+2025-11-20 22:16:35.037 W [test_server.exe] [17948-event poller 1] RtspPlayer.cpp:762 onPlayResult_l | 2 play rtsp timeout
+2025-11-20 22:16:35.037 T [test_server.exe] [17948-event poller 1] TcpClient.cpp:80 operator () | class mediakit::RtspPlayerImp-27 on err: 6(teardown)
+2025-11-20 22:17:35.057 W [test_server.exe] [17948-event poller 1] PlayerProxy.cpp:246 operator () | 重试播放[26]:rtsp://admin:admin123@192.168.1.64:554/cam/realmonitor?channel=1&subtype=1
+2025-11-20 22:17:35.057 D [test_server.exe] [17948-event poller 1] RtspPlayerImp.h:31 ~RtspPlayerImp | 
+2025-11-20 22:17:35.057 D [test_server.exe] [17948-event poller 1] RtspPlayer.cpp:37 ~RtspPlayer | 
+2025-11-20 22:17:35.057 T [test_server.exe] [17948-event poller 1] TcpClient.cpp:29 ~TcpClient | ~class mediakit::RtspPlayerImp-27
+2025-11-20 22:17:35.058 D [test_server.exe] [17948-event poller 1] RtspPlayer.cpp:92 play | rtsp://192.168.1.64:554/cam/realmonitor?channel=1&subtype=1 admin admin123 0
+2025-11-20 22:17:35.058 T [test_server.exe] [17948-event poller 1] TcpClient.cpp:84 startConnect | class mediakit::RtspPlayerImp-28 start connect 192.168.1.64:554
+2025-11-20 22:17:45.067 W [test_server.exe] [17948-event poller 1] RtspPlayer.cpp:762 onPlayResult_l | 2 play rtsp timeout
+2025-11-20 22:17:45.067 T [test_server.exe] [17948-event poller 1] TcpClient.cpp:80 operator () | class mediakit::RtspPlayerImp-28 on err: 6(teardown)
+2025-11-20 22:18:45.096 W [test_server.exe] [17948-event poller 1] PlayerProxy.cpp:246 operator () | 重试播放[27]:rtsp://admin:admin123@192.168.1.64:554/cam/realmonitor?channel=1&subtype=1
+2025-11-20 22:18:45.097 D [test_server.exe] [17948-event poller 1] RtspPlayerImp.h:31 ~RtspPlayerImp | 
+2025-11-20 22:18:45.097 D [test_server.exe] [17948-event poller 1] RtspPlayer.cpp:37 ~RtspPlayer | 
+2025-11-20 22:18:45.097 T [test_server.exe] [17948-event poller 1] TcpClient.cpp:29 ~TcpClient | ~class mediakit::RtspPlayerImp-28
+2025-11-20 22:18:45.097 D [test_server.exe] [17948-event poller 1] RtspPlayer.cpp:92 play | rtsp://192.168.1.64:554/cam/realmonitor?channel=1&subtype=1 admin admin123 0
+2025-11-20 22:18:45.097 T [test_server.exe] [17948-event poller 1] TcpClient.cpp:84 startConnect | class mediakit::RtspPlayerImp-29 start connect 192.168.1.64:554
+2025-11-20 22:18:55.105 W [test_server.exe] [17948-event poller 1] RtspPlayer.cpp:762 onPlayResult_l | 2 play rtsp timeout
+2025-11-20 22:18:55.105 T [test_server.exe] [17948-event poller 1] TcpClient.cpp:80 operator () | class mediakit::RtspPlayerImp-29 on err: 6(teardown)
+2025-11-20 22:19:55.125 W [test_server.exe] [17948-event poller 1] PlayerProxy.cpp:246 operator () | 重试播放[28]:rtsp://admin:admin123@192.168.1.64:554/cam/realmonitor?channel=1&subtype=1
+2025-11-20 22:19:55.125 D [test_server.exe] [17948-event poller 1] RtspPlayerImp.h:31 ~RtspPlayerImp | 
+2025-11-20 22:19:55.125 D [test_server.exe] [17948-event poller 1] RtspPlayer.cpp:37 ~RtspPlayer | 
+2025-11-20 22:19:55.125 T [test_server.exe] [17948-event poller 1] TcpClient.cpp:29 ~TcpClient | ~class mediakit::RtspPlayerImp-29
+2025-11-20 22:19:55.126 D [test_server.exe] [17948-event poller 1] RtspPlayer.cpp:92 play | rtsp://192.168.1.64:554/cam/realmonitor?channel=1&subtype=1 admin admin123 0
+2025-11-20 22:19:55.126 T [test_server.exe] [17948-event poller 1] TcpClient.cpp:84 startConnect | class mediakit::RtspPlayerImp-30 start connect 192.168.1.64:554
+2025-11-20 22:20:05.156 W [test_server.exe] [17948-event poller 1] RtspPlayer.cpp:762 onPlayResult_l | 2 play rtsp timeout
+2025-11-20 22:20:05.156 T [test_server.exe] [17948-event poller 1] TcpClient.cpp:80 operator () | class mediakit::RtspPlayerImp-30 on err: 6(teardown)
+2025-11-20 22:21:05.163 W [test_server.exe] [17948-event poller 1] PlayerProxy.cpp:246 operator () | 重试播放[29]:rtsp://admin:admin123@192.168.1.64:554/cam/realmonitor?channel=1&subtype=1
+2025-11-20 22:21:05.163 D [test_server.exe] [17948-event poller 1] RtspPlayerImp.h:31 ~RtspPlayerImp | 
+2025-11-20 22:21:05.163 D [test_server.exe] [17948-event poller 1] RtspPlayer.cpp:37 ~RtspPlayer | 
+2025-11-20 22:21:05.163 T [test_server.exe] [17948-event poller 1] TcpClient.cpp:29 ~TcpClient | ~class mediakit::RtspPlayerImp-30
+2025-11-20 22:21:05.163 D [test_server.exe] [17948-event poller 1] RtspPlayer.cpp:92 play | rtsp://192.168.1.64:554/cam/realmonitor?channel=1&subtype=1 admin admin123 0
+2025-11-20 22:21:05.163 T [test_server.exe] [17948-event poller 1] TcpClient.cpp:84 startConnect | class mediakit::RtspPlayerImp-31 start connect 192.168.1.64:554
+2025-11-20 22:21:15.164 W [test_server.exe] [17948-event poller 1] RtspPlayer.cpp:762 onPlayResult_l | 2 play rtsp timeout
+2025-11-20 22:21:15.164 T [test_server.exe] [17948-event poller 1] TcpClient.cpp:80 operator () | class mediakit::RtspPlayerImp-31 on err: 6(teardown)
+2025-11-20 22:22:15.179 W [test_server.exe] [17948-event poller 1] PlayerProxy.cpp:246 operator () | 重试播放[30]:rtsp://admin:admin123@192.168.1.64:554/cam/realmonitor?channel=1&subtype=1
+2025-11-20 22:22:15.179 D [test_server.exe] [17948-event poller 1] RtspPlayerImp.h:31 ~RtspPlayerImp | 
+2025-11-20 22:22:15.179 D [test_server.exe] [17948-event poller 1] RtspPlayer.cpp:37 ~RtspPlayer | 
+2025-11-20 22:22:15.179 T [test_server.exe] [17948-event poller 1] TcpClient.cpp:29 ~TcpClient | ~class mediakit::RtspPlayerImp-31
+2025-11-20 22:22:15.180 D [test_server.exe] [17948-event poller 1] RtspPlayer.cpp:92 play | rtsp://192.168.1.64:554/cam/realmonitor?channel=1&subtype=1 admin admin123 0
+2025-11-20 22:22:15.180 T [test_server.exe] [17948-event poller 1] TcpClient.cpp:84 startConnect | class mediakit::RtspPlayerImp-32 start connect 192.168.1.64:554
+2025-11-20 22:22:25.211 W [test_server.exe] [17948-event poller 1] RtspPlayer.cpp:762 onPlayResult_l | 2 play rtsp timeout
+2025-11-20 22:22:25.211 T [test_server.exe] [17948-event poller 1] TcpClient.cpp:80 operator () | class mediakit::RtspPlayerImp-32 on err: 6(teardown)
+2025-11-20 22:23:25.236 W [test_server.exe] [17948-event poller 1] PlayerProxy.cpp:246 operator () | 重试播放[31]:rtsp://admin:admin123@192.168.1.64:554/cam/realmonitor?channel=1&subtype=1
+2025-11-20 22:23:25.236 D [test_server.exe] [17948-event poller 1] RtspPlayerImp.h:31 ~RtspPlayerImp | 
+2025-11-20 22:23:25.236 D [test_server.exe] [17948-event poller 1] RtspPlayer.cpp:37 ~RtspPlayer | 
+2025-11-20 22:23:25.236 T [test_server.exe] [17948-event poller 1] TcpClient.cpp:29 ~TcpClient | ~class mediakit::RtspPlayerImp-32
+2025-11-20 22:23:25.236 D [test_server.exe] [17948-event poller 1] RtspPlayer.cpp:92 play | rtsp://192.168.1.64:554/cam/realmonitor?channel=1&subtype=1 admin admin123 0
+2025-11-20 22:23:25.237 T [test_server.exe] [17948-event poller 1] TcpClient.cpp:84 startConnect | class mediakit::RtspPlayerImp-33 start connect 192.168.1.64:554
+2025-11-20 22:23:35.253 W [test_server.exe] [17948-event poller 1] RtspPlayer.cpp:762 onPlayResult_l | 2 play rtsp timeout
+2025-11-20 22:23:35.253 T [test_server.exe] [17948-event poller 1] TcpClient.cpp:80 operator () | class mediakit::RtspPlayerImp-33 on err: 6(teardown)
+2025-11-20 22:24:35.269 W [test_server.exe] [17948-event poller 1] PlayerProxy.cpp:246 operator () | 重试播放[32]:rtsp://admin:admin123@192.168.1.64:554/cam/realmonitor?channel=1&subtype=1
+2025-11-20 22:24:35.269 D [test_server.exe] [17948-event poller 1] RtspPlayerImp.h:31 ~RtspPlayerImp | 
+2025-11-20 22:24:35.269 D [test_server.exe] [17948-event poller 1] RtspPlayer.cpp:37 ~RtspPlayer | 
+2025-11-20 22:24:35.269 T [test_server.exe] [17948-event poller 1] TcpClient.cpp:29 ~TcpClient | ~class mediakit::RtspPlayerImp-33
+2025-11-20 22:24:35.269 D [test_server.exe] [17948-event poller 1] RtspPlayer.cpp:92 play | rtsp://192.168.1.64:554/cam/realmonitor?channel=1&subtype=1 admin admin123 0
+2025-11-20 22:24:35.269 T [test_server.exe] [17948-event poller 1] TcpClient.cpp:84 startConnect | class mediakit::RtspPlayerImp-34 start connect 192.168.1.64:554
+2025-11-20 22:24:45.273 W [test_server.exe] [17948-event poller 1] RtspPlayer.cpp:762 onPlayResult_l | 2 play rtsp timeout
+2025-11-20 22:24:45.273 T [test_server.exe] [17948-event poller 1] TcpClient.cpp:80 operator () | class mediakit::RtspPlayerImp-34 on err: 6(teardown)
+2025-11-20 22:25:45.272 W [test_server.exe] [17948-event poller 1] PlayerProxy.cpp:246 operator () | 重试播放[33]:rtsp://admin:admin123@192.168.1.64:554/cam/realmonitor?channel=1&subtype=1
+2025-11-20 22:25:45.273 D [test_server.exe] [17948-event poller 1] RtspPlayerImp.h:31 ~RtspPlayerImp | 
+2025-11-20 22:25:45.273 D [test_server.exe] [17948-event poller 1] RtspPlayer.cpp:37 ~RtspPlayer | 
+2025-11-20 22:25:45.273 T [test_server.exe] [17948-event poller 1] TcpClient.cpp:29 ~TcpClient | ~class mediakit::RtspPlayerImp-34
+2025-11-20 22:25:45.273 D [test_server.exe] [17948-event poller 1] RtspPlayer.cpp:92 play | rtsp://192.168.1.64:554/cam/realmonitor?channel=1&subtype=1 admin admin123 0
+2025-11-20 22:25:45.273 T [test_server.exe] [17948-event poller 1] TcpClient.cpp:84 startConnect | class mediakit::RtspPlayerImp-35 start connect 192.168.1.64:554
+2025-11-20 22:25:55.301 W [test_server.exe] [17948-event poller 1] RtspPlayer.cpp:762 onPlayResult_l | 2 play rtsp timeout
+2025-11-20 22:25:55.301 T [test_server.exe] [17948-event poller 1] TcpClient.cpp:80 operator () | class mediakit::RtspPlayerImp-35 on err: 6(teardown)
+2025-11-20 22:26:55.310 W [test_server.exe] [17948-event poller 1] PlayerProxy.cpp:246 operator () | 重试播放[34]:rtsp://admin:admin123@192.168.1.64:554/cam/realmonitor?channel=1&subtype=1
+2025-11-20 22:26:55.310 D [test_server.exe] [17948-event poller 1] RtspPlayerImp.h:31 ~RtspPlayerImp | 
+2025-11-20 22:26:55.310 D [test_server.exe] [17948-event poller 1] RtspPlayer.cpp:37 ~RtspPlayer | 
+2025-11-20 22:26:55.310 T [test_server.exe] [17948-event poller 1] TcpClient.cpp:29 ~TcpClient | ~class mediakit::RtspPlayerImp-35
+2025-11-20 22:26:55.310 D [test_server.exe] [17948-event poller 1] RtspPlayer.cpp:92 play | rtsp://192.168.1.64:554/cam/realmonitor?channel=1&subtype=1 admin admin123 0
+2025-11-20 22:26:55.310 T [test_server.exe] [17948-event poller 1] TcpClient.cpp:84 startConnect | class mediakit::RtspPlayerImp-36 start connect 192.168.1.64:554
+2025-11-20 22:27:05.329 W [test_server.exe] [17948-event poller 1] RtspPlayer.cpp:762 onPlayResult_l | 2 play rtsp timeout
+2025-11-20 22:27:05.329 T [test_server.exe] [17948-event poller 1] TcpClient.cpp:80 operator () | class mediakit::RtspPlayerImp-36 on err: 6(teardown)
+2025-11-20 22:28:05.340 W [test_server.exe] [17948-event poller 1] PlayerProxy.cpp:246 operator () | 重试播放[35]:rtsp://admin:admin123@192.168.1.64:554/cam/realmonitor?channel=1&subtype=1
+2025-11-20 22:28:05.340 D [test_server.exe] [17948-event poller 1] RtspPlayerImp.h:31 ~RtspPlayerImp | 
+2025-11-20 22:28:05.340 D [test_server.exe] [17948-event poller 1] RtspPlayer.cpp:37 ~RtspPlayer | 
+2025-11-20 22:28:05.340 T [test_server.exe] [17948-event poller 1] TcpClient.cpp:29 ~TcpClient | ~class mediakit::RtspPlayerImp-36
+2025-11-20 22:28:05.341 D [test_server.exe] [17948-event poller 1] RtspPlayer.cpp:92 play | rtsp://192.168.1.64:554/cam/realmonitor?channel=1&subtype=1 admin admin123 0
+2025-11-20 22:28:05.341 T [test_server.exe] [17948-event poller 1] TcpClient.cpp:84 startConnect | class mediakit::RtspPlayerImp-37 start connect 192.168.1.64:554
+2025-11-20 22:28:15.343 W [test_server.exe] [17948-event poller 1] RtspPlayer.cpp:762 onPlayResult_l | 2 play rtsp timeout
+2025-11-20 22:28:15.343 T [test_server.exe] [17948-event poller 1] TcpClient.cpp:80 operator () | class mediakit::RtspPlayerImp-37 on err: 6(teardown)
+2025-11-20 22:29:15.352 W [test_server.exe] [17948-event poller 1] PlayerProxy.cpp:246 operator () | 重试播放[36]:rtsp://admin:admin123@192.168.1.64:554/cam/realmonitor?channel=1&subtype=1
+2025-11-20 22:29:15.352 D [test_server.exe] [17948-event poller 1] RtspPlayerImp.h:31 ~RtspPlayerImp | 
+2025-11-20 22:29:15.352 D [test_server.exe] [17948-event poller 1] RtspPlayer.cpp:37 ~RtspPlayer | 
+2025-11-20 22:29:15.352 T [test_server.exe] [17948-event poller 1] TcpClient.cpp:29 ~TcpClient | ~class mediakit::RtspPlayerImp-37
+2025-11-20 22:29:15.352 D [test_server.exe] [17948-event poller 1] RtspPlayer.cpp:92 play | rtsp://192.168.1.64:554/cam/realmonitor?channel=1&subtype=1 admin admin123 0
+2025-11-20 22:29:15.352 T [test_server.exe] [17948-event poller 1] TcpClient.cpp:84 startConnect | class mediakit::RtspPlayerImp-38 start connect 192.168.1.64:554
+2025-11-20 22:29:25.366 W [test_server.exe] [17948-event poller 1] RtspPlayer.cpp:762 onPlayResult_l | 2 play rtsp timeout
+2025-11-20 22:29:25.366 T [test_server.exe] [17948-event poller 1] TcpClient.cpp:80 operator () | class mediakit::RtspPlayerImp-38 on err: 6(teardown)
+2025-11-20 22:30:25.382 W [test_server.exe] [17948-event poller 1] PlayerProxy.cpp:246 operator () | 重试播放[37]:rtsp://admin:admin123@192.168.1.64:554/cam/realmonitor?channel=1&subtype=1
+2025-11-20 22:30:25.382 D [test_server.exe] [17948-event poller 1] RtspPlayerImp.h:31 ~RtspPlayerImp | 
+2025-11-20 22:30:25.382 D [test_server.exe] [17948-event poller 1] RtspPlayer.cpp:37 ~RtspPlayer | 
+2025-11-20 22:30:25.382 T [test_server.exe] [17948-event poller 1] TcpClient.cpp:29 ~TcpClient | ~class mediakit::RtspPlayerImp-38
+2025-11-20 22:30:25.382 D [test_server.exe] [17948-event poller 1] RtspPlayer.cpp:92 play | rtsp://192.168.1.64:554/cam/realmonitor?channel=1&subtype=1 admin admin123 0
+2025-11-20 22:30:25.382 T [test_server.exe] [17948-event poller 1] TcpClient.cpp:84 startConnect | class mediakit::RtspPlayerImp-39 start connect 192.168.1.64:554
+2025-11-20 22:30:35.385 W [test_server.exe] [17948-event poller 1] RtspPlayer.cpp:762 onPlayResult_l | 2 play rtsp timeout
+2025-11-20 22:30:35.385 T [test_server.exe] [17948-event poller 1] TcpClient.cpp:80 operator () | class mediakit::RtspPlayerImp-39 on err: 6(teardown)
+2025-11-20 22:31:35.396 W [test_server.exe] [17948-event poller 1] PlayerProxy.cpp:246 operator () | 重试播放[38]:rtsp://admin:admin123@192.168.1.64:554/cam/realmonitor?channel=1&subtype=1
+2025-11-20 22:31:35.396 D [test_server.exe] [17948-event poller 1] RtspPlayerImp.h:31 ~RtspPlayerImp | 
+2025-11-20 22:31:35.396 D [test_server.exe] [17948-event poller 1] RtspPlayer.cpp:37 ~RtspPlayer | 
+2025-11-20 22:31:35.396 T [test_server.exe] [17948-event poller 1] TcpClient.cpp:29 ~TcpClient | ~class mediakit::RtspPlayerImp-39
+2025-11-20 22:31:35.397 D [test_server.exe] [17948-event poller 1] RtspPlayer.cpp:92 play | rtsp://192.168.1.64:554/cam/realmonitor?channel=1&subtype=1 admin admin123 0
+2025-11-20 22:31:35.397 T [test_server.exe] [17948-event poller 1] TcpClient.cpp:84 startConnect | class mediakit::RtspPlayerImp-40 start connect 192.168.1.64:554
+2025-11-20 22:31:45.415 W [test_server.exe] [17948-event poller 1] RtspPlayer.cpp:762 onPlayResult_l | 2 play rtsp timeout
+2025-11-20 22:31:45.415 T [test_server.exe] [17948-event poller 1] TcpClient.cpp:80 operator () | class mediakit::RtspPlayerImp-40 on err: 6(teardown)
+2025-11-20 22:32:45.459 W [test_server.exe] [17948-event poller 1] PlayerProxy.cpp:246 operator () | 重试播放[39]:rtsp://admin:admin123@192.168.1.64:554/cam/realmonitor?channel=1&subtype=1
+2025-11-20 22:32:45.459 D [test_server.exe] [17948-event poller 1] RtspPlayerImp.h:31 ~RtspPlayerImp | 
+2025-11-20 22:32:45.459 D [test_server.exe] [17948-event poller 1] RtspPlayer.cpp:37 ~RtspPlayer | 
+2025-11-20 22:32:45.459 T [test_server.exe] [17948-event poller 1] TcpClient.cpp:29 ~TcpClient | ~class mediakit::RtspPlayerImp-40
+2025-11-20 22:32:45.459 D [test_server.exe] [17948-event poller 1] RtspPlayer.cpp:92 play | rtsp://192.168.1.64:554/cam/realmonitor?channel=1&subtype=1 admin admin123 0
+2025-11-20 22:32:45.459 T [test_server.exe] [17948-event poller 1] TcpClient.cpp:84 startConnect | class mediakit::RtspPlayerImp-41 start connect 192.168.1.64:554
+2025-11-20 22:32:55.486 W [test_server.exe] [17948-event poller 1] RtspPlayer.cpp:762 onPlayResult_l | 2 play rtsp timeout
+2025-11-20 22:32:55.486 T [test_server.exe] [17948-event poller 1] TcpClient.cpp:80 operator () | class mediakit::RtspPlayerImp-41 on err: 6(teardown)
+2025-11-20 22:33:55.492 W [test_server.exe] [17948-event poller 1] PlayerProxy.cpp:246 operator () | 重试播放[40]:rtsp://admin:admin123@192.168.1.64:554/cam/realmonitor?channel=1&subtype=1
+2025-11-20 22:33:55.492 D [test_server.exe] [17948-event poller 1] RtspPlayerImp.h:31 ~RtspPlayerImp | 
+2025-11-20 22:33:55.492 D [test_server.exe] [17948-event poller 1] RtspPlayer.cpp:37 ~RtspPlayer | 
+2025-11-20 22:33:55.492 T [test_server.exe] [17948-event poller 1] TcpClient.cpp:29 ~TcpClient | ~class mediakit::RtspPlayerImp-41
+2025-11-20 22:33:55.493 D [test_server.exe] [17948-event poller 1] RtspPlayer.cpp:92 play | rtsp://192.168.1.64:554/cam/realmonitor?channel=1&subtype=1 admin admin123 0
+2025-11-20 22:33:55.493 T [test_server.exe] [17948-event poller 1] TcpClient.cpp:84 startConnect | class mediakit::RtspPlayerImp-42 start connect 192.168.1.64:554
+2025-11-20 22:34:05.492 W [test_server.exe] [17948-event poller 1] RtspPlayer.cpp:762 onPlayResult_l | 2 play rtsp timeout
+2025-11-20 22:34:05.492 T [test_server.exe] [17948-event poller 1] TcpClient.cpp:80 operator () | class mediakit::RtspPlayerImp-42 on err: 6(teardown)
+2025-11-20 22:35:05.507 W [test_server.exe] [17948-event poller 1] PlayerProxy.cpp:246 operator () | 重试播放[41]:rtsp://admin:admin123@192.168.1.64:554/cam/realmonitor?channel=1&subtype=1
+2025-11-20 22:35:05.508 D [test_server.exe] [17948-event poller 1] RtspPlayerImp.h:31 ~RtspPlayerImp | 
+2025-11-20 22:35:05.508 D [test_server.exe] [17948-event poller 1] RtspPlayer.cpp:37 ~RtspPlayer | 
+2025-11-20 22:35:05.508 T [test_server.exe] [17948-event poller 1] TcpClient.cpp:29 ~TcpClient | ~class mediakit::RtspPlayerImp-42
+2025-11-20 22:35:05.508 D [test_server.exe] [17948-event poller 1] RtspPlayer.cpp:92 play | rtsp://192.168.1.64:554/cam/realmonitor?channel=1&subtype=1 admin admin123 0
+2025-11-20 22:35:05.508 T [test_server.exe] [17948-event poller 1] TcpClient.cpp:84 startConnect | class mediakit::RtspPlayerImp-43 start connect 192.168.1.64:554
+2025-11-20 22:35:15.537 W [test_server.exe] [17948-event poller 1] RtspPlayer.cpp:762 onPlayResult_l | 2 play rtsp timeout
+2025-11-20 22:35:15.537 T [test_server.exe] [17948-event poller 1] TcpClient.cpp:80 operator () | class mediakit::RtspPlayerImp-43 on err: 6(teardown)
+2025-11-20 22:36:15.553 W [test_server.exe] [17948-event poller 1] PlayerProxy.cpp:246 operator () | 重试播放[42]:rtsp://admin:admin123@192.168.1.64:554/cam/realmonitor?channel=1&subtype=1
+2025-11-20 22:36:15.554 D [test_server.exe] [17948-event poller 1] RtspPlayerImp.h:31 ~RtspPlayerImp | 
+2025-11-20 22:36:15.554 D [test_server.exe] [17948-event poller 1] RtspPlayer.cpp:37 ~RtspPlayer | 
+2025-11-20 22:36:15.554 T [test_server.exe] [17948-event poller 1] TcpClient.cpp:29 ~TcpClient | ~class mediakit::RtspPlayerImp-43
+2025-11-20 22:36:15.554 D [test_server.exe] [17948-event poller 1] RtspPlayer.cpp:92 play | rtsp://192.168.1.64:554/cam/realmonitor?channel=1&subtype=1 admin admin123 0
+2025-11-20 22:36:15.554 T [test_server.exe] [17948-event poller 1] TcpClient.cpp:84 startConnect | class mediakit::RtspPlayerImp-44 start connect 192.168.1.64:554
+2025-11-20 22:36:25.569 W [test_server.exe] [17948-event poller 1] RtspPlayer.cpp:762 onPlayResult_l | 2 play rtsp timeout
+2025-11-20 22:36:25.569 T [test_server.exe] [17948-event poller 1] TcpClient.cpp:80 operator () | class mediakit::RtspPlayerImp-44 on err: 6(teardown)
+2025-11-20 22:37:25.584 W [test_server.exe] [17948-event poller 1] PlayerProxy.cpp:246 operator () | 重试播放[43]:rtsp://admin:admin123@192.168.1.64:554/cam/realmonitor?channel=1&subtype=1
+2025-11-20 22:37:25.585 D [test_server.exe] [17948-event poller 1] RtspPlayerImp.h:31 ~RtspPlayerImp | 
+2025-11-20 22:37:25.585 D [test_server.exe] [17948-event poller 1] RtspPlayer.cpp:37 ~RtspPlayer | 
+2025-11-20 22:37:25.585 T [test_server.exe] [17948-event poller 1] TcpClient.cpp:29 ~TcpClient | ~class mediakit::RtspPlayerImp-44
+2025-11-20 22:37:25.585 D [test_server.exe] [17948-event poller 1] RtspPlayer.cpp:92 play | rtsp://192.168.1.64:554/cam/realmonitor?channel=1&subtype=1 admin admin123 0
+2025-11-20 22:37:25.585 T [test_server.exe] [17948-event poller 1] TcpClient.cpp:84 startConnect | class mediakit::RtspPlayerImp-45 start connect 192.168.1.64:554
+2025-11-20 22:37:35.600 W [test_server.exe] [17948-event poller 1] RtspPlayer.cpp:762 onPlayResult_l | 2 play rtsp timeout
+2025-11-20 22:37:35.600 T [test_server.exe] [17948-event poller 1] TcpClient.cpp:80 operator () | class mediakit::RtspPlayerImp-45 on err: 6(teardown)
+2025-11-20 22:38:35.622 W [test_server.exe] [17948-event poller 1] PlayerProxy.cpp:246 operator () | 重试播放[44]:rtsp://admin:admin123@192.168.1.64:554/cam/realmonitor?channel=1&subtype=1
+2025-11-20 22:38:35.622 D [test_server.exe] [17948-event poller 1] RtspPlayerImp.h:31 ~RtspPlayerImp | 
+2025-11-20 22:38:35.622 D [test_server.exe] [17948-event poller 1] RtspPlayer.cpp:37 ~RtspPlayer | 
+2025-11-20 22:38:35.622 T [test_server.exe] [17948-event poller 1] TcpClient.cpp:29 ~TcpClient | ~class mediakit::RtspPlayerImp-45
+2025-11-20 22:38:35.622 D [test_server.exe] [17948-event poller 1] RtspPlayer.cpp:92 play | rtsp://192.168.1.64:554/cam/realmonitor?channel=1&subtype=1 admin admin123 0
+2025-11-20 22:38:35.622 T [test_server.exe] [17948-event poller 1] TcpClient.cpp:84 startConnect | class mediakit::RtspPlayerImp-46 start connect 192.168.1.64:554
+2025-11-20 22:38:45.633 W [test_server.exe] [17948-event poller 1] RtspPlayer.cpp:762 onPlayResult_l | 2 play rtsp timeout
+2025-11-20 22:38:45.633 T [test_server.exe] [17948-event poller 1] TcpClient.cpp:80 operator () | class mediakit::RtspPlayerImp-46 on err: 6(teardown)
+2025-11-20 22:39:45.663 W [test_server.exe] [17948-event poller 1] PlayerProxy.cpp:246 operator () | 重试播放[45]:rtsp://admin:admin123@192.168.1.64:554/cam/realmonitor?channel=1&subtype=1
+2025-11-20 22:39:45.664 D [test_server.exe] [17948-event poller 1] RtspPlayerImp.h:31 ~RtspPlayerImp | 
+2025-11-20 22:39:45.664 D [test_server.exe] [17948-event poller 1] RtspPlayer.cpp:37 ~RtspPlayer | 
+2025-11-20 22:39:45.664 T [test_server.exe] [17948-event poller 1] TcpClient.cpp:29 ~TcpClient | ~class mediakit::RtspPlayerImp-46
+2025-11-20 22:39:45.664 D [test_server.exe] [17948-event poller 1] RtspPlayer.cpp:92 play | rtsp://192.168.1.64:554/cam/realmonitor?channel=1&subtype=1 admin admin123 0
+2025-11-20 22:39:45.664 T [test_server.exe] [17948-event poller 1] TcpClient.cpp:84 startConnect | class mediakit::RtspPlayerImp-47 start connect 192.168.1.64:554
+2025-11-20 22:39:55.671 W [test_server.exe] [17948-event poller 1] RtspPlayer.cpp:762 onPlayResult_l | 2 play rtsp timeout
+2025-11-20 22:39:55.671 T [test_server.exe] [17948-event poller 1] TcpClient.cpp:80 operator () | class mediakit::RtspPlayerImp-47 on err: 6(teardown)
+2025-11-20 22:40:55.678 W [test_server.exe] [17948-event poller 1] PlayerProxy.cpp:246 operator () | 重试播放[46]:rtsp://admin:admin123@192.168.1.64:554/cam/realmonitor?channel=1&subtype=1
+2025-11-20 22:40:55.679 D [test_server.exe] [17948-event poller 1] RtspPlayerImp.h:31 ~RtspPlayerImp | 
+2025-11-20 22:40:55.679 D [test_server.exe] [17948-event poller 1] RtspPlayer.cpp:37 ~RtspPlayer | 
+2025-11-20 22:40:55.679 T [test_server.exe] [17948-event poller 1] TcpClient.cpp:29 ~TcpClient | ~class mediakit::RtspPlayerImp-47
+2025-11-20 22:40:55.679 D [test_server.exe] [17948-event poller 1] RtspPlayer.cpp:92 play | rtsp://192.168.1.64:554/cam/realmonitor?channel=1&subtype=1 admin admin123 0
+2025-11-20 22:40:55.679 T [test_server.exe] [17948-event poller 1] TcpClient.cpp:84 startConnect | class mediakit::RtspPlayerImp-48 start connect 192.168.1.64:554
+2025-11-20 22:41:05.724 W [test_server.exe] [17948-event poller 1] RtspPlayer.cpp:762 onPlayResult_l | 2 play rtsp timeout
+2025-11-20 22:41:05.724 T [test_server.exe] [17948-event poller 1] TcpClient.cpp:80 operator () | class mediakit::RtspPlayerImp-48 on err: 6(teardown)
+2025-11-20 22:42:05.725 W [test_server.exe] [17948-event poller 1] PlayerProxy.cpp:246 operator () | 重试播放[47]:rtsp://admin:admin123@192.168.1.64:554/cam/realmonitor?channel=1&subtype=1
+2025-11-20 22:42:05.726 D [test_server.exe] [17948-event poller 1] RtspPlayerImp.h:31 ~RtspPlayerImp | 
+2025-11-20 22:42:05.726 D [test_server.exe] [17948-event poller 1] RtspPlayer.cpp:37 ~RtspPlayer | 
+2025-11-20 22:42:05.726 T [test_server.exe] [17948-event poller 1] TcpClient.cpp:29 ~TcpClient | ~class mediakit::RtspPlayerImp-48
+2025-11-20 22:42:05.726 D [test_server.exe] [17948-event poller 1] RtspPlayer.cpp:92 play | rtsp://192.168.1.64:554/cam/realmonitor?channel=1&subtype=1 admin admin123 0
+2025-11-20 22:42:05.726 T [test_server.exe] [17948-event poller 1] TcpClient.cpp:84 startConnect | class mediakit::RtspPlayerImp-49 start connect 192.168.1.64:554
+2025-11-20 22:42:15.727 W [test_server.exe] [17948-event poller 1] RtspPlayer.cpp:762 onPlayResult_l | 2 play rtsp timeout
+2025-11-20 22:42:15.727 T [test_server.exe] [17948-event poller 1] TcpClient.cpp:80 operator () | class mediakit::RtspPlayerImp-49 on err: 6(teardown)
+2025-11-20 22:43:15.757 W [test_server.exe] [17948-event poller 1] PlayerProxy.cpp:246 operator () | 重试播放[48]:rtsp://admin:admin123@192.168.1.64:554/cam/realmonitor?channel=1&subtype=1
+2025-11-20 22:43:15.757 D [test_server.exe] [17948-event poller 1] RtspPlayerImp.h:31 ~RtspPlayerImp | 
+2025-11-20 22:43:15.757 D [test_server.exe] [17948-event poller 1] RtspPlayer.cpp:37 ~RtspPlayer | 
+2025-11-20 22:43:15.757 T [test_server.exe] [17948-event poller 1] TcpClient.cpp:29 ~TcpClient | ~class mediakit::RtspPlayerImp-49
+2025-11-20 22:43:15.758 D [test_server.exe] [17948-event poller 1] RtspPlayer.cpp:92 play | rtsp://192.168.1.64:554/cam/realmonitor?channel=1&subtype=1 admin admin123 0
+2025-11-20 22:43:15.758 T [test_server.exe] [17948-event poller 1] TcpClient.cpp:84 startConnect | class mediakit::RtspPlayerImp-50 start connect 192.168.1.64:554
+2025-11-20 22:43:25.772 W [test_server.exe] [17948-event poller 1] RtspPlayer.cpp:762 onPlayResult_l | 2 play rtsp timeout
+2025-11-20 22:43:25.772 T [test_server.exe] [17948-event poller 1] TcpClient.cpp:80 operator () | class mediakit::RtspPlayerImp-50 on err: 6(teardown)
+2025-11-20 22:44:25.789 W [test_server.exe] [17948-event poller 1] PlayerProxy.cpp:246 operator () | 重试播放[49]:rtsp://admin:admin123@192.168.1.64:554/cam/realmonitor?channel=1&subtype=1
+2025-11-20 22:44:25.789 D [test_server.exe] [17948-event poller 1] RtspPlayerImp.h:31 ~RtspPlayerImp | 
+2025-11-20 22:44:25.789 D [test_server.exe] [17948-event poller 1] RtspPlayer.cpp:37 ~RtspPlayer | 
+2025-11-20 22:44:25.789 T [test_server.exe] [17948-event poller 1] TcpClient.cpp:29 ~TcpClient | ~class mediakit::RtspPlayerImp-50
+2025-11-20 22:44:25.789 D [test_server.exe] [17948-event poller 1] RtspPlayer.cpp:92 play | rtsp://192.168.1.64:554/cam/realmonitor?channel=1&subtype=1 admin admin123 0
+2025-11-20 22:44:25.789 T [test_server.exe] [17948-event poller 1] TcpClient.cpp:84 startConnect | class mediakit::RtspPlayerImp-51 start connect 192.168.1.64:554
+2025-11-20 22:44:35.803 W [test_server.exe] [17948-event poller 1] RtspPlayer.cpp:762 onPlayResult_l | 2 play rtsp timeout
+2025-11-20 22:44:35.803 T [test_server.exe] [17948-event poller 1] TcpClient.cpp:80 operator () | class mediakit::RtspPlayerImp-51 on err: 6(teardown)
+2025-11-20 22:45:35.805 W [test_server.exe] [17948-event poller 1] PlayerProxy.cpp:246 operator () | 重试播放[50]:rtsp://admin:admin123@192.168.1.64:554/cam/realmonitor?channel=1&subtype=1
+2025-11-20 22:45:35.805 D [test_server.exe] [17948-event poller 1] RtspPlayerImp.h:31 ~RtspPlayerImp | 
+2025-11-20 22:45:35.805 D [test_server.exe] [17948-event poller 1] RtspPlayer.cpp:37 ~RtspPlayer | 
+2025-11-20 22:45:35.805 T [test_server.exe] [17948-event poller 1] TcpClient.cpp:29 ~TcpClient | ~class mediakit::RtspPlayerImp-51
+2025-11-20 22:45:35.805 D [test_server.exe] [17948-event poller 1] RtspPlayer.cpp:92 play | rtsp://192.168.1.64:554/cam/realmonitor?channel=1&subtype=1 admin admin123 0
+2025-11-20 22:45:35.805 T [test_server.exe] [17948-event poller 1] TcpClient.cpp:84 startConnect | class mediakit::RtspPlayerImp-52 start connect 192.168.1.64:554
+2025-11-20 22:45:45.835 W [test_server.exe] [17948-event poller 1] RtspPlayer.cpp:762 onPlayResult_l | 2 play rtsp timeout
+2025-11-20 22:45:45.835 T [test_server.exe] [17948-event poller 1] TcpClient.cpp:80 operator () | class mediakit::RtspPlayerImp-52 on err: 6(teardown)
+2025-11-20 22:46:45.845 W [test_server.exe] [17948-event poller 1] PlayerProxy.cpp:246 operator () | 重试播放[51]:rtsp://admin:admin123@192.168.1.64:554/cam/realmonitor?channel=1&subtype=1
+2025-11-20 22:46:45.845 D [test_server.exe] [17948-event poller 1] RtspPlayerImp.h:31 ~RtspPlayerImp | 
+2025-11-20 22:46:45.845 D [test_server.exe] [17948-event poller 1] RtspPlayer.cpp:37 ~RtspPlayer | 
+2025-11-20 22:46:45.845 T [test_server.exe] [17948-event poller 1] TcpClient.cpp:29 ~TcpClient | ~class mediakit::RtspPlayerImp-52
+2025-11-20 22:46:45.845 D [test_server.exe] [17948-event poller 1] RtspPlayer.cpp:92 play | rtsp://192.168.1.64:554/cam/realmonitor?channel=1&subtype=1 admin admin123 0
+2025-11-20 22:46:45.845 T [test_server.exe] [17948-event poller 1] TcpClient.cpp:84 startConnect | class mediakit::RtspPlayerImp-53 start connect 192.168.1.64:554
+2025-11-20 22:46:55.850 W [test_server.exe] [17948-event poller 1] RtspPlayer.cpp:762 onPlayResult_l | 2 play rtsp timeout
+2025-11-20 22:46:55.850 T [test_server.exe] [17948-event poller 1] TcpClient.cpp:80 operator () | class mediakit::RtspPlayerImp-53 on err: 6(teardown)
+2025-11-20 22:47:55.866 W [test_server.exe] [17948-event poller 1] PlayerProxy.cpp:246 operator () | 重试播放[52]:rtsp://admin:admin123@192.168.1.64:554/cam/realmonitor?channel=1&subtype=1
+2025-11-20 22:47:55.866 D [test_server.exe] [17948-event poller 1] RtspPlayerImp.h:31 ~RtspPlayerImp | 
+2025-11-20 22:47:55.866 D [test_server.exe] [17948-event poller 1] RtspPlayer.cpp:37 ~RtspPlayer | 
+2025-11-20 22:47:55.866 T [test_server.exe] [17948-event poller 1] TcpClient.cpp:29 ~TcpClient | ~class mediakit::RtspPlayerImp-53
+2025-11-20 22:47:55.866 D [test_server.exe] [17948-event poller 1] RtspPlayer.cpp:92 play | rtsp://192.168.1.64:554/cam/realmonitor?channel=1&subtype=1 admin admin123 0
+2025-11-20 22:47:55.866 T [test_server.exe] [17948-event poller 1] TcpClient.cpp:84 startConnect | class mediakit::RtspPlayerImp-54 start connect 192.168.1.64:554
+2025-11-20 22:48:05.876 W [test_server.exe] [17948-event poller 1] RtspPlayer.cpp:762 onPlayResult_l | 2 play rtsp timeout
+2025-11-20 22:48:05.876 T [test_server.exe] [17948-event poller 1] TcpClient.cpp:80 operator () | class mediakit::RtspPlayerImp-54 on err: 6(teardown)
+2025-11-20 22:49:05.884 W [test_server.exe] [17948-event poller 1] PlayerProxy.cpp:246 operator () | 重试播放[53]:rtsp://admin:admin123@192.168.1.64:554/cam/realmonitor?channel=1&subtype=1
+2025-11-20 22:49:05.884 D [test_server.exe] [17948-event poller 1] RtspPlayerImp.h:31 ~RtspPlayerImp | 
+2025-11-20 22:49:05.884 D [test_server.exe] [17948-event poller 1] RtspPlayer.cpp:37 ~RtspPlayer | 
+2025-11-20 22:49:05.884 T [test_server.exe] [17948-event poller 1] TcpClient.cpp:29 ~TcpClient | ~class mediakit::RtspPlayerImp-54
+2025-11-20 22:49:05.884 D [test_server.exe] [17948-event poller 1] RtspPlayer.cpp:92 play | rtsp://192.168.1.64:554/cam/realmonitor?channel=1&subtype=1 admin admin123 0
+2025-11-20 22:49:05.884 T [test_server.exe] [17948-event poller 1] TcpClient.cpp:84 startConnect | class mediakit::RtspPlayerImp-55 start connect 192.168.1.64:554
+2025-11-20 22:49:15.886 W [test_server.exe] [17948-event poller 1] RtspPlayer.cpp:762 onPlayResult_l | 2 play rtsp timeout
+2025-11-20 22:49:15.886 T [test_server.exe] [17948-event poller 1] TcpClient.cpp:80 operator () | class mediakit::RtspPlayerImp-55 on err: 6(teardown)
+2025-11-20 22:50:15.897 W [test_server.exe] [17948-event poller 1] PlayerProxy.cpp:246 operator () | 重试播放[54]:rtsp://admin:admin123@192.168.1.64:554/cam/realmonitor?channel=1&subtype=1
+2025-11-20 22:50:15.897 D [test_server.exe] [17948-event poller 1] RtspPlayerImp.h:31 ~RtspPlayerImp | 
+2025-11-20 22:50:15.897 D [test_server.exe] [17948-event poller 1] RtspPlayer.cpp:37 ~RtspPlayer | 
+2025-11-20 22:50:15.897 T [test_server.exe] [17948-event poller 1] TcpClient.cpp:29 ~TcpClient | ~class mediakit::RtspPlayerImp-55
+2025-11-20 22:50:15.897 D [test_server.exe] [17948-event poller 1] RtspPlayer.cpp:92 play | rtsp://192.168.1.64:554/cam/realmonitor?channel=1&subtype=1 admin admin123 0
+2025-11-20 22:50:15.897 T [test_server.exe] [17948-event poller 1] TcpClient.cpp:84 startConnect | class mediakit::RtspPlayerImp-56 start connect 192.168.1.64:554
+2025-11-20 22:50:25.928 W [test_server.exe] [17948-event poller 1] RtspPlayer.cpp:762 onPlayResult_l | 2 play rtsp timeout
+2025-11-20 22:50:25.928 T [test_server.exe] [17948-event poller 1] TcpClient.cpp:80 operator () | class mediakit::RtspPlayerImp-56 on err: 6(teardown)
+2025-11-20 22:51:25.943 W [test_server.exe] [17948-event poller 1] PlayerProxy.cpp:246 operator () | 重试播放[55]:rtsp://admin:admin123@192.168.1.64:554/cam/realmonitor?channel=1&subtype=1
+2025-11-20 22:51:25.943 D [test_server.exe] [17948-event poller 1] RtspPlayerImp.h:31 ~RtspPlayerImp | 
+2025-11-20 22:51:25.943 D [test_server.exe] [17948-event poller 1] RtspPlayer.cpp:37 ~RtspPlayer | 
+2025-11-20 22:51:25.943 T [test_server.exe] [17948-event poller 1] TcpClient.cpp:29 ~TcpClient | ~class mediakit::RtspPlayerImp-56
+2025-11-20 22:51:25.943 D [test_server.exe] [17948-event poller 1] RtspPlayer.cpp:92 play | rtsp://192.168.1.64:554/cam/realmonitor?channel=1&subtype=1 admin admin123 0
+2025-11-20 22:51:25.943 T [test_server.exe] [17948-event poller 1] TcpClient.cpp:84 startConnect | class mediakit::RtspPlayerImp-57 start connect 192.168.1.64:554
+2025-11-20 22:51:35.945 W [test_server.exe] [17948-event poller 1] RtspPlayer.cpp:762 onPlayResult_l | 2 play rtsp timeout
+2025-11-20 22:51:35.945 T [test_server.exe] [17948-event poller 1] TcpClient.cpp:80 operator () | class mediakit::RtspPlayerImp-57 on err: 6(teardown)
+2025-11-20 22:52:35.959 W [test_server.exe] [17948-event poller 1] PlayerProxy.cpp:246 operator () | 重试播放[56]:rtsp://admin:admin123@192.168.1.64:554/cam/realmonitor?channel=1&subtype=1
+2025-11-20 22:52:35.959 D [test_server.exe] [17948-event poller 1] RtspPlayerImp.h:31 ~RtspPlayerImp | 
+2025-11-20 22:52:35.959 D [test_server.exe] [17948-event poller 1] RtspPlayer.cpp:37 ~RtspPlayer | 
+2025-11-20 22:52:35.959 T [test_server.exe] [17948-event poller 1] TcpClient.cpp:29 ~TcpClient | ~class mediakit::RtspPlayerImp-57
+2025-11-20 22:52:35.959 D [test_server.exe] [17948-event poller 1] RtspPlayer.cpp:92 play | rtsp://192.168.1.64:554/cam/realmonitor?channel=1&subtype=1 admin admin123 0
+2025-11-20 22:52:35.959 T [test_server.exe] [17948-event poller 1] TcpClient.cpp:84 startConnect | class mediakit::RtspPlayerImp-58 start connect 192.168.1.64:554
+2025-11-20 22:52:45.975 W [test_server.exe] [17948-event poller 1] RtspPlayer.cpp:762 onPlayResult_l | 2 play rtsp timeout
+2025-11-20 22:52:45.975 T [test_server.exe] [17948-event poller 1] TcpClient.cpp:80 operator () | class mediakit::RtspPlayerImp-58 on err: 6(teardown)
+2025-11-20 22:53:45.980 W [test_server.exe] [17948-event poller 1] PlayerProxy.cpp:246 operator () | 重试播放[57]:rtsp://admin:admin123@192.168.1.64:554/cam/realmonitor?channel=1&subtype=1
+2025-11-20 22:53:45.980 D [test_server.exe] [17948-event poller 1] RtspPlayerImp.h:31 ~RtspPlayerImp | 
+2025-11-20 22:53:45.980 D [test_server.exe] [17948-event poller 1] RtspPlayer.cpp:37 ~RtspPlayer | 
+2025-11-20 22:53:45.980 T [test_server.exe] [17948-event poller 1] TcpClient.cpp:29 ~TcpClient | ~class mediakit::RtspPlayerImp-58
+2025-11-20 22:53:45.980 D [test_server.exe] [17948-event poller 1] RtspPlayer.cpp:92 play | rtsp://192.168.1.64:554/cam/realmonitor?channel=1&subtype=1 admin admin123 0
+2025-11-20 22:53:45.980 T [test_server.exe] [17948-event poller 1] TcpClient.cpp:84 startConnect | class mediakit::RtspPlayerImp-59 start connect 192.168.1.64:554
+2025-11-20 22:53:56.006 W [test_server.exe] [17948-event poller 1] RtspPlayer.cpp:762 onPlayResult_l | 2 play rtsp timeout
+2025-11-20 22:53:56.007 T [test_server.exe] [17948-event poller 1] TcpClient.cpp:80 operator () | class mediakit::RtspPlayerImp-59 on err: 6(teardown)
+2025-11-20 22:54:56.015 W [test_server.exe] [17948-event poller 1] PlayerProxy.cpp:246 operator () | 重试播放[58]:rtsp://admin:admin123@192.168.1.64:554/cam/realmonitor?channel=1&subtype=1
+2025-11-20 22:54:56.015 D [test_server.exe] [17948-event poller 1] RtspPlayerImp.h:31 ~RtspPlayerImp | 
+2025-11-20 22:54:56.015 D [test_server.exe] [17948-event poller 1] RtspPlayer.cpp:37 ~RtspPlayer | 
+2025-11-20 22:54:56.015 T [test_server.exe] [17948-event poller 1] TcpClient.cpp:29 ~TcpClient | ~class mediakit::RtspPlayerImp-59
+2025-11-20 22:54:56.015 D [test_server.exe] [17948-event poller 1] RtspPlayer.cpp:92 play | rtsp://192.168.1.64:554/cam/realmonitor?channel=1&subtype=1 admin admin123 0
+2025-11-20 22:54:56.015 T [test_server.exe] [17948-event poller 1] TcpClient.cpp:84 startConnect | class mediakit::RtspPlayerImp-60 start connect 192.168.1.64:554
+2025-11-20 22:55:06.025 W [test_server.exe] [17948-event poller 1] RtspPlayer.cpp:762 onPlayResult_l | 2 play rtsp timeout
+2025-11-20 22:55:06.025 T [test_server.exe] [17948-event poller 1] TcpClient.cpp:80 operator () | class mediakit::RtspPlayerImp-60 on err: 6(teardown)
+2025-11-20 22:56:06.034 W [test_server.exe] [17948-event poller 1] PlayerProxy.cpp:246 operator () | 重试播放[59]:rtsp://admin:admin123@192.168.1.64:554/cam/realmonitor?channel=1&subtype=1
+2025-11-20 22:56:06.034 D [test_server.exe] [17948-event poller 1] RtspPlayerImp.h:31 ~RtspPlayerImp | 
+2025-11-20 22:56:06.034 D [test_server.exe] [17948-event poller 1] RtspPlayer.cpp:37 ~RtspPlayer | 
+2025-11-20 22:56:06.034 T [test_server.exe] [17948-event poller 1] TcpClient.cpp:29 ~TcpClient | ~class mediakit::RtspPlayerImp-60
+2025-11-20 22:56:06.034 D [test_server.exe] [17948-event poller 1] RtspPlayer.cpp:92 play | rtsp://192.168.1.64:554/cam/realmonitor?channel=1&subtype=1 admin admin123 0
+2025-11-20 22:56:06.034 T [test_server.exe] [17948-event poller 1] TcpClient.cpp:84 startConnect | class mediakit::RtspPlayerImp-61 start connect 192.168.1.64:554
+2025-11-20 22:56:16.038 W [test_server.exe] [17948-event poller 1] RtspPlayer.cpp:762 onPlayResult_l | 2 play rtsp timeout
+2025-11-20 22:56:16.038 T [test_server.exe] [17948-event poller 1] TcpClient.cpp:80 operator () | class mediakit::RtspPlayerImp-61 on err: 6(teardown)
+2025-11-20 22:57:16.048 W [test_server.exe] [17948-event poller 1] PlayerProxy.cpp:246 operator () | 重试播放[60]:rtsp://admin:admin123@192.168.1.64:554/cam/realmonitor?channel=1&subtype=1
+2025-11-20 22:57:16.048 D [test_server.exe] [17948-event poller 1] RtspPlayerImp.h:31 ~RtspPlayerImp | 
+2025-11-20 22:57:16.048 D [test_server.exe] [17948-event poller 1] RtspPlayer.cpp:37 ~RtspPlayer | 
+2025-11-20 22:57:16.048 T [test_server.exe] [17948-event poller 1] TcpClient.cpp:29 ~TcpClient | ~class mediakit::RtspPlayerImp-61
+2025-11-20 22:57:16.048 D [test_server.exe] [17948-event poller 1] RtspPlayer.cpp:92 play | rtsp://192.168.1.64:554/cam/realmonitor?channel=1&subtype=1 admin admin123 0
+2025-11-20 22:57:16.048 T [test_server.exe] [17948-event poller 1] TcpClient.cpp:84 startConnect | class mediakit::RtspPlayerImp-62 start connect 192.168.1.64:554
+2025-11-20 22:57:26.060 W [test_server.exe] [17948-event poller 1] RtspPlayer.cpp:762 onPlayResult_l | 2 play rtsp timeout
+2025-11-20 22:57:26.060 T [test_server.exe] [17948-event poller 1] TcpClient.cpp:80 operator () | class mediakit::RtspPlayerImp-62 on err: 6(teardown)
+2025-11-20 22:58:26.066 W [test_server.exe] [17948-event poller 1] PlayerProxy.cpp:246 operator () | 重试播放[61]:rtsp://admin:admin123@192.168.1.64:554/cam/realmonitor?channel=1&subtype=1
+2025-11-20 22:58:26.066 D [test_server.exe] [17948-event poller 1] RtspPlayerImp.h:31 ~RtspPlayerImp | 
+2025-11-20 22:58:26.066 D [test_server.exe] [17948-event poller 1] RtspPlayer.cpp:37 ~RtspPlayer | 
+2025-11-20 22:58:26.066 T [test_server.exe] [17948-event poller 1] TcpClient.cpp:29 ~TcpClient | ~class mediakit::RtspPlayerImp-62
+2025-11-20 22:58:26.067 D [test_server.exe] [17948-event poller 1] RtspPlayer.cpp:92 play | rtsp://192.168.1.64:554/cam/realmonitor?channel=1&subtype=1 admin admin123 0
+2025-11-20 22:58:26.067 T [test_server.exe] [17948-event poller 1] TcpClient.cpp:84 startConnect | class mediakit::RtspPlayerImp-63 start connect 192.168.1.64:554
+2025-11-20 22:58:36.089 W [test_server.exe] [17948-event poller 1] RtspPlayer.cpp:762 onPlayResult_l | 2 play rtsp timeout
+2025-11-20 22:58:36.090 T [test_server.exe] [17948-event poller 1] TcpClient.cpp:80 operator () | class mediakit::RtspPlayerImp-63 on err: 6(teardown)
+2025-11-20 22:59:36.095 W [test_server.exe] [17948-event poller 1] PlayerProxy.cpp:246 operator () | 重试播放[62]:rtsp://admin:admin123@192.168.1.64:554/cam/realmonitor?channel=1&subtype=1
+2025-11-20 22:59:36.095 D [test_server.exe] [17948-event poller 1] RtspPlayerImp.h:31 ~RtspPlayerImp | 
+2025-11-20 22:59:36.095 D [test_server.exe] [17948-event poller 1] RtspPlayer.cpp:37 ~RtspPlayer | 
+2025-11-20 22:59:36.095 T [test_server.exe] [17948-event poller 1] TcpClient.cpp:29 ~TcpClient | ~class mediakit::RtspPlayerImp-63
+2025-11-20 22:59:36.095 D [test_server.exe] [17948-event poller 1] RtspPlayer.cpp:92 play | rtsp://192.168.1.64:554/cam/realmonitor?channel=1&subtype=1 admin admin123 0
+2025-11-20 22:59:36.095 T [test_server.exe] [17948-event poller 1] TcpClient.cpp:84 startConnect | class mediakit::RtspPlayerImp-64 start connect 192.168.1.64:554
+2025-11-20 22:59:46.109 W [test_server.exe] [17948-event poller 1] RtspPlayer.cpp:762 onPlayResult_l | 2 play rtsp timeout
+2025-11-20 22:59:46.109 T [test_server.exe] [17948-event poller 1] TcpClient.cpp:80 operator () | class mediakit::RtspPlayerImp-64 on err: 6(teardown)
+2025-11-20 23:00:46.111 W [test_server.exe] [17948-event poller 1] PlayerProxy.cpp:246 operator () | 重试播放[63]:rtsp://admin:admin123@192.168.1.64:554/cam/realmonitor?channel=1&subtype=1
+2025-11-20 23:00:46.111 D [test_server.exe] [17948-event poller 1] RtspPlayerImp.h:31 ~RtspPlayerImp | 
+2025-11-20 23:00:46.111 D [test_server.exe] [17948-event poller 1] RtspPlayer.cpp:37 ~RtspPlayer | 
+2025-11-20 23:00:46.111 T [test_server.exe] [17948-event poller 1] TcpClient.cpp:29 ~TcpClient | ~class mediakit::RtspPlayerImp-64
+2025-11-20 23:00:46.111 D [test_server.exe] [17948-event poller 1] RtspPlayer.cpp:92 play | rtsp://192.168.1.64:554/cam/realmonitor?channel=1&subtype=1 admin admin123 0
+2025-11-20 23:00:46.111 T [test_server.exe] [17948-event poller 1] TcpClient.cpp:84 startConnect | class mediakit::RtspPlayerImp-65 start connect 192.168.1.64:554
+2025-11-20 23:00:56.121 W [test_server.exe] [17948-event poller 1] RtspPlayer.cpp:762 onPlayResult_l | 2 play rtsp timeout
+2025-11-20 23:00:56.121 T [test_server.exe] [17948-event poller 1] TcpClient.cpp:80 operator () | class mediakit::RtspPlayerImp-65 on err: 6(teardown)
+2025-11-20 23:01:56.128 W [test_server.exe] [17948-event poller 1] PlayerProxy.cpp:246 operator () | 重试播放[64]:rtsp://admin:admin123@192.168.1.64:554/cam/realmonitor?channel=1&subtype=1
+2025-11-20 23:01:56.128 D [test_server.exe] [17948-event poller 1] RtspPlayerImp.h:31 ~RtspPlayerImp | 
+2025-11-20 23:01:56.128 D [test_server.exe] [17948-event poller 1] RtspPlayer.cpp:37 ~RtspPlayer | 
+2025-11-20 23:01:56.128 T [test_server.exe] [17948-event poller 1] TcpClient.cpp:29 ~TcpClient | ~class mediakit::RtspPlayerImp-65
+2025-11-20 23:01:56.129 D [test_server.exe] [17948-event poller 1] RtspPlayer.cpp:92 play | rtsp://192.168.1.64:554/cam/realmonitor?channel=1&subtype=1 admin admin123 0
+2025-11-20 23:01:56.129 T [test_server.exe] [17948-event poller 1] TcpClient.cpp:84 startConnect | class mediakit::RtspPlayerImp-66 start connect 192.168.1.64:554
+2025-11-20 23:02:06.162 W [test_server.exe] [17948-event poller 1] RtspPlayer.cpp:762 onPlayResult_l | 2 play rtsp timeout
+2025-11-20 23:02:06.162 T [test_server.exe] [17948-event poller 1] TcpClient.cpp:80 operator () | class mediakit::RtspPlayerImp-66 on err: 6(teardown)
+2025-11-20 23:03:06.171 W [test_server.exe] [17948-event poller 1] PlayerProxy.cpp:246 operator () | 重试播放[65]:rtsp://admin:admin123@192.168.1.64:554/cam/realmonitor?channel=1&subtype=1
+2025-11-20 23:03:06.171 D [test_server.exe] [17948-event poller 1] RtspPlayerImp.h:31 ~RtspPlayerImp | 
+2025-11-20 23:03:06.171 D [test_server.exe] [17948-event poller 1] RtspPlayer.cpp:37 ~RtspPlayer | 
+2025-11-20 23:03:06.171 T [test_server.exe] [17948-event poller 1] TcpClient.cpp:29 ~TcpClient | ~class mediakit::RtspPlayerImp-66
+2025-11-20 23:03:06.171 D [test_server.exe] [17948-event poller 1] RtspPlayer.cpp:92 play | rtsp://192.168.1.64:554/cam/realmonitor?channel=1&subtype=1 admin admin123 0
+2025-11-20 23:03:06.171 T [test_server.exe] [17948-event poller 1] TcpClient.cpp:84 startConnect | class mediakit::RtspPlayerImp-67 start connect 192.168.1.64:554
+2025-11-20 23:03:16.173 W [test_server.exe] [17948-event poller 1] RtspPlayer.cpp:762 onPlayResult_l | 2 play rtsp timeout
+2025-11-20 23:03:16.173 T [test_server.exe] [17948-event poller 1] TcpClient.cpp:80 operator () | class mediakit::RtspPlayerImp-67 on err: 6(teardown)
+2025-11-20 23:04:16.198 W [test_server.exe] [17948-event poller 1] PlayerProxy.cpp:246 operator () | 重试播放[66]:rtsp://admin:admin123@192.168.1.64:554/cam/realmonitor?channel=1&subtype=1
+2025-11-20 23:04:16.198 D [test_server.exe] [17948-event poller 1] RtspPlayerImp.h:31 ~RtspPlayerImp | 
+2025-11-20 23:04:16.198 D [test_server.exe] [17948-event poller 1] RtspPlayer.cpp:37 ~RtspPlayer | 
+2025-11-20 23:04:16.198 T [test_server.exe] [17948-event poller 1] TcpClient.cpp:29 ~TcpClient | ~class mediakit::RtspPlayerImp-67
+2025-11-20 23:04:16.199 D [test_server.exe] [17948-event poller 1] RtspPlayer.cpp:92 play | rtsp://192.168.1.64:554/cam/realmonitor?channel=1&subtype=1 admin admin123 0
+2025-11-20 23:04:16.199 T [test_server.exe] [17948-event poller 1] TcpClient.cpp:84 startConnect | class mediakit::RtspPlayerImp-68 start connect 192.168.1.64:554
+2025-11-20 23:04:26.215 W [test_server.exe] [17948-event poller 1] RtspPlayer.cpp:762 onPlayResult_l | 2 play rtsp timeout
+2025-11-20 23:04:26.216 T [test_server.exe] [17948-event poller 1] TcpClient.cpp:80 operator () | class mediakit::RtspPlayerImp-68 on err: 6(teardown)
+2025-11-20 23:05:26.226 W [test_server.exe] [17948-event poller 1] PlayerProxy.cpp:246 operator () | 重试播放[67]:rtsp://admin:admin123@192.168.1.64:554/cam/realmonitor?channel=1&subtype=1
+2025-11-20 23:05:26.226 D [test_server.exe] [17948-event poller 1] RtspPlayerImp.h:31 ~RtspPlayerImp | 
+2025-11-20 23:05:26.226 D [test_server.exe] [17948-event poller 1] RtspPlayer.cpp:37 ~RtspPlayer | 
+2025-11-20 23:05:26.226 T [test_server.exe] [17948-event poller 1] TcpClient.cpp:29 ~TcpClient | ~class mediakit::RtspPlayerImp-68
+2025-11-20 23:05:26.226 D [test_server.exe] [17948-event poller 1] RtspPlayer.cpp:92 play | rtsp://192.168.1.64:554/cam/realmonitor?channel=1&subtype=1 admin admin123 0
+2025-11-20 23:05:26.226 T [test_server.exe] [17948-event poller 1] TcpClient.cpp:84 startConnect | class mediakit::RtspPlayerImp-69 start connect 192.168.1.64:554
+2025-11-20 23:05:36.244 W [test_server.exe] [17948-event poller 1] RtspPlayer.cpp:762 onPlayResult_l | 2 play rtsp timeout
+2025-11-20 23:05:36.244 T [test_server.exe] [17948-event poller 1] TcpClient.cpp:80 operator () | class mediakit::RtspPlayerImp-69 on err: 6(teardown)
+2025-11-20 23:06:36.274 W [test_server.exe] [17948-event poller 1] PlayerProxy.cpp:246 operator () | 重试播放[68]:rtsp://admin:admin123@192.168.1.64:554/cam/realmonitor?channel=1&subtype=1
+2025-11-20 23:06:36.274 D [test_server.exe] [17948-event poller 1] RtspPlayerImp.h:31 ~RtspPlayerImp | 
+2025-11-20 23:06:36.274 D [test_server.exe] [17948-event poller 1] RtspPlayer.cpp:37 ~RtspPlayer | 
+2025-11-20 23:06:36.274 T [test_server.exe] [17948-event poller 1] TcpClient.cpp:29 ~TcpClient | ~class mediakit::RtspPlayerImp-69
+2025-11-20 23:06:36.274 D [test_server.exe] [17948-event poller 1] RtspPlayer.cpp:92 play | rtsp://192.168.1.64:554/cam/realmonitor?channel=1&subtype=1 admin admin123 0
+2025-11-20 23:06:36.274 T [test_server.exe] [17948-event poller 1] TcpClient.cpp:84 startConnect | class mediakit::RtspPlayerImp-70 start connect 192.168.1.64:554
+2025-11-20 23:06:46.289 W [test_server.exe] [17948-event poller 1] RtspPlayer.cpp:762 onPlayResult_l | 2 play rtsp timeout
+2025-11-20 23:06:46.289 T [test_server.exe] [17948-event poller 1] TcpClient.cpp:80 operator () | class mediakit::RtspPlayerImp-70 on err: 6(teardown)
+2025-11-20 23:07:46.317 W [test_server.exe] [17948-event poller 1] PlayerProxy.cpp:246 operator () | 重试播放[69]:rtsp://admin:admin123@192.168.1.64:554/cam/realmonitor?channel=1&subtype=1
+2025-11-20 23:07:46.317 D [test_server.exe] [17948-event poller 1] RtspPlayerImp.h:31 ~RtspPlayerImp | 
+2025-11-20 23:07:46.317 D [test_server.exe] [17948-event poller 1] RtspPlayer.cpp:37 ~RtspPlayer | 
+2025-11-20 23:07:46.317 T [test_server.exe] [17948-event poller 1] TcpClient.cpp:29 ~TcpClient | ~class mediakit::RtspPlayerImp-70
+2025-11-20 23:07:46.318 D [test_server.exe] [17948-event poller 1] RtspPlayer.cpp:92 play | rtsp://192.168.1.64:554/cam/realmonitor?channel=1&subtype=1 admin admin123 0
+2025-11-20 23:07:46.318 T [test_server.exe] [17948-event poller 1] TcpClient.cpp:84 startConnect | class mediakit::RtspPlayerImp-71 start connect 192.168.1.64:554
+2025-11-20 23:07:56.343 W [test_server.exe] [17948-event poller 1] RtspPlayer.cpp:762 onPlayResult_l | 2 play rtsp timeout
+2025-11-20 23:07:56.343 T [test_server.exe] [17948-event poller 1] TcpClient.cpp:80 operator () | class mediakit::RtspPlayerImp-71 on err: 6(teardown)
+2025-11-20 23:08:56.348 W [test_server.exe] [17948-event poller 1] PlayerProxy.cpp:246 operator () | 重试播放[70]:rtsp://admin:admin123@192.168.1.64:554/cam/realmonitor?channel=1&subtype=1
+2025-11-20 23:08:56.348 D [test_server.exe] [17948-event poller 1] RtspPlayerImp.h:31 ~RtspPlayerImp | 
+2025-11-20 23:08:56.348 D [test_server.exe] [17948-event poller 1] RtspPlayer.cpp:37 ~RtspPlayer | 
+2025-11-20 23:08:56.348 T [test_server.exe] [17948-event poller 1] TcpClient.cpp:29 ~TcpClient | ~class mediakit::RtspPlayerImp-71
+2025-11-20 23:08:56.348 D [test_server.exe] [17948-event poller 1] RtspPlayer.cpp:92 play | rtsp://192.168.1.64:554/cam/realmonitor?channel=1&subtype=1 admin admin123 0
+2025-11-20 23:08:56.348 T [test_server.exe] [17948-event poller 1] TcpClient.cpp:84 startConnect | class mediakit::RtspPlayerImp-72 start connect 192.168.1.64:554
+2025-11-20 23:09:06.370 W [test_server.exe] [17948-event poller 1] RtspPlayer.cpp:762 onPlayResult_l | 2 play rtsp timeout
+2025-11-20 23:09:06.370 T [test_server.exe] [17948-event poller 1] TcpClient.cpp:80 operator () | class mediakit::RtspPlayerImp-72 on err: 6(teardown)
+2025-11-20 23:10:06.372 W [test_server.exe] [17948-event poller 1] PlayerProxy.cpp:246 operator () | 重试播放[71]:rtsp://admin:admin123@192.168.1.64:554/cam/realmonitor?channel=1&subtype=1
+2025-11-20 23:10:06.372 D [test_server.exe] [17948-event poller 1] RtspPlayerImp.h:31 ~RtspPlayerImp | 
+2025-11-20 23:10:06.372 D [test_server.exe] [17948-event poller 1] RtspPlayer.cpp:37 ~RtspPlayer | 
+2025-11-20 23:10:06.372 T [test_server.exe] [17948-event poller 1] TcpClient.cpp:29 ~TcpClient | ~class mediakit::RtspPlayerImp-72
+2025-11-20 23:10:06.372 D [test_server.exe] [17948-event poller 1] RtspPlayer.cpp:92 play | rtsp://192.168.1.64:554/cam/realmonitor?channel=1&subtype=1 admin admin123 0
+2025-11-20 23:10:06.373 T [test_server.exe] [17948-event poller 1] TcpClient.cpp:84 startConnect | class mediakit::RtspPlayerImp-73 start connect 192.168.1.64:554
+2025-11-20 23:10:16.387 W [test_server.exe] [17948-event poller 1] RtspPlayer.cpp:762 onPlayResult_l | 2 play rtsp timeout
+2025-11-20 23:10:16.387 T [test_server.exe] [17948-event poller 1] TcpClient.cpp:80 operator () | class mediakit::RtspPlayerImp-73 on err: 6(teardown)
+2025-11-20 23:11:16.410 W [test_server.exe] [17948-event poller 1] PlayerProxy.cpp:246 operator () | 重试播放[72]:rtsp://admin:admin123@192.168.1.64:554/cam/realmonitor?channel=1&subtype=1
+2025-11-20 23:11:16.410 D [test_server.exe] [17948-event poller 1] RtspPlayerImp.h:31 ~RtspPlayerImp | 
+2025-11-20 23:11:16.410 D [test_server.exe] [17948-event poller 1] RtspPlayer.cpp:37 ~RtspPlayer | 
+2025-11-20 23:11:16.410 T [test_server.exe] [17948-event poller 1] TcpClient.cpp:29 ~TcpClient | ~class mediakit::RtspPlayerImp-73
+2025-11-20 23:11:16.410 D [test_server.exe] [17948-event poller 1] RtspPlayer.cpp:92 play | rtsp://192.168.1.64:554/cam/realmonitor?channel=1&subtype=1 admin admin123 0
+2025-11-20 23:11:16.410 T [test_server.exe] [17948-event poller 1] TcpClient.cpp:84 startConnect | class mediakit::RtspPlayerImp-74 start connect 192.168.1.64:554
+2025-11-20 23:11:26.427 W [test_server.exe] [17948-event poller 1] RtspPlayer.cpp:762 onPlayResult_l | 2 play rtsp timeout
+2025-11-20 23:11:26.428 T [test_server.exe] [17948-event poller 1] TcpClient.cpp:80 operator () | class mediakit::RtspPlayerImp-74 on err: 6(teardown)
+2025-11-20 23:12:26.451 W [test_server.exe] [17948-event poller 1] PlayerProxy.cpp:246 operator () | 重试播放[73]:rtsp://admin:admin123@192.168.1.64:554/cam/realmonitor?channel=1&subtype=1
+2025-11-20 23:12:26.451 D [test_server.exe] [17948-event poller 1] RtspPlayerImp.h:31 ~RtspPlayerImp | 
+2025-11-20 23:12:26.451 D [test_server.exe] [17948-event poller 1] RtspPlayer.cpp:37 ~RtspPlayer | 
+2025-11-20 23:12:26.451 T [test_server.exe] [17948-event poller 1] TcpClient.cpp:29 ~TcpClient | ~class mediakit::RtspPlayerImp-74
+2025-11-20 23:12:26.451 D [test_server.exe] [17948-event poller 1] RtspPlayer.cpp:92 play | rtsp://192.168.1.64:554/cam/realmonitor?channel=1&subtype=1 admin admin123 0
+2025-11-20 23:12:26.451 T [test_server.exe] [17948-event poller 1] TcpClient.cpp:84 startConnect | class mediakit::RtspPlayerImp-75 start connect 192.168.1.64:554
+2025-11-20 23:12:36.452 W [test_server.exe] [17948-event poller 1] RtspPlayer.cpp:762 onPlayResult_l | 2 play rtsp timeout
+2025-11-20 23:12:36.452 T [test_server.exe] [17948-event poller 1] TcpClient.cpp:80 operator () | class mediakit::RtspPlayerImp-75 on err: 6(teardown)
+2025-11-20 23:13:36.483 W [test_server.exe] [17948-event poller 1] PlayerProxy.cpp:246 operator () | 重试播放[74]:rtsp://admin:admin123@192.168.1.64:554/cam/realmonitor?channel=1&subtype=1
+2025-11-20 23:13:36.484 D [test_server.exe] [17948-event poller 1] RtspPlayerImp.h:31 ~RtspPlayerImp | 
+2025-11-20 23:13:36.484 D [test_server.exe] [17948-event poller 1] RtspPlayer.cpp:37 ~RtspPlayer | 
+2025-11-20 23:13:36.484 T [test_server.exe] [17948-event poller 1] TcpClient.cpp:29 ~TcpClient | ~class mediakit::RtspPlayerImp-75
+2025-11-20 23:13:36.484 D [test_server.exe] [17948-event poller 1] RtspPlayer.cpp:92 play | rtsp://192.168.1.64:554/cam/realmonitor?channel=1&subtype=1 admin admin123 0
+2025-11-20 23:13:36.484 T [test_server.exe] [17948-event poller 1] TcpClient.cpp:84 startConnect | class mediakit::RtspPlayerImp-76 start connect 192.168.1.64:554
+2025-11-20 23:13:46.515 W [test_server.exe] [17948-event poller 1] RtspPlayer.cpp:762 onPlayResult_l | 2 play rtsp timeout
+2025-11-20 23:13:46.515 T [test_server.exe] [17948-event poller 1] TcpClient.cpp:80 operator () | class mediakit::RtspPlayerImp-76 on err: 6(teardown)
+2025-11-20 23:14:46.544 W [test_server.exe] [17948-event poller 1] PlayerProxy.cpp:246 operator () | 重试播放[75]:rtsp://admin:admin123@192.168.1.64:554/cam/realmonitor?channel=1&subtype=1
+2025-11-20 23:14:46.544 D [test_server.exe] [17948-event poller 1] RtspPlayerImp.h:31 ~RtspPlayerImp | 
+2025-11-20 23:14:46.544 D [test_server.exe] [17948-event poller 1] RtspPlayer.cpp:37 ~RtspPlayer | 
+2025-11-20 23:14:46.544 T [test_server.exe] [17948-event poller 1] TcpClient.cpp:29 ~TcpClient | ~class mediakit::RtspPlayerImp-76
+2025-11-20 23:14:46.545 D [test_server.exe] [17948-event poller 1] RtspPlayer.cpp:92 play | rtsp://192.168.1.64:554/cam/realmonitor?channel=1&subtype=1 admin admin123 0
+2025-11-20 23:14:46.545 T [test_server.exe] [17948-event poller 1] TcpClient.cpp:84 startConnect | class mediakit::RtspPlayerImp-77 start connect 192.168.1.64:554
+2025-11-20 23:14:56.549 W [test_server.exe] [17948-event poller 1] RtspPlayer.cpp:762 onPlayResult_l | 2 play rtsp timeout
+2025-11-20 23:14:56.549 T [test_server.exe] [17948-event poller 1] TcpClient.cpp:80 operator () | class mediakit::RtspPlayerImp-77 on err: 6(teardown)
+2025-11-20 23:15:56.554 W [test_server.exe] [17948-event poller 1] PlayerProxy.cpp:246 operator () | 重试播放[76]:rtsp://admin:admin123@192.168.1.64:554/cam/realmonitor?channel=1&subtype=1
+2025-11-20 23:15:56.554 D [test_server.exe] [17948-event poller 1] RtspPlayerImp.h:31 ~RtspPlayerImp | 
+2025-11-20 23:15:56.554 D [test_server.exe] [17948-event poller 1] RtspPlayer.cpp:37 ~RtspPlayer | 
+2025-11-20 23:15:56.554 T [test_server.exe] [17948-event poller 1] TcpClient.cpp:29 ~TcpClient | ~class mediakit::RtspPlayerImp-77
+2025-11-20 23:15:56.554 D [test_server.exe] [17948-event poller 1] RtspPlayer.cpp:92 play | rtsp://192.168.1.64:554/cam/realmonitor?channel=1&subtype=1 admin admin123 0
+2025-11-20 23:15:56.554 T [test_server.exe] [17948-event poller 1] TcpClient.cpp:84 startConnect | class mediakit::RtspPlayerImp-78 start connect 192.168.1.64:554
+2025-11-20 23:16:06.566 W [test_server.exe] [17948-event poller 1] RtspPlayer.cpp:762 onPlayResult_l | 2 play rtsp timeout
+2025-11-20 23:16:06.566 T [test_server.exe] [17948-event poller 1] TcpClient.cpp:80 operator () | class mediakit::RtspPlayerImp-78 on err: 6(teardown)
+2025-11-20 23:17:06.569 W [test_server.exe] [17948-event poller 1] PlayerProxy.cpp:246 operator () | 重试播放[77]:rtsp://admin:admin123@192.168.1.64:554/cam/realmonitor?channel=1&subtype=1
+2025-11-20 23:17:06.569 D [test_server.exe] [17948-event poller 1] RtspPlayerImp.h:31 ~RtspPlayerImp | 
+2025-11-20 23:17:06.569 D [test_server.exe] [17948-event poller 1] RtspPlayer.cpp:37 ~RtspPlayer | 
+2025-11-20 23:17:06.569 T [test_server.exe] [17948-event poller 1] TcpClient.cpp:29 ~TcpClient | ~class mediakit::RtspPlayerImp-78
+2025-11-20 23:17:06.569 D [test_server.exe] [17948-event poller 1] RtspPlayer.cpp:92 play | rtsp://192.168.1.64:554/cam/realmonitor?channel=1&subtype=1 admin admin123 0
+2025-11-20 23:17:06.569 T [test_server.exe] [17948-event poller 1] TcpClient.cpp:84 startConnect | class mediakit::RtspPlayerImp-79 start connect 192.168.1.64:554
+2025-11-20 23:17:16.600 W [test_server.exe] [17948-event poller 1] RtspPlayer.cpp:762 onPlayResult_l | 2 play rtsp timeout
+2025-11-20 23:17:16.600 T [test_server.exe] [17948-event poller 1] TcpClient.cpp:80 operator () | class mediakit::RtspPlayerImp-79 on err: 6(teardown)
+2025-11-20 23:18:16.616 W [test_server.exe] [17948-event poller 1] PlayerProxy.cpp:246 operator () | 重试播放[78]:rtsp://admin:admin123@192.168.1.64:554/cam/realmonitor?channel=1&subtype=1
+2025-11-20 23:18:16.616 D [test_server.exe] [17948-event poller 1] RtspPlayerImp.h:31 ~RtspPlayerImp | 
+2025-11-20 23:18:16.616 D [test_server.exe] [17948-event poller 1] RtspPlayer.cpp:37 ~RtspPlayer | 
+2025-11-20 23:18:16.616 T [test_server.exe] [17948-event poller 1] TcpClient.cpp:29 ~TcpClient | ~class mediakit::RtspPlayerImp-79
+2025-11-20 23:18:16.616 D [test_server.exe] [17948-event poller 1] RtspPlayer.cpp:92 play | rtsp://192.168.1.64:554/cam/realmonitor?channel=1&subtype=1 admin admin123 0
+2025-11-20 23:18:16.616 T [test_server.exe] [17948-event poller 1] TcpClient.cpp:84 startConnect | class mediakit::RtspPlayerImp-80 start connect 192.168.1.64:554
+2025-11-20 23:18:26.615 W [test_server.exe] [17948-event poller 1] RtspPlayer.cpp:762 onPlayResult_l | 2 play rtsp timeout
+2025-11-20 23:18:26.615 T [test_server.exe] [17948-event poller 1] TcpClient.cpp:80 operator () | class mediakit::RtspPlayerImp-80 on err: 6(teardown)
+2025-11-20 23:19:26.645 W [test_server.exe] [17948-event poller 1] PlayerProxy.cpp:246 operator () | 重试播放[79]:rtsp://admin:admin123@192.168.1.64:554/cam/realmonitor?channel=1&subtype=1
+2025-11-20 23:19:26.646 D [test_server.exe] [17948-event poller 1] RtspPlayerImp.h:31 ~RtspPlayerImp | 
+2025-11-20 23:19:26.646 D [test_server.exe] [17948-event poller 1] RtspPlayer.cpp:37 ~RtspPlayer | 
+2025-11-20 23:19:26.646 T [test_server.exe] [17948-event poller 1] TcpClient.cpp:29 ~TcpClient | ~class mediakit::RtspPlayerImp-80
+2025-11-20 23:19:26.646 D [test_server.exe] [17948-event poller 1] RtspPlayer.cpp:92 play | rtsp://192.168.1.64:554/cam/realmonitor?channel=1&subtype=1 admin admin123 0
+2025-11-20 23:19:26.646 T [test_server.exe] [17948-event poller 1] TcpClient.cpp:84 startConnect | class mediakit::RtspPlayerImp-81 start connect 192.168.1.64:554
+2025-11-20 23:19:36.650 W [test_server.exe] [17948-event poller 1] RtspPlayer.cpp:762 onPlayResult_l | 2 play rtsp timeout
+2025-11-20 23:19:36.650 T [test_server.exe] [17948-event poller 1] TcpClient.cpp:80 operator () | class mediakit::RtspPlayerImp-81 on err: 6(teardown)
+2025-11-20 23:20:36.674 W [test_server.exe] [17948-event poller 1] PlayerProxy.cpp:246 operator () | 重试播放[80]:rtsp://admin:admin123@192.168.1.64:554/cam/realmonitor?channel=1&subtype=1
+2025-11-20 23:20:36.674 D [test_server.exe] [17948-event poller 1] RtspPlayerImp.h:31 ~RtspPlayerImp | 
+2025-11-20 23:20:36.674 D [test_server.exe] [17948-event poller 1] RtspPlayer.cpp:37 ~RtspPlayer | 
+2025-11-20 23:20:36.674 T [test_server.exe] [17948-event poller 1] TcpClient.cpp:29 ~TcpClient | ~class mediakit::RtspPlayerImp-81
+2025-11-20 23:20:36.674 D [test_server.exe] [17948-event poller 1] RtspPlayer.cpp:92 play | rtsp://192.168.1.64:554/cam/realmonitor?channel=1&subtype=1 admin admin123 0
+2025-11-20 23:20:36.674 T [test_server.exe] [17948-event poller 1] TcpClient.cpp:84 startConnect | class mediakit::RtspPlayerImp-82 start connect 192.168.1.64:554
+2025-11-20 23:20:46.699 W [test_server.exe] [17948-event poller 1] RtspPlayer.cpp:762 onPlayResult_l | 2 play rtsp timeout
+2025-11-20 23:20:46.699 T [test_server.exe] [17948-event poller 1] TcpClient.cpp:80 operator () | class mediakit::RtspPlayerImp-82 on err: 6(teardown)
+2025-11-20 23:21:46.725 W [test_server.exe] [17948-event poller 1] PlayerProxy.cpp:246 operator () | 重试播放[81]:rtsp://admin:admin123@192.168.1.64:554/cam/realmonitor?channel=1&subtype=1
+2025-11-20 23:21:46.726 D [test_server.exe] [17948-event poller 1] RtspPlayerImp.h:31 ~RtspPlayerImp | 
+2025-11-20 23:21:46.726 D [test_server.exe] [17948-event poller 1] RtspPlayer.cpp:37 ~RtspPlayer | 
+2025-11-20 23:21:46.726 T [test_server.exe] [17948-event poller 1] TcpClient.cpp:29 ~TcpClient | ~class mediakit::RtspPlayerImp-82
+2025-11-20 23:21:46.726 D [test_server.exe] [17948-event poller 1] RtspPlayer.cpp:92 play | rtsp://192.168.1.64:554/cam/realmonitor?channel=1&subtype=1 admin admin123 0
+2025-11-20 23:21:46.726 T [test_server.exe] [17948-event poller 1] TcpClient.cpp:84 startConnect | class mediakit::RtspPlayerImp-83 start connect 192.168.1.64:554
+2025-11-20 23:21:56.733 W [test_server.exe] [17948-event poller 1] RtspPlayer.cpp:762 onPlayResult_l | 2 play rtsp timeout
+2025-11-20 23:21:56.733 T [test_server.exe] [17948-event poller 1] TcpClient.cpp:80 operator () | class mediakit::RtspPlayerImp-83 on err: 6(teardown)
+2025-11-20 23:22:56.763 W [test_server.exe] [17948-event poller 1] PlayerProxy.cpp:246 operator () | 重试播放[82]:rtsp://admin:admin123@192.168.1.64:554/cam/realmonitor?channel=1&subtype=1
+2025-11-20 23:22:56.763 D [test_server.exe] [17948-event poller 1] RtspPlayerImp.h:31 ~RtspPlayerImp | 
+2025-11-20 23:22:56.763 D [test_server.exe] [17948-event poller 1] RtspPlayer.cpp:37 ~RtspPlayer | 
+2025-11-20 23:22:56.763 T [test_server.exe] [17948-event poller 1] TcpClient.cpp:29 ~TcpClient | ~class mediakit::RtspPlayerImp-83
+2025-11-20 23:22:56.763 D [test_server.exe] [17948-event poller 1] RtspPlayer.cpp:92 play | rtsp://192.168.1.64:554/cam/realmonitor?channel=1&subtype=1 admin admin123 0
+2025-11-20 23:22:56.763 T [test_server.exe] [17948-event poller 1] TcpClient.cpp:84 startConnect | class mediakit::RtspPlayerImp-84 start connect 192.168.1.64:554
+2025-11-20 23:23:06.786 W [test_server.exe] [17948-event poller 1] RtspPlayer.cpp:762 onPlayResult_l | 2 play rtsp timeout
+2025-11-20 23:23:06.786 T [test_server.exe] [17948-event poller 1] TcpClient.cpp:80 operator () | class mediakit::RtspPlayerImp-84 on err: 6(teardown)
+2025-11-20 23:24:06.820 W [test_server.exe] [17948-event poller 1] PlayerProxy.cpp:246 operator () | 重试播放[83]:rtsp://admin:admin123@192.168.1.64:554/cam/realmonitor?channel=1&subtype=1
+2025-11-20 23:24:06.820 D [test_server.exe] [17948-event poller 1] RtspPlayerImp.h:31 ~RtspPlayerImp | 
+2025-11-20 23:24:06.820 D [test_server.exe] [17948-event poller 1] RtspPlayer.cpp:37 ~RtspPlayer | 
+2025-11-20 23:24:06.820 T [test_server.exe] [17948-event poller 1] TcpClient.cpp:29 ~TcpClient | ~class mediakit::RtspPlayerImp-84
+2025-11-20 23:24:06.820 D [test_server.exe] [17948-event poller 1] RtspPlayer.cpp:92 play | rtsp://192.168.1.64:554/cam/realmonitor?channel=1&subtype=1 admin admin123 0
+2025-11-20 23:24:06.820 T [test_server.exe] [17948-event poller 1] TcpClient.cpp:84 startConnect | class mediakit::RtspPlayerImp-85 start connect 192.168.1.64:554
+2025-11-20 23:24:16.851 W [test_server.exe] [17948-event poller 1] RtspPlayer.cpp:762 onPlayResult_l | 2 play rtsp timeout
+2025-11-20 23:24:16.851 T [test_server.exe] [17948-event poller 1] TcpClient.cpp:80 operator () | class mediakit::RtspPlayerImp-85 on err: 6(teardown)
+2025-11-20 23:25:16.872 W [test_server.exe] [17948-event poller 1] PlayerProxy.cpp:246 operator () | 重试播放[84]:rtsp://admin:admin123@192.168.1.64:554/cam/realmonitor?channel=1&subtype=1
+2025-11-20 23:25:16.873 D [test_server.exe] [17948-event poller 1] RtspPlayerImp.h:31 ~RtspPlayerImp | 
+2025-11-20 23:25:16.873 D [test_server.exe] [17948-event poller 1] RtspPlayer.cpp:37 ~RtspPlayer | 
+2025-11-20 23:25:16.873 T [test_server.exe] [17948-event poller 1] TcpClient.cpp:29 ~TcpClient | ~class mediakit::RtspPlayerImp-85
+2025-11-20 23:25:16.873 D [test_server.exe] [17948-event poller 1] RtspPlayer.cpp:92 play | rtsp://192.168.1.64:554/cam/realmonitor?channel=1&subtype=1 admin admin123 0
+2025-11-20 23:25:16.873 T [test_server.exe] [17948-event poller 1] TcpClient.cpp:84 startConnect | class mediakit::RtspPlayerImp-86 start connect 192.168.1.64:554
+2025-11-20 23:25:26.875 W [test_server.exe] [17948-event poller 1] RtspPlayer.cpp:762 onPlayResult_l | 2 play rtsp timeout
+2025-11-20 23:25:26.875 T [test_server.exe] [17948-event poller 1] TcpClient.cpp:80 operator () | class mediakit::RtspPlayerImp-86 on err: 6(teardown)
+2025-11-20 23:26:26.896 W [test_server.exe] [17948-event poller 1] PlayerProxy.cpp:246 operator () | 重试播放[85]:rtsp://admin:admin123@192.168.1.64:554/cam/realmonitor?channel=1&subtype=1
+2025-11-20 23:26:26.896 D [test_server.exe] [17948-event poller 1] RtspPlayerImp.h:31 ~RtspPlayerImp | 
+2025-11-20 23:26:26.896 D [test_server.exe] [17948-event poller 1] RtspPlayer.cpp:37 ~RtspPlayer | 
+2025-11-20 23:26:26.896 T [test_server.exe] [17948-event poller 1] TcpClient.cpp:29 ~TcpClient | ~class mediakit::RtspPlayerImp-86
+2025-11-20 23:26:26.897 D [test_server.exe] [17948-event poller 1] RtspPlayer.cpp:92 play | rtsp://192.168.1.64:554/cam/realmonitor?channel=1&subtype=1 admin admin123 0
+2025-11-20 23:26:26.897 T [test_server.exe] [17948-event poller 1] TcpClient.cpp:84 startConnect | class mediakit::RtspPlayerImp-87 start connect 192.168.1.64:554
+2025-11-20 23:26:36.911 W [test_server.exe] [17948-event poller 1] RtspPlayer.cpp:762 onPlayResult_l | 2 play rtsp timeout
+2025-11-20 23:26:36.911 T [test_server.exe] [17948-event poller 1] TcpClient.cpp:80 operator () | class mediakit::RtspPlayerImp-87 on err: 6(teardown)
+2025-11-20 23:27:36.917 W [test_server.exe] [17948-event poller 1] PlayerProxy.cpp:246 operator () | 重试播放[86]:rtsp://admin:admin123@192.168.1.64:554/cam/realmonitor?channel=1&subtype=1
+2025-11-20 23:27:36.917 D [test_server.exe] [17948-event poller 1] RtspPlayerImp.h:31 ~RtspPlayerImp | 
+2025-11-20 23:27:36.917 D [test_server.exe] [17948-event poller 1] RtspPlayer.cpp:37 ~RtspPlayer | 
+2025-11-20 23:27:36.917 T [test_server.exe] [17948-event poller 1] TcpClient.cpp:29 ~TcpClient | ~class mediakit::RtspPlayerImp-87
+2025-11-20 23:27:36.917 D [test_server.exe] [17948-event poller 1] RtspPlayer.cpp:92 play | rtsp://192.168.1.64:554/cam/realmonitor?channel=1&subtype=1 admin admin123 0
+2025-11-20 23:27:36.917 T [test_server.exe] [17948-event poller 1] TcpClient.cpp:84 startConnect | class mediakit::RtspPlayerImp-88 start connect 192.168.1.64:554
+2025-11-20 23:27:46.919 W [test_server.exe] [17948-event poller 1] RtspPlayer.cpp:762 onPlayResult_l | 2 play rtsp timeout
+2025-11-20 23:27:46.919 T [test_server.exe] [17948-event poller 1] TcpClient.cpp:80 operator () | class mediakit::RtspPlayerImp-88 on err: 6(teardown)
+2025-11-20 23:28:46.922 W [test_server.exe] [17948-event poller 1] PlayerProxy.cpp:246 operator () | 重试播放[87]:rtsp://admin:admin123@192.168.1.64:554/cam/realmonitor?channel=1&subtype=1
+2025-11-20 23:28:46.922 D [test_server.exe] [17948-event poller 1] RtspPlayerImp.h:31 ~RtspPlayerImp | 
+2025-11-20 23:28:46.922 D [test_server.exe] [17948-event poller 1] RtspPlayer.cpp:37 ~RtspPlayer | 
+2025-11-20 23:28:46.922 T [test_server.exe] [17948-event poller 1] TcpClient.cpp:29 ~TcpClient | ~class mediakit::RtspPlayerImp-88
+2025-11-20 23:28:46.922 D [test_server.exe] [17948-event poller 1] RtspPlayer.cpp:92 play | rtsp://192.168.1.64:554/cam/realmonitor?channel=1&subtype=1 admin admin123 0
+2025-11-20 23:28:46.922 T [test_server.exe] [17948-event poller 1] TcpClient.cpp:84 startConnect | class mediakit::RtspPlayerImp-89 start connect 192.168.1.64:554
+2025-11-20 23:28:56.944 W [test_server.exe] [17948-event poller 1] RtspPlayer.cpp:762 onPlayResult_l | 2 play rtsp timeout
+2025-11-20 23:28:56.945 T [test_server.exe] [17948-event poller 1] TcpClient.cpp:80 operator () | class mediakit::RtspPlayerImp-89 on err: 6(teardown)
+2025-11-20 23:29:56.948 W [test_server.exe] [17948-event poller 1] PlayerProxy.cpp:246 operator () | 重试播放[88]:rtsp://admin:admin123@192.168.1.64:554/cam/realmonitor?channel=1&subtype=1
+2025-11-20 23:29:56.948 D [test_server.exe] [17948-event poller 1] RtspPlayerImp.h:31 ~RtspPlayerImp | 
+2025-11-20 23:29:56.948 D [test_server.exe] [17948-event poller 1] RtspPlayer.cpp:37 ~RtspPlayer | 
+2025-11-20 23:29:56.948 T [test_server.exe] [17948-event poller 1] TcpClient.cpp:29 ~TcpClient | ~class mediakit::RtspPlayerImp-89
+2025-11-20 23:29:56.948 D [test_server.exe] [17948-event poller 1] RtspPlayer.cpp:92 play | rtsp://192.168.1.64:554/cam/realmonitor?channel=1&subtype=1 admin admin123 0
+2025-11-20 23:29:56.948 T [test_server.exe] [17948-event poller 1] TcpClient.cpp:84 startConnect | class mediakit::RtspPlayerImp-90 start connect 192.168.1.64:554
+2025-11-20 23:30:06.967 W [test_server.exe] [17948-event poller 1] RtspPlayer.cpp:762 onPlayResult_l | 2 play rtsp timeout
+2025-11-20 23:30:06.967 T [test_server.exe] [17948-event poller 1] TcpClient.cpp:80 operator () | class mediakit::RtspPlayerImp-90 on err: 6(teardown)
+2025-11-20 23:31:06.954 W [test_server.exe] [17948-event poller 1] PlayerProxy.cpp:246 operator () | 重试播放[89]:rtsp://admin:admin123@192.168.1.64:554/cam/realmonitor?channel=1&subtype=1
+2025-11-20 23:31:06.955 D [test_server.exe] [17948-event poller 1] RtspPlayerImp.h:31 ~RtspPlayerImp | 
+2025-11-20 23:31:06.955 D [test_server.exe] [17948-event poller 1] RtspPlayer.cpp:37 ~RtspPlayer | 
+2025-11-20 23:31:06.955 T [test_server.exe] [17948-event poller 1] TcpClient.cpp:29 ~TcpClient | ~class mediakit::RtspPlayerImp-90
+2025-11-20 23:31:06.955 D [test_server.exe] [17948-event poller 1] RtspPlayer.cpp:92 play | rtsp://192.168.1.64:554/cam/realmonitor?channel=1&subtype=1 admin admin123 0
+2025-11-20 23:31:06.955 T [test_server.exe] [17948-event poller 1] TcpClient.cpp:84 startConnect | class mediakit::RtspPlayerImp-91 start connect 192.168.1.64:554
+2025-11-20 23:31:16.960 W [test_server.exe] [17948-event poller 1] RtspPlayer.cpp:762 onPlayResult_l | 2 play rtsp timeout
+2025-11-20 23:31:16.960 T [test_server.exe] [17948-event poller 1] TcpClient.cpp:80 operator () | class mediakit::RtspPlayerImp-91 on err: 6(teardown)
+2025-11-20 23:32:16.984 W [test_server.exe] [17948-event poller 1] PlayerProxy.cpp:246 operator () | 重试播放[90]:rtsp://admin:admin123@192.168.1.64:554/cam/realmonitor?channel=1&subtype=1
+2025-11-20 23:32:16.984 D [test_server.exe] [17948-event poller 1] RtspPlayerImp.h:31 ~RtspPlayerImp | 
+2025-11-20 23:32:16.984 D [test_server.exe] [17948-event poller 1] RtspPlayer.cpp:37 ~RtspPlayer | 
+2025-11-20 23:32:16.984 T [test_server.exe] [17948-event poller 1] TcpClient.cpp:29 ~TcpClient | ~class mediakit::RtspPlayerImp-91
+2025-11-20 23:32:16.984 D [test_server.exe] [17948-event poller 1] RtspPlayer.cpp:92 play | rtsp://192.168.1.64:554/cam/realmonitor?channel=1&subtype=1 admin admin123 0
+2025-11-20 23:32:16.984 T [test_server.exe] [17948-event poller 1] TcpClient.cpp:84 startConnect | class mediakit::RtspPlayerImp-92 start connect 192.168.1.64:554
+2025-11-20 23:32:26.991 W [test_server.exe] [17948-event poller 1] RtspPlayer.cpp:762 onPlayResult_l | 2 play rtsp timeout
+2025-11-20 23:32:26.991 T [test_server.exe] [17948-event poller 1] TcpClient.cpp:80 operator () | class mediakit::RtspPlayerImp-92 on err: 6(teardown)
+2025-11-20 23:33:26.997 W [test_server.exe] [17948-event poller 1] PlayerProxy.cpp:246 operator () | 重试播放[91]:rtsp://admin:admin123@192.168.1.64:554/cam/realmonitor?channel=1&subtype=1
+2025-11-20 23:33:26.997 D [test_server.exe] [17948-event poller 1] RtspPlayerImp.h:31 ~RtspPlayerImp | 
+2025-11-20 23:33:26.997 D [test_server.exe] [17948-event poller 1] RtspPlayer.cpp:37 ~RtspPlayer | 
+2025-11-20 23:33:26.997 T [test_server.exe] [17948-event poller 1] TcpClient.cpp:29 ~TcpClient | ~class mediakit::RtspPlayerImp-92
+2025-11-20 23:33:26.997 D [test_server.exe] [17948-event poller 1] RtspPlayer.cpp:92 play | rtsp://192.168.1.64:554/cam/realmonitor?channel=1&subtype=1 admin admin123 0
+2025-11-20 23:33:26.997 T [test_server.exe] [17948-event poller 1] TcpClient.cpp:84 startConnect | class mediakit::RtspPlayerImp-93 start connect 192.168.1.64:554
+2025-11-20 23:33:36.998 W [test_server.exe] [17948-event poller 1] RtspPlayer.cpp:762 onPlayResult_l | 2 play rtsp timeout
+2025-11-20 23:33:36.998 T [test_server.exe] [17948-event poller 1] TcpClient.cpp:80 operator () | class mediakit::RtspPlayerImp-93 on err: 6(teardown)
+2025-11-20 23:34:37.021 W [test_server.exe] [17948-event poller 1] PlayerProxy.cpp:246 operator () | 重试播放[92]:rtsp://admin:admin123@192.168.1.64:554/cam/realmonitor?channel=1&subtype=1
+2025-11-20 23:34:37.021 D [test_server.exe] [17948-event poller 1] RtspPlayerImp.h:31 ~RtspPlayerImp | 
+2025-11-20 23:34:37.021 D [test_server.exe] [17948-event poller 1] RtspPlayer.cpp:37 ~RtspPlayer | 
+2025-11-20 23:34:37.021 T [test_server.exe] [17948-event poller 1] TcpClient.cpp:29 ~TcpClient | ~class mediakit::RtspPlayerImp-93
+2025-11-20 23:34:37.021 D [test_server.exe] [17948-event poller 1] RtspPlayer.cpp:92 play | rtsp://192.168.1.64:554/cam/realmonitor?channel=1&subtype=1 admin admin123 0
+2025-11-20 23:34:37.021 T [test_server.exe] [17948-event poller 1] TcpClient.cpp:84 startConnect | class mediakit::RtspPlayerImp-94 start connect 192.168.1.64:554
+2025-11-20 23:34:47.050 W [test_server.exe] [17948-event poller 1] RtspPlayer.cpp:762 onPlayResult_l | 2 play rtsp timeout
+2025-11-20 23:34:47.051 T [test_server.exe] [17948-event poller 1] TcpClient.cpp:80 operator () | class mediakit::RtspPlayerImp-94 on err: 6(teardown)
+2025-11-20 23:35:47.059 W [test_server.exe] [17948-event poller 1] PlayerProxy.cpp:246 operator () | 重试播放[93]:rtsp://admin:admin123@192.168.1.64:554/cam/realmonitor?channel=1&subtype=1
+2025-11-20 23:35:47.060 D [test_server.exe] [17948-event poller 1] RtspPlayerImp.h:31 ~RtspPlayerImp | 
+2025-11-20 23:35:47.060 D [test_server.exe] [17948-event poller 1] RtspPlayer.cpp:37 ~RtspPlayer | 
+2025-11-20 23:35:47.060 T [test_server.exe] [17948-event poller 1] TcpClient.cpp:29 ~TcpClient | ~class mediakit::RtspPlayerImp-94
+2025-11-20 23:35:47.060 D [test_server.exe] [17948-event poller 1] RtspPlayer.cpp:92 play | rtsp://192.168.1.64:554/cam/realmonitor?channel=1&subtype=1 admin admin123 0
+2025-11-20 23:35:47.061 T [test_server.exe] [17948-event poller 1] TcpClient.cpp:84 startConnect | class mediakit::RtspPlayerImp-95 start connect 192.168.1.64:554
+2025-11-20 23:35:57.079 W [test_server.exe] [17948-event poller 1] RtspPlayer.cpp:762 onPlayResult_l | 2 play rtsp timeout
+2025-11-20 23:35:57.079 T [test_server.exe] [17948-event poller 1] TcpClient.cpp:80 operator () | class mediakit::RtspPlayerImp-95 on err: 6(teardown)
+2025-11-20 23:36:57.097 W [test_server.exe] [17948-event poller 1] PlayerProxy.cpp:246 operator () | 重试播放[94]:rtsp://admin:admin123@192.168.1.64:554/cam/realmonitor?channel=1&subtype=1
+2025-11-20 23:36:57.097 D [test_server.exe] [17948-event poller 1] RtspPlayerImp.h:31 ~RtspPlayerImp | 
+2025-11-20 23:36:57.097 D [test_server.exe] [17948-event poller 1] RtspPlayer.cpp:37 ~RtspPlayer | 
+2025-11-20 23:36:57.097 T [test_server.exe] [17948-event poller 1] TcpClient.cpp:29 ~TcpClient | ~class mediakit::RtspPlayerImp-95
+2025-11-20 23:36:57.098 D [test_server.exe] [17948-event poller 1] RtspPlayer.cpp:92 play | rtsp://192.168.1.64:554/cam/realmonitor?channel=1&subtype=1 admin admin123 0
+2025-11-20 23:36:57.098 T [test_server.exe] [17948-event poller 1] TcpClient.cpp:84 startConnect | class mediakit::RtspPlayerImp-96 start connect 192.168.1.64:554
+2025-11-20 23:37:07.107 W [test_server.exe] [17948-event poller 1] RtspPlayer.cpp:762 onPlayResult_l | 2 play rtsp timeout
+2025-11-20 23:37:07.107 T [test_server.exe] [17948-event poller 1] TcpClient.cpp:80 operator () | class mediakit::RtspPlayerImp-96 on err: 6(teardown)
+2025-11-20 23:38:07.126 W [test_server.exe] [17948-event poller 1] PlayerProxy.cpp:246 operator () | 重试播放[95]:rtsp://admin:admin123@192.168.1.64:554/cam/realmonitor?channel=1&subtype=1
+2025-11-20 23:38:07.126 D [test_server.exe] [17948-event poller 1] RtspPlayerImp.h:31 ~RtspPlayerImp | 
+2025-11-20 23:38:07.126 D [test_server.exe] [17948-event poller 1] RtspPlayer.cpp:37 ~RtspPlayer | 
+2025-11-20 23:38:07.126 T [test_server.exe] [17948-event poller 1] TcpClient.cpp:29 ~TcpClient | ~class mediakit::RtspPlayerImp-96
+2025-11-20 23:38:07.126 D [test_server.exe] [17948-event poller 1] RtspPlayer.cpp:92 play | rtsp://192.168.1.64:554/cam/realmonitor?channel=1&subtype=1 admin admin123 0
+2025-11-20 23:38:07.126 T [test_server.exe] [17948-event poller 1] TcpClient.cpp:84 startConnect | class mediakit::RtspPlayerImp-97 start connect 192.168.1.64:554
+2025-11-20 23:38:17.132 W [test_server.exe] [17948-event poller 1] RtspPlayer.cpp:762 onPlayResult_l | 2 play rtsp timeout
+2025-11-20 23:38:17.132 T [test_server.exe] [17948-event poller 1] TcpClient.cpp:80 operator () | class mediakit::RtspPlayerImp-97 on err: 6(teardown)
+2025-11-20 23:39:17.136 W [test_server.exe] [17948-event poller 1] PlayerProxy.cpp:246 operator () | 重试播放[96]:rtsp://admin:admin123@192.168.1.64:554/cam/realmonitor?channel=1&subtype=1
+2025-11-20 23:39:17.136 D [test_server.exe] [17948-event poller 1] RtspPlayerImp.h:31 ~RtspPlayerImp | 
+2025-11-20 23:39:17.136 D [test_server.exe] [17948-event poller 1] RtspPlayer.cpp:37 ~RtspPlayer | 
+2025-11-20 23:39:17.136 T [test_server.exe] [17948-event poller 1] TcpClient.cpp:29 ~TcpClient | ~class mediakit::RtspPlayerImp-97
+2025-11-20 23:39:17.136 D [test_server.exe] [17948-event poller 1] RtspPlayer.cpp:92 play | rtsp://192.168.1.64:554/cam/realmonitor?channel=1&subtype=1 admin admin123 0
+2025-11-20 23:39:17.136 T [test_server.exe] [17948-event poller 1] TcpClient.cpp:84 startConnect | class mediakit::RtspPlayerImp-98 start connect 192.168.1.64:554
+2025-11-20 23:39:27.142 W [test_server.exe] [17948-event poller 1] RtspPlayer.cpp:762 onPlayResult_l | 2 play rtsp timeout
+2025-11-20 23:39:27.142 T [test_server.exe] [17948-event poller 1] TcpClient.cpp:80 operator () | class mediakit::RtspPlayerImp-98 on err: 6(teardown)
+2025-11-20 23:40:27.167 W [test_server.exe] [17948-event poller 1] PlayerProxy.cpp:246 operator () | 重试播放[97]:rtsp://admin:admin123@192.168.1.64:554/cam/realmonitor?channel=1&subtype=1
+2025-11-20 23:40:27.167 D [test_server.exe] [17948-event poller 1] RtspPlayerImp.h:31 ~RtspPlayerImp | 
+2025-11-20 23:40:27.167 D [test_server.exe] [17948-event poller 1] RtspPlayer.cpp:37 ~RtspPlayer | 
+2025-11-20 23:40:27.167 T [test_server.exe] [17948-event poller 1] TcpClient.cpp:29 ~TcpClient | ~class mediakit::RtspPlayerImp-98
+2025-11-20 23:40:27.167 D [test_server.exe] [17948-event poller 1] RtspPlayer.cpp:92 play | rtsp://192.168.1.64:554/cam/realmonitor?channel=1&subtype=1 admin admin123 0
+2025-11-20 23:40:27.167 T [test_server.exe] [17948-event poller 1] TcpClient.cpp:84 startConnect | class mediakit::RtspPlayerImp-99 start connect 192.168.1.64:554
+2025-11-20 23:40:37.181 W [test_server.exe] [17948-event poller 1] RtspPlayer.cpp:762 onPlayResult_l | 2 play rtsp timeout
+2025-11-20 23:40:37.181 T [test_server.exe] [17948-event poller 1] TcpClient.cpp:80 operator () | class mediakit::RtspPlayerImp-99 on err: 6(teardown)
+2025-11-20 23:41:37.192 W [test_server.exe] [17948-event poller 1] PlayerProxy.cpp:246 operator () | 重试播放[98]:rtsp://admin:admin123@192.168.1.64:554/cam/realmonitor?channel=1&subtype=1
+2025-11-20 23:41:37.193 D [test_server.exe] [17948-event poller 1] RtspPlayerImp.h:31 ~RtspPlayerImp | 
+2025-11-20 23:41:37.193 D [test_server.exe] [17948-event poller 1] RtspPlayer.cpp:37 ~RtspPlayer | 
+2025-11-20 23:41:37.193 T [test_server.exe] [17948-event poller 1] TcpClient.cpp:29 ~TcpClient | ~class mediakit::RtspPlayerImp-99
+2025-11-20 23:41:37.193 D [test_server.exe] [17948-event poller 1] RtspPlayer.cpp:92 play | rtsp://192.168.1.64:554/cam/realmonitor?channel=1&subtype=1 admin admin123 0
+2025-11-20 23:41:37.193 T [test_server.exe] [17948-event poller 1] TcpClient.cpp:84 startConnect | class mediakit::RtspPlayerImp-100 start connect 192.168.1.64:554
+2025-11-20 23:41:47.202 W [test_server.exe] [17948-event poller 1] RtspPlayer.cpp:762 onPlayResult_l | 2 play rtsp timeout
+2025-11-20 23:41:47.202 T [test_server.exe] [17948-event poller 1] TcpClient.cpp:80 operator () | class mediakit::RtspPlayerImp-100 on err: 6(teardown)
+2025-11-20 23:42:47.204 W [test_server.exe] [17948-event poller 1] PlayerProxy.cpp:246 operator () | 重试播放[99]:rtsp://admin:admin123@192.168.1.64:554/cam/realmonitor?channel=1&subtype=1
+2025-11-20 23:42:47.204 D [test_server.exe] [17948-event poller 1] RtspPlayerImp.h:31 ~RtspPlayerImp | 
+2025-11-20 23:42:47.204 D [test_server.exe] [17948-event poller 1] RtspPlayer.cpp:37 ~RtspPlayer | 
+2025-11-20 23:42:47.204 T [test_server.exe] [17948-event poller 1] TcpClient.cpp:29 ~TcpClient | ~class mediakit::RtspPlayerImp-100
+2025-11-20 23:42:47.205 D [test_server.exe] [17948-event poller 1] RtspPlayer.cpp:92 play | rtsp://192.168.1.64:554/cam/realmonitor?channel=1&subtype=1 admin admin123 0
+2025-11-20 23:42:47.205 T [test_server.exe] [17948-event poller 1] TcpClient.cpp:84 startConnect | class mediakit::RtspPlayerImp-101 start connect 192.168.1.64:554
+2025-11-20 23:42:57.204 W [test_server.exe] [17948-event poller 1] RtspPlayer.cpp:762 onPlayResult_l | 2 play rtsp timeout
+2025-11-20 23:42:57.204 T [test_server.exe] [17948-event poller 1] TcpClient.cpp:80 operator () | class mediakit::RtspPlayerImp-101 on err: 6(teardown)
+2025-11-20 23:43:57.215 W [test_server.exe] [17948-event poller 1] PlayerProxy.cpp:246 operator () | 重试播放[100]:rtsp://admin:admin123@192.168.1.64:554/cam/realmonitor?channel=1&subtype=1
+2025-11-20 23:43:57.216 D [test_server.exe] [17948-event poller 1] RtspPlayerImp.h:31 ~RtspPlayerImp | 
+2025-11-20 23:43:57.216 D [test_server.exe] [17948-event poller 1] RtspPlayer.cpp:37 ~RtspPlayer | 
+2025-11-20 23:43:57.216 T [test_server.exe] [17948-event poller 1] TcpClient.cpp:29 ~TcpClient | ~class mediakit::RtspPlayerImp-101
+2025-11-20 23:43:57.216 D [test_server.exe] [17948-event poller 1] RtspPlayer.cpp:92 play | rtsp://192.168.1.64:554/cam/realmonitor?channel=1&subtype=1 admin admin123 0
+2025-11-20 23:43:57.216 T [test_server.exe] [17948-event poller 1] TcpClient.cpp:84 startConnect | class mediakit::RtspPlayerImp-102 start connect 192.168.1.64:554
+2025-11-20 23:44:07.224 W [test_server.exe] [17948-event poller 1] RtspPlayer.cpp:762 onPlayResult_l | 2 play rtsp timeout
+2025-11-20 23:44:07.224 T [test_server.exe] [17948-event poller 1] TcpClient.cpp:80 operator () | class mediakit::RtspPlayerImp-102 on err: 6(teardown)
+2025-11-20 23:45:07.246 W [test_server.exe] [17948-event poller 1] PlayerProxy.cpp:246 operator () | 重试播放[101]:rtsp://admin:admin123@192.168.1.64:554/cam/realmonitor?channel=1&subtype=1
+2025-11-20 23:45:07.247 D [test_server.exe] [17948-event poller 1] RtspPlayerImp.h:31 ~RtspPlayerImp | 
+2025-11-20 23:45:07.247 D [test_server.exe] [17948-event poller 1] RtspPlayer.cpp:37 ~RtspPlayer | 
+2025-11-20 23:45:07.247 T [test_server.exe] [17948-event poller 1] TcpClient.cpp:29 ~TcpClient | ~class mediakit::RtspPlayerImp-102
+2025-11-20 23:45:07.247 D [test_server.exe] [17948-event poller 1] RtspPlayer.cpp:92 play | rtsp://192.168.1.64:554/cam/realmonitor?channel=1&subtype=1 admin admin123 0
+2025-11-20 23:45:07.247 T [test_server.exe] [17948-event poller 1] TcpClient.cpp:84 startConnect | class mediakit::RtspPlayerImp-103 start connect 192.168.1.64:554
+2025-11-20 23:45:17.273 W [test_server.exe] [17948-event poller 1] RtspPlayer.cpp:762 onPlayResult_l | 2 play rtsp timeout
+2025-11-20 23:45:17.273 T [test_server.exe] [17948-event poller 1] TcpClient.cpp:80 operator () | class mediakit::RtspPlayerImp-103 on err: 6(teardown)
+2025-11-20 23:46:17.303 W [test_server.exe] [17948-event poller 1] PlayerProxy.cpp:246 operator () | 重试播放[102]:rtsp://admin:admin123@192.168.1.64:554/cam/realmonitor?channel=1&subtype=1
+2025-11-20 23:46:17.303 D [test_server.exe] [17948-event poller 1] RtspPlayerImp.h:31 ~RtspPlayerImp | 
+2025-11-20 23:46:17.303 D [test_server.exe] [17948-event poller 1] RtspPlayer.cpp:37 ~RtspPlayer | 
+2025-11-20 23:46:17.303 T [test_server.exe] [17948-event poller 1] TcpClient.cpp:29 ~TcpClient | ~class mediakit::RtspPlayerImp-103
+2025-11-20 23:46:17.303 D [test_server.exe] [17948-event poller 1] RtspPlayer.cpp:92 play | rtsp://192.168.1.64:554/cam/realmonitor?channel=1&subtype=1 admin admin123 0
+2025-11-20 23:46:17.303 T [test_server.exe] [17948-event poller 1] TcpClient.cpp:84 startConnect | class mediakit::RtspPlayerImp-104 start connect 192.168.1.64:554
+2025-11-20 23:46:27.309 W [test_server.exe] [17948-event poller 1] RtspPlayer.cpp:762 onPlayResult_l | 2 play rtsp timeout
+2025-11-20 23:46:27.309 T [test_server.exe] [17948-event poller 1] TcpClient.cpp:80 operator () | class mediakit::RtspPlayerImp-104 on err: 6(teardown)
+2025-11-20 23:47:27.318 W [test_server.exe] [17948-event poller 1] PlayerProxy.cpp:246 operator () | 重试播放[103]:rtsp://admin:admin123@192.168.1.64:554/cam/realmonitor?channel=1&subtype=1
+2025-11-20 23:47:27.318 D [test_server.exe] [17948-event poller 1] RtspPlayerImp.h:31 ~RtspPlayerImp | 
+2025-11-20 23:47:27.318 D [test_server.exe] [17948-event poller 1] RtspPlayer.cpp:37 ~RtspPlayer | 
+2025-11-20 23:47:27.318 T [test_server.exe] [17948-event poller 1] TcpClient.cpp:29 ~TcpClient | ~class mediakit::RtspPlayerImp-104
+2025-11-20 23:47:27.319 D [test_server.exe] [17948-event poller 1] RtspPlayer.cpp:92 play | rtsp://192.168.1.64:554/cam/realmonitor?channel=1&subtype=1 admin admin123 0
+2025-11-20 23:47:27.319 T [test_server.exe] [17948-event poller 1] TcpClient.cpp:84 startConnect | class mediakit::RtspPlayerImp-105 start connect 192.168.1.64:554
+2025-11-20 23:47:37.346 W [test_server.exe] [17948-event poller 1] RtspPlayer.cpp:762 onPlayResult_l | 2 play rtsp timeout
+2025-11-20 23:47:37.346 T [test_server.exe] [17948-event poller 1] TcpClient.cpp:80 operator () | class mediakit::RtspPlayerImp-105 on err: 6(teardown)
+2025-11-20 23:48:10.586 T [test_server.exe] [17948-event poller 3] TcpServer.h:72 operator () | 5-608(127.0.0.1:53103) class toolkit::SessionWithSSL<class mediakit::HttpSession>
+2025-11-20 23:48:10.598 W [test_server.exe] [17948-event poller 3] SSLBox.cpp:131 findCertificate | Can not find any certificate of host: cdn-ima.33across.com, select default certificate of: 
+2025-11-20 23:48:10.598 W [test_server.exe] [17948-event poller 3] SSLBox.cpp:302 getSSLCtx_l | Server with ssl must have certification and key
+2025-11-20 23:48:10.602 T [test_server.exe] [17948-event poller 3] TcpServer.cpp:210 operator () | 5-608(127.0.0.1:53103) class toolkit::SessionWithSSL<class mediakit::HttpSession> on err: 1(end of file)
+2025-11-20 23:48:10.602 T [test_server.exe] [17948-event poller 3] TcpServer.h:66 operator () | 5-608(127.0.0.1:53103) ~class toolkit::SessionWithSSL<class mediakit::HttpSession>
+2025-11-20 23:48:10.603 T [test_server.exe] [17948-event poller 4] TcpServer.h:72 operator () | 6-608(127.0.0.1:51261) class toolkit::SessionWithSSL<class mediakit::HttpSession>
+2025-11-20 23:48:10.604 W [test_server.exe] [17948-event poller 4] SSLBox.cpp:131 findCertificate | Can not find any certificate of host: cdn-ima.33across.com, select default certificate of: 
+2025-11-20 23:48:10.604 W [test_server.exe] [17948-event poller 4] SSLBox.cpp:302 getSSLCtx_l | Server with ssl must have certification and key
+2025-11-20 23:48:10.604 T [test_server.exe] [17948-event poller 4] TcpServer.cpp:210 operator () | 6-608(127.0.0.1:51261) class toolkit::SessionWithSSL<class mediakit::HttpSession> on err: 1(end of file)
+2025-11-20 23:48:10.604 T [test_server.exe] [17948-event poller 4] TcpServer.h:66 operator () | 6-608(127.0.0.1:51261) ~class toolkit::SessionWithSSL<class mediakit::HttpSession>
+2025-11-20 23:48:37.364 W [test_server.exe] [17948-event poller 1] PlayerProxy.cpp:246 operator () | 重试播放[104]:rtsp://admin:admin123@192.168.1.64:554/cam/realmonitor?channel=1&subtype=1
+2025-11-20 23:48:37.365 D [test_server.exe] [17948-event poller 1] RtspPlayerImp.h:31 ~RtspPlayerImp | 
+2025-11-20 23:48:37.365 D [test_server.exe] [17948-event poller 1] RtspPlayer.cpp:37 ~RtspPlayer | 
+2025-11-20 23:48:37.365 T [test_server.exe] [17948-event poller 1] TcpClient.cpp:29 ~TcpClient | ~class mediakit::RtspPlayerImp-105
+2025-11-20 23:48:37.365 D [test_server.exe] [17948-event poller 1] RtspPlayer.cpp:92 play | rtsp://192.168.1.64:554/cam/realmonitor?channel=1&subtype=1 admin admin123 0
+2025-11-20 23:48:37.365 T [test_server.exe] [17948-event poller 1] TcpClient.cpp:84 startConnect | class mediakit::RtspPlayerImp-106 start connect 192.168.1.64:554
+2025-11-20 23:48:47.366 W [test_server.exe] [17948-event poller 1] RtspPlayer.cpp:762 onPlayResult_l | 2 play rtsp timeout
+2025-11-20 23:48:47.366 T [test_server.exe] [17948-event poller 1] TcpClient.cpp:80 operator () | class mediakit::RtspPlayerImp-106 on err: 6(teardown)
+2025-11-20 23:49:47.397 W [test_server.exe] [17948-event poller 1] PlayerProxy.cpp:246 operator () | 重试播放[105]:rtsp://admin:admin123@192.168.1.64:554/cam/realmonitor?channel=1&subtype=1
+2025-11-20 23:49:47.397 D [test_server.exe] [17948-event poller 1] RtspPlayerImp.h:31 ~RtspPlayerImp | 
+2025-11-20 23:49:47.397 D [test_server.exe] [17948-event poller 1] RtspPlayer.cpp:37 ~RtspPlayer | 
+2025-11-20 23:49:47.397 T [test_server.exe] [17948-event poller 1] TcpClient.cpp:29 ~TcpClient | ~class mediakit::RtspPlayerImp-106
+2025-11-20 23:49:47.397 D [test_server.exe] [17948-event poller 1] RtspPlayer.cpp:92 play | rtsp://192.168.1.64:554/cam/realmonitor?channel=1&subtype=1 admin admin123 0
+2025-11-20 23:49:47.397 T [test_server.exe] [17948-event poller 1] TcpClient.cpp:84 startConnect | class mediakit::RtspPlayerImp-107 start connect 192.168.1.64:554
+2025-11-20 23:49:57.398 W [test_server.exe] [17948-event poller 1] RtspPlayer.cpp:762 onPlayResult_l | 2 play rtsp timeout
+2025-11-20 23:49:57.398 T [test_server.exe] [17948-event poller 1] TcpClient.cpp:80 operator () | class mediakit::RtspPlayerImp-107 on err: 6(teardown)
+2025-11-20 23:50:57.413 W [test_server.exe] [17948-event poller 1] PlayerProxy.cpp:246 operator () | 重试播放[106]:rtsp://admin:admin123@192.168.1.64:554/cam/realmonitor?channel=1&subtype=1
+2025-11-20 23:50:57.413 D [test_server.exe] [17948-event poller 1] RtspPlayerImp.h:31 ~RtspPlayerImp | 
+2025-11-20 23:50:57.413 D [test_server.exe] [17948-event poller 1] RtspPlayer.cpp:37 ~RtspPlayer | 
+2025-11-20 23:50:57.413 T [test_server.exe] [17948-event poller 1] TcpClient.cpp:29 ~TcpClient | ~class mediakit::RtspPlayerImp-107
+2025-11-20 23:50:57.413 D [test_server.exe] [17948-event poller 1] RtspPlayer.cpp:92 play | rtsp://192.168.1.64:554/cam/realmonitor?channel=1&subtype=1 admin admin123 0
+2025-11-20 23:50:57.413 T [test_server.exe] [17948-event poller 1] TcpClient.cpp:84 startConnect | class mediakit::RtspPlayerImp-108 start connect 192.168.1.64:554
+2025-11-20 23:51:07.417 W [test_server.exe] [17948-event poller 1] RtspPlayer.cpp:762 onPlayResult_l | 2 play rtsp timeout
+2025-11-20 23:51:07.417 T [test_server.exe] [17948-event poller 1] TcpClient.cpp:80 operator () | class mediakit::RtspPlayerImp-108 on err: 6(teardown)
+2025-11-20 23:52:07.441 W [test_server.exe] [17948-event poller 1] PlayerProxy.cpp:246 operator () | 重试播放[107]:rtsp://admin:admin123@192.168.1.64:554/cam/realmonitor?channel=1&subtype=1
+2025-11-20 23:52:07.441 D [test_server.exe] [17948-event poller 1] RtspPlayerImp.h:31 ~RtspPlayerImp | 
+2025-11-20 23:52:07.441 D [test_server.exe] [17948-event poller 1] RtspPlayer.cpp:37 ~RtspPlayer | 
+2025-11-20 23:52:07.441 T [test_server.exe] [17948-event poller 1] TcpClient.cpp:29 ~TcpClient | ~class mediakit::RtspPlayerImp-108
+2025-11-20 23:52:07.441 D [test_server.exe] [17948-event poller 1] RtspPlayer.cpp:92 play | rtsp://192.168.1.64:554/cam/realmonitor?channel=1&subtype=1 admin admin123 0
+2025-11-20 23:52:07.441 T [test_server.exe] [17948-event poller 1] TcpClient.cpp:84 startConnect | class mediakit::RtspPlayerImp-109 start connect 192.168.1.64:554
+2025-11-20 23:52:17.455 W [test_server.exe] [17948-event poller 1] RtspPlayer.cpp:762 onPlayResult_l | 2 play rtsp timeout
+2025-11-20 23:52:17.455 T [test_server.exe] [17948-event poller 1] TcpClient.cpp:80 operator () | class mediakit::RtspPlayerImp-109 on err: 6(teardown)
+2025-11-20 23:53:17.487 W [test_server.exe] [17948-event poller 1] PlayerProxy.cpp:246 operator () | 重试播放[108]:rtsp://admin:admin123@192.168.1.64:554/cam/realmonitor?channel=1&subtype=1
+2025-11-20 23:53:17.487 D [test_server.exe] [17948-event poller 1] RtspPlayerImp.h:31 ~RtspPlayerImp | 
+2025-11-20 23:53:17.487 D [test_server.exe] [17948-event poller 1] RtspPlayer.cpp:37 ~RtspPlayer | 
+2025-11-20 23:53:17.487 T [test_server.exe] [17948-event poller 1] TcpClient.cpp:29 ~TcpClient | ~class mediakit::RtspPlayerImp-109
+2025-11-20 23:53:17.487 D [test_server.exe] [17948-event poller 1] RtspPlayer.cpp:92 play | rtsp://192.168.1.64:554/cam/realmonitor?channel=1&subtype=1 admin admin123 0
+2025-11-20 23:53:17.487 T [test_server.exe] [17948-event poller 1] TcpClient.cpp:84 startConnect | class mediakit::RtspPlayerImp-110 start connect 192.168.1.64:554
+2025-11-20 23:53:27.492 W [test_server.exe] [17948-event poller 1] RtspPlayer.cpp:762 onPlayResult_l | 2 play rtsp timeout
+2025-11-20 23:53:27.492 T [test_server.exe] [17948-event poller 1] TcpClient.cpp:80 operator () | class mediakit::RtspPlayerImp-110 on err: 6(teardown)
+2025-11-20 23:54:27.500 W [test_server.exe] [17948-event poller 1] PlayerProxy.cpp:246 operator () | 重试播放[109]:rtsp://admin:admin123@192.168.1.64:554/cam/realmonitor?channel=1&subtype=1
+2025-11-20 23:54:27.500 D [test_server.exe] [17948-event poller 1] RtspPlayerImp.h:31 ~RtspPlayerImp | 
+2025-11-20 23:54:27.500 D [test_server.exe] [17948-event poller 1] RtspPlayer.cpp:37 ~RtspPlayer | 
+2025-11-20 23:54:27.500 T [test_server.exe] [17948-event poller 1] TcpClient.cpp:29 ~TcpClient | ~class mediakit::RtspPlayerImp-110
+2025-11-20 23:54:27.501 D [test_server.exe] [17948-event poller 1] RtspPlayer.cpp:92 play | rtsp://192.168.1.64:554/cam/realmonitor?channel=1&subtype=1 admin admin123 0
+2025-11-20 23:54:27.501 T [test_server.exe] [17948-event poller 1] TcpClient.cpp:84 startConnect | class mediakit::RtspPlayerImp-111 start connect 192.168.1.64:554
+2025-11-20 23:54:37.511 W [test_server.exe] [17948-event poller 1] RtspPlayer.cpp:762 onPlayResult_l | 2 play rtsp timeout
+2025-11-20 23:54:37.511 T [test_server.exe] [17948-event poller 1] TcpClient.cpp:80 operator () | class mediakit::RtspPlayerImp-111 on err: 6(teardown)
+2025-11-20 23:55:37.536 W [test_server.exe] [17948-event poller 1] PlayerProxy.cpp:246 operator () | 重试播放[110]:rtsp://admin:admin123@192.168.1.64:554/cam/realmonitor?channel=1&subtype=1
+2025-11-20 23:55:37.537 D [test_server.exe] [17948-event poller 1] RtspPlayerImp.h:31 ~RtspPlayerImp | 
+2025-11-20 23:55:37.537 D [test_server.exe] [17948-event poller 1] RtspPlayer.cpp:37 ~RtspPlayer | 
+2025-11-20 23:55:37.537 T [test_server.exe] [17948-event poller 1] TcpClient.cpp:29 ~TcpClient | ~class mediakit::RtspPlayerImp-111
+2025-11-20 23:55:37.537 D [test_server.exe] [17948-event poller 1] RtspPlayer.cpp:92 play | rtsp://192.168.1.64:554/cam/realmonitor?channel=1&subtype=1 admin admin123 0
+2025-11-20 23:55:37.537 T [test_server.exe] [17948-event poller 1] TcpClient.cpp:84 startConnect | class mediakit::RtspPlayerImp-112 start connect 192.168.1.64:554
+2025-11-20 23:55:47.560 W [test_server.exe] [17948-event poller 1] RtspPlayer.cpp:762 onPlayResult_l | 2 play rtsp timeout
+2025-11-20 23:55:47.560 T [test_server.exe] [17948-event poller 1] TcpClient.cpp:80 operator () | class mediakit::RtspPlayerImp-112 on err: 6(teardown)
+2025-11-20 23:56:47.562 W [test_server.exe] [17948-event poller 1] PlayerProxy.cpp:246 operator () | 重试播放[111]:rtsp://admin:admin123@192.168.1.64:554/cam/realmonitor?channel=1&subtype=1
+2025-11-20 23:56:47.562 D [test_server.exe] [17948-event poller 1] RtspPlayerImp.h:31 ~RtspPlayerImp | 
+2025-11-20 23:56:47.562 D [test_server.exe] [17948-event poller 1] RtspPlayer.cpp:37 ~RtspPlayer | 
+2025-11-20 23:56:47.562 T [test_server.exe] [17948-event poller 1] TcpClient.cpp:29 ~TcpClient | ~class mediakit::RtspPlayerImp-112
+2025-11-20 23:56:47.562 D [test_server.exe] [17948-event poller 1] RtspPlayer.cpp:92 play | rtsp://192.168.1.64:554/cam/realmonitor?channel=1&subtype=1 admin admin123 0
+2025-11-20 23:56:47.562 T [test_server.exe] [17948-event poller 1] TcpClient.cpp:84 startConnect | class mediakit::RtspPlayerImp-113 start connect 192.168.1.64:554
+2025-11-20 23:56:57.569 W [test_server.exe] [17948-event poller 1] RtspPlayer.cpp:762 onPlayResult_l | 2 play rtsp timeout
+2025-11-20 23:56:57.569 T [test_server.exe] [17948-event poller 1] TcpClient.cpp:80 operator () | class mediakit::RtspPlayerImp-113 on err: 6(teardown)
+2025-11-20 23:57:57.597 W [test_server.exe] [17948-event poller 1] PlayerProxy.cpp:246 operator () | 重试播放[112]:rtsp://admin:admin123@192.168.1.64:554/cam/realmonitor?channel=1&subtype=1
+2025-11-20 23:57:57.598 D [test_server.exe] [17948-event poller 1] RtspPlayerImp.h:31 ~RtspPlayerImp | 
+2025-11-20 23:57:57.598 D [test_server.exe] [17948-event poller 1] RtspPlayer.cpp:37 ~RtspPlayer | 
+2025-11-20 23:57:57.598 T [test_server.exe] [17948-event poller 1] TcpClient.cpp:29 ~TcpClient | ~class mediakit::RtspPlayerImp-113
+2025-11-20 23:57:57.598 D [test_server.exe] [17948-event poller 1] RtspPlayer.cpp:92 play | rtsp://192.168.1.64:554/cam/realmonitor?channel=1&subtype=1 admin admin123 0
+2025-11-20 23:57:57.598 T [test_server.exe] [17948-event poller 1] TcpClient.cpp:84 startConnect | class mediakit::RtspPlayerImp-114 start connect 192.168.1.64:554
+2025-11-20 23:58:07.599 W [test_server.exe] [17948-event poller 1] RtspPlayer.cpp:762 onPlayResult_l | 2 play rtsp timeout
+2025-11-20 23:58:07.599 T [test_server.exe] [17948-event poller 1] TcpClient.cpp:80 operator () | class mediakit::RtspPlayerImp-114 on err: 6(teardown)
+2025-11-20 23:59:07.625 W [test_server.exe] [17948-event poller 1] PlayerProxy.cpp:246 operator () | 重试播放[113]:rtsp://admin:admin123@192.168.1.64:554/cam/realmonitor?channel=1&subtype=1
+2025-11-20 23:59:07.625 D [test_server.exe] [17948-event poller 1] RtspPlayerImp.h:31 ~RtspPlayerImp | 
+2025-11-20 23:59:07.625 D [test_server.exe] [17948-event poller 1] RtspPlayer.cpp:37 ~RtspPlayer | 
+2025-11-20 23:59:07.625 T [test_server.exe] [17948-event poller 1] TcpClient.cpp:29 ~TcpClient | ~class mediakit::RtspPlayerImp-114
+2025-11-20 23:59:07.625 D [test_server.exe] [17948-event poller 1] RtspPlayer.cpp:92 play | rtsp://192.168.1.64:554/cam/realmonitor?channel=1&subtype=1 admin admin123 0
+2025-11-20 23:59:07.625 T [test_server.exe] [17948-event poller 1] TcpClient.cpp:84 startConnect | class mediakit::RtspPlayerImp-115 start connect 192.168.1.64:554
+2025-11-20 23:59:17.627 W [test_server.exe] [17948-event poller 1] RtspPlayer.cpp:762 onPlayResult_l | 2 play rtsp timeout
+2025-11-20 23:59:17.627 T [test_server.exe] [17948-event poller 1] TcpClient.cpp:80 operator () | class mediakit::RtspPlayerImp-115 on err: 6(teardown)

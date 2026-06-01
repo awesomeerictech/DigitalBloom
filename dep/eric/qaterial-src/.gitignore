@@ -1,0 +1,17 @@
+# Allow in source build
+[Bb]uild*/
+# Ignore qt files when importing CMakeLists
+*.users
+# Ignore CLion project files
+*.idea
+# For macOs users
+.DS_Store
+
+CMakeLists.txt.user
+
+# CPM cache
+.cpm
+
+# nix files
+result*
+.direnv

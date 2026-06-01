@@ -1,0 +1,68 @@
+{
+    "eric": [
+        {
+
+            "ptype":"Type",
+            "picon": ""
+        },
+        {
+
+            "ptype":"Food",
+            "picon": ""
+        },
+        {
+
+            "ptype":"Cloth",
+            "picon": ""
+        },
+        {
+            "ptype":"Love",
+            "picon": ""
+        },
+        {
+
+            "ptype":"Parenting",
+            "picon": ""
+        },
+        {
+
+            "ptype":"Transport",
+            "picon": ""
+        },
+        {
+
+            "ptype":"Parenting",
+            "picon": ""
+        },
+        {
+
+            "ptype":"Electronics",
+            "picon": ""
+        },
+        {
+
+            "ptype":"Fashion",
+            "picon": ""
+        },
+        {
+
+            "ptype":"Laundry",
+            "picon": ""
+        },
+        {
+
+            "ptype":"Hygiene",
+            "picon": ""
+        },
+        {
+
+            "ptype":"Beauty",
+            "picon": ""
+        },
+        {
+
+            "ptype":"Lifestyle",
+            "picon": ""
+        }
+    ]
+}

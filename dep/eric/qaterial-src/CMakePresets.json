@@ -1,0 +1,71 @@
+{
+    "version": 3,
+    "cmakeMinimumRequired": {
+        "major": 3,
+        "minor": 17,
+        "patch": 0
+    },
+    "configurePresets": [
+        {
+            "name": "base-dev",
+            "hidden": true,
+            "binaryDir": "${sourceDir}/build/${presetName}",
+            "cacheVariables": {
+                "CMAKE_EXPORT_COMPILE_COMMANDS": true,
+                "CPM_SOURCE_CACHE": "${sourceDir}/.cpm",
+                "QATERIAL_ENABLE_TESTS": true,
+                "QATERIAL_ENABLE_UNITY_BUILD": false
+            }
+        },
+        {
+            "name": "ninja",
+            "inherits": "base-dev",
+            "displayName": "Ninja Multi-Config",
+            "description": "Default build using Ninja Multi-Config generator",
+            "generator": "Ninja Multi-Config"
+        },
+        {
+            "name": "msvc-16",
+            "inherits": "base-dev",
+            "displayName": "Visual Studio 2019",
+            "generator": "Visual Studio 16 2019",
+            "description": "Build Visual Studio 16 2019 generator",
+            "condition": {
+                "type": "equals",
+                "lhs": "${hostSystemName}",
+                "rhs": "Windows"
+            }
+        },
+        {
+            "name": "msvc-17",
+            "inherits": "base-dev",
+            "displayName": "Visual Studio 2022",
+            "generator": "Visual Studio 17 2022",
+            "description": "Build Visual Studio 17 2022 generator",
+            "condition": {
+                "type": "equals",
+                "lhs": "${hostSystemName}",
+                "rhs": "Windows"
+            }
+        }
+    ],
+    "buildPresets": [
+        {
+            "name": "base-dev",
+            "configurePreset": "base-dev"
+        }
+    ],
+    "testPresets": [
+        {
+            "name": "base-dev",
+            "configurePreset": "base-dev",
+            "output": {
+                "outputOnFailure": true
+            },
+            "execution": {
+                "noTestsAction": "error",
+                "stopOnFailure": true
+            }
+        }
+    ]
+}

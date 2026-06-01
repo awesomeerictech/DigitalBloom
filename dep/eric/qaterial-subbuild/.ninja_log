@@ -1,0 +1,21 @@
+# ninja log v7
+2	80	7825884684256134	qaterial-populate-prefix/src/qaterial-populate-stamp/qaterial-populate-mkdir	abe16a3be78ded68
+2	80	7825884684256134	C:/Qt/dev/qaterialdev/build/Desktop_Qt_6_9_3_MSVC2022_64bit-Release/_deps/qaterial-subbuild/qaterial-populate-prefix/src/qaterial-populate-stamp/qaterial-populate-mkdir	abe16a3be78ded68
+81	6444	7825884747834252	qaterial-populate-prefix/src/qaterial-populate-stamp/qaterial-populate-download	298cea5fc61a41c5
+81	6444	7825884747834252	C:/Qt/dev/qaterialdev/build/Desktop_Qt_6_9_3_MSVC2022_64bit-Release/_deps/qaterial-subbuild/qaterial-populate-prefix/src/qaterial-populate-stamp/qaterial-populate-download	298cea5fc61a41c5
+6444	11355	7825884747975106	qaterial-populate-prefix/src/qaterial-populate-stamp/qaterial-populate-update	f84cbed69f8016e7
+6444	11355	7825884747975106	C:/Qt/dev/qaterialdev/build/Desktop_Qt_6_9_3_MSVC2022_64bit-Release/_deps/qaterial-subbuild/qaterial-populate-prefix/src/qaterial-populate-stamp/qaterial-populate-update	f84cbed69f8016e7
+11355	11557	7825884799017628	qaterial-populate-prefix/src/qaterial-populate-stamp/qaterial-populate-patch	49be0b24f0162b95
+11355	11557	7825884799017628	C:/Qt/dev/qaterialdev/build/Desktop_Qt_6_9_3_MSVC2022_64bit-Release/_deps/qaterial-subbuild/qaterial-populate-prefix/src/qaterial-populate-stamp/qaterial-populate-patch	49be0b24f0162b95
+11557	11628	7825884799729911	qaterial-populate-prefix/src/qaterial-populate-stamp/qaterial-populate-configure	8dc4a5fcf340bec5
+11557	11628	7825884799729911	C:/Qt/dev/qaterialdev/build/Desktop_Qt_6_9_3_MSVC2022_64bit-Release/_deps/qaterial-subbuild/qaterial-populate-prefix/src/qaterial-populate-stamp/qaterial-populate-configure	8dc4a5fcf340bec5
+11628	11706	7825884800504419	qaterial-populate-prefix/src/qaterial-populate-stamp/qaterial-populate-build	a6ab8222c1b4d3af
+11628	11706	7825884800504419	C:/Qt/dev/qaterialdev/build/Desktop_Qt_6_9_3_MSVC2022_64bit-Release/_deps/qaterial-subbuild/qaterial-populate-prefix/src/qaterial-populate-stamp/qaterial-populate-build	a6ab8222c1b4d3af
+11706	11781	7825884801239580	qaterial-populate-prefix/src/qaterial-populate-stamp/qaterial-populate-install	e55922c42d1d26f1
+11706	11781	7825884801239580	C:/Qt/dev/qaterialdev/build/Desktop_Qt_6_9_3_MSVC2022_64bit-Release/_deps/qaterial-subbuild/qaterial-populate-prefix/src/qaterial-populate-stamp/qaterial-populate-install	e55922c42d1d26f1
+11781	11855	7825884801988953	qaterial-populate-prefix/src/qaterial-populate-stamp/qaterial-populate-test	72e0dd8c5c9b77d1
+11781	11855	7825884801988953	C:/Qt/dev/qaterialdev/build/Desktop_Qt_6_9_3_MSVC2022_64bit-Release/_deps/qaterial-subbuild/qaterial-populate-prefix/src/qaterial-populate-stamp/qaterial-populate-test	72e0dd8c5c9b77d1
+11855	11956	7825884803006341	CMakeFiles/qaterial-populate-complete	9277d4ff5281d14f
+11855	11956	7825884803006341	qaterial-populate-prefix/src/qaterial-populate-stamp/qaterial-populate-done	9277d4ff5281d14f
+11855	11956	7825884803006341	C:/Qt/dev/qaterialdev/build/Desktop_Qt_6_9_3_MSVC2022_64bit-Release/_deps/qaterial-subbuild/CMakeFiles/qaterial-populate-complete	9277d4ff5281d14f
+11855	11956	7825884803006341	C:/Qt/dev/qaterialdev/build/Desktop_Qt_6_9_3_MSVC2022_64bit-Release/_deps/qaterial-subbuild/qaterial-populate-prefix/src/qaterial-populate-stamp/qaterial-populate-done	9277d4ff5281d14f

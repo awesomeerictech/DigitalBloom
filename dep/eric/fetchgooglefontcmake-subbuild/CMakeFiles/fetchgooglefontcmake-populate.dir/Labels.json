@@ -1,0 +1,46 @@
+{
+	"sources" : 
+	[
+		{
+			"file" : "C:/Qt/dev/qaterialdev/build/Desktop_Qt_6_9_3_MSVC2022_64bit-Release/_deps/fetchgooglefontcmake-subbuild/CMakeFiles/fetchgooglefontcmake-populate"
+		},
+		{
+			"file" : "C:/Qt/dev/qaterialdev/build/Desktop_Qt_6_9_3_MSVC2022_64bit-Release/_deps/fetchgooglefontcmake-subbuild/CMakeFiles/fetchgooglefontcmake-populate.rule"
+		},
+		{
+			"file" : "C:/Qt/dev/qaterialdev/build/Desktop_Qt_6_9_3_MSVC2022_64bit-Release/_deps/fetchgooglefontcmake-subbuild/CMakeFiles/fetchgooglefontcmake-populate-complete.rule"
+		},
+		{
+			"file" : "C:/Qt/dev/qaterialdev/build/Desktop_Qt_6_9_3_MSVC2022_64bit-Release/_deps/fetchgooglefontcmake-subbuild/fetchgooglefontcmake-populate-prefix/src/fetchgooglefontcmake-populate-stamp/fetchgooglefontcmake-populate-build.rule"
+		},
+		{
+			"file" : "C:/Qt/dev/qaterialdev/build/Desktop_Qt_6_9_3_MSVC2022_64bit-Release/_deps/fetchgooglefontcmake-subbuild/fetchgooglefontcmake-populate-prefix/src/fetchgooglefontcmake-populate-stamp/fetchgooglefontcmake-populate-configure.rule"
+		},
+		{
+			"file" : "C:/Qt/dev/qaterialdev/build/Desktop_Qt_6_9_3_MSVC2022_64bit-Release/_deps/fetchgooglefontcmake-subbuild/fetchgooglefontcmake-populate-prefix/src/fetchgooglefontcmake-populate-stamp/fetchgooglefontcmake-populate-download.rule"
+		},
+		{
+			"file" : "C:/Qt/dev/qaterialdev/build/Desktop_Qt_6_9_3_MSVC2022_64bit-Release/_deps/fetchgooglefontcmake-subbuild/fetchgooglefontcmake-populate-prefix/src/fetchgooglefontcmake-populate-stamp/fetchgooglefontcmake-populate-install.rule"
+		},
+		{
+			"file" : "C:/Qt/dev/qaterialdev/build/Desktop_Qt_6_9_3_MSVC2022_64bit-Release/_deps/fetchgooglefontcmake-subbuild/fetchgooglefontcmake-populate-prefix/src/fetchgooglefontcmake-populate-stamp/fetchgooglefontcmake-populate-mkdir.rule"
+		},
+		{
+			"file" : "C:/Qt/dev/qaterialdev/build/Desktop_Qt_6_9_3_MSVC2022_64bit-Release/_deps/fetchgooglefontcmake-subbuild/fetchgooglefontcmake-populate-prefix/src/fetchgooglefontcmake-populate-stamp/fetchgooglefontcmake-populate-patch.rule"
+		},
+		{
+			"file" : "C:/Qt/dev/qaterialdev/build/Desktop_Qt_6_9_3_MSVC2022_64bit-Release/_deps/fetchgooglefontcmake-subbuild/fetchgooglefontcmake-populate-prefix/src/fetchgooglefontcmake-populate-stamp/fetchgooglefontcmake-populate-test.rule"
+		},
+		{
+			"file" : "C:/Qt/dev/qaterialdev/build/Desktop_Qt_6_9_3_MSVC2022_64bit-Release/_deps/fetchgooglefontcmake-subbuild/fetchgooglefontcmake-populate-prefix/src/fetchgooglefontcmake-populate-stamp/fetchgooglefontcmake-populate-update.rule"
+		}
+	],
+	"target" : 
+	{
+		"labels" : 
+		[
+			"fetchgooglefontcmake-populate"
+		],
+		"name" : "fetchgooglefontcmake-populate"
+	}
+}

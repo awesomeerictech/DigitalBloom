@@ -1,0 +1,14 @@
+# Target labels
+ fetchgooglefontcmake-populate
+# Source files and their labels
+C:/Qt/dev/qaterialdev/build/Desktop_Qt_6_9_3_MSVC2022_64bit-Release/_deps/fetchgooglefontcmake-subbuild/CMakeFiles/fetchgooglefontcmake-populate
+C:/Qt/dev/qaterialdev/build/Desktop_Qt_6_9_3_MSVC2022_64bit-Release/_deps/fetchgooglefontcmake-subbuild/CMakeFiles/fetchgooglefontcmake-populate.rule
+C:/Qt/dev/qaterialdev/build/Desktop_Qt_6_9_3_MSVC2022_64bit-Release/_deps/fetchgooglefontcmake-subbuild/CMakeFiles/fetchgooglefontcmake-populate-complete.rule
+C:/Qt/dev/qaterialdev/build/Desktop_Qt_6_9_3_MSVC2022_64bit-Release/_deps/fetchgooglefontcmake-subbuild/fetchgooglefontcmake-populate-prefix/src/fetchgooglefontcmake-populate-stamp/fetchgooglefontcmake-populate-build.rule
+C:/Qt/dev/qaterialdev/build/Desktop_Qt_6_9_3_MSVC2022_64bit-Release/_deps/fetchgooglefontcmake-subbuild/fetchgooglefontcmake-populate-prefix/src/fetchgooglefontcmake-populate-stamp/fetchgooglefontcmake-populate-configure.rule
+C:/Qt/dev/qaterialdev/build/Desktop_Qt_6_9_3_MSVC2022_64bit-Release/_deps/fetchgooglefontcmake-subbuild/fetchgooglefontcmake-populate-prefix/src/fetchgooglefontcmake-populate-stamp/fetchgooglefontcmake-populate-download.rule
+C:/Qt/dev/qaterialdev/build/Desktop_Qt_6_9_3_MSVC2022_64bit-Release/_deps/fetchgooglefontcmake-subbuild/fetchgooglefontcmake-populate-prefix/src/fetchgooglefontcmake-populate-stamp/fetchgooglefontcmake-populate-install.rule
+C:/Qt/dev/qaterialdev/build/Desktop_Qt_6_9_3_MSVC2022_64bit-Release/_deps/fetchgooglefontcmake-subbuild/fetchgooglefontcmake-populate-prefix/src/fetchgooglefontcmake-populate-stamp/fetchgooglefontcmake-populate-mkdir.rule
+C:/Qt/dev/qaterialdev/build/Desktop_Qt_6_9_3_MSVC2022_64bit-Release/_deps/fetchgooglefontcmake-subbuild/fetchgooglefontcmake-populate-prefix/src/fetchgooglefontcmake-populate-stamp/fetchgooglefontcmake-populate-patch.rule
+C:/Qt/dev/qaterialdev/build/Desktop_Qt_6_9_3_MSVC2022_64bit-Release/_deps/fetchgooglefontcmake-subbuild/fetchgooglefontcmake-populate-prefix/src/fetchgooglefontcmake-populate-stamp/fetchgooglefontcmake-populate-test.rule
+C:/Qt/dev/qaterialdev/build/Desktop_Qt_6_9_3_MSVC2022_64bit-Release/_deps/fetchgooglefontcmake-subbuild/fetchgooglefontcmake-populate-prefix/src/fetchgooglefontcmake-populate-stamp/fetchgooglefontcmake-populate-update.rule

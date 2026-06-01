@@ -1,0 +1,46 @@
+{
+	"sources" : 
+	[
+		{
+			"file" : "C:/Qt/dev/qaterialdev/build/Desktop_Qt_6_9_3_MSVC2022_64bit-Release/_deps/qaterial-subbuild/CMakeFiles/qaterial-populate"
+		},
+		{
+			"file" : "C:/Qt/dev/qaterialdev/build/Desktop_Qt_6_9_3_MSVC2022_64bit-Release/_deps/qaterial-subbuild/CMakeFiles/qaterial-populate.rule"
+		},
+		{
+			"file" : "C:/Qt/dev/qaterialdev/build/Desktop_Qt_6_9_3_MSVC2022_64bit-Release/_deps/qaterial-subbuild/CMakeFiles/qaterial-populate-complete.rule"
+		},
+		{
+			"file" : "C:/Qt/dev/qaterialdev/build/Desktop_Qt_6_9_3_MSVC2022_64bit-Release/_deps/qaterial-subbuild/qaterial-populate-prefix/src/qaterial-populate-stamp/qaterial-populate-build.rule"
+		},
+		{
+			"file" : "C:/Qt/dev/qaterialdev/build/Desktop_Qt_6_9_3_MSVC2022_64bit-Release/_deps/qaterial-subbuild/qaterial-populate-prefix/src/qaterial-populate-stamp/qaterial-populate-configure.rule"
+		},
+		{
+			"file" : "C:/Qt/dev/qaterialdev/build/Desktop_Qt_6_9_3_MSVC2022_64bit-Release/_deps/qaterial-subbuild/qaterial-populate-prefix/src/qaterial-populate-stamp/qaterial-populate-download.rule"
+		},
+		{
+			"file" : "C:/Qt/dev/qaterialdev/build/Desktop_Qt_6_9_3_MSVC2022_64bit-Release/_deps/qaterial-subbuild/qaterial-populate-prefix/src/qaterial-populate-stamp/qaterial-populate-install.rule"
+		},
+		{
+			"file" : "C:/Qt/dev/qaterialdev/build/Desktop_Qt_6_9_3_MSVC2022_64bit-Release/_deps/qaterial-subbuild/qaterial-populate-prefix/src/qaterial-populate-stamp/qaterial-populate-mkdir.rule"
+		},
+		{
+			"file" : "C:/Qt/dev/qaterialdev/build/Desktop_Qt_6_9_3_MSVC2022_64bit-Release/_deps/qaterial-subbuild/qaterial-populate-prefix/src/qaterial-populate-stamp/qaterial-populate-patch.rule"
+		},
+		{
+			"file" : "C:/Qt/dev/qaterialdev/build/Desktop_Qt_6_9_3_MSVC2022_64bit-Release/_deps/qaterial-subbuild/qaterial-populate-prefix/src/qaterial-populate-stamp/qaterial-populate-test.rule"
+		},
+		{
+			"file" : "C:/Qt/dev/qaterialdev/build/Desktop_Qt_6_9_3_MSVC2022_64bit-Release/_deps/qaterial-subbuild/qaterial-populate-prefix/src/qaterial-populate-stamp/qaterial-populate-update.rule"
+		}
+	],
+	"target" : 
+	{
+		"labels" : 
+		[
+			"qaterial-populate"
+		],
+		"name" : "qaterial-populate"
+	}
+}

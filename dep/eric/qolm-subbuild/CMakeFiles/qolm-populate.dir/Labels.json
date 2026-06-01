@@ -1,0 +1,46 @@
+{
+	"sources" : 
+	[
+		{
+			"file" : "C:/Qt/dev/qaterialdev/build/Desktop_Qt_6_9_3_MSVC2022_64bit-Release/_deps/qolm-subbuild/CMakeFiles/qolm-populate"
+		},
+		{
+			"file" : "C:/Qt/dev/qaterialdev/build/Desktop_Qt_6_9_3_MSVC2022_64bit-Release/_deps/qolm-subbuild/CMakeFiles/qolm-populate.rule"
+		},
+		{
+			"file" : "C:/Qt/dev/qaterialdev/build/Desktop_Qt_6_9_3_MSVC2022_64bit-Release/_deps/qolm-subbuild/CMakeFiles/qolm-populate-complete.rule"
+		},
+		{
+			"file" : "C:/Qt/dev/qaterialdev/build/Desktop_Qt_6_9_3_MSVC2022_64bit-Release/_deps/qolm-subbuild/qolm-populate-prefix/src/qolm-populate-stamp/qolm-populate-build.rule"
+		},
+		{
+			"file" : "C:/Qt/dev/qaterialdev/build/Desktop_Qt_6_9_3_MSVC2022_64bit-Release/_deps/qolm-subbuild/qolm-populate-prefix/src/qolm-populate-stamp/qolm-populate-configure.rule"
+		},
+		{
+			"file" : "C:/Qt/dev/qaterialdev/build/Desktop_Qt_6_9_3_MSVC2022_64bit-Release/_deps/qolm-subbuild/qolm-populate-prefix/src/qolm-populate-stamp/qolm-populate-download.rule"
+		},
+		{
+			"file" : "C:/Qt/dev/qaterialdev/build/Desktop_Qt_6_9_3_MSVC2022_64bit-Release/_deps/qolm-subbuild/qolm-populate-prefix/src/qolm-populate-stamp/qolm-populate-install.rule"
+		},
+		{
+			"file" : "C:/Qt/dev/qaterialdev/build/Desktop_Qt_6_9_3_MSVC2022_64bit-Release/_deps/qolm-subbuild/qolm-populate-prefix/src/qolm-populate-stamp/qolm-populate-mkdir.rule"
+		},
+		{
+			"file" : "C:/Qt/dev/qaterialdev/build/Desktop_Qt_6_9_3_MSVC2022_64bit-Release/_deps/qolm-subbuild/qolm-populate-prefix/src/qolm-populate-stamp/qolm-populate-patch.rule"
+		},
+		{
+			"file" : "C:/Qt/dev/qaterialdev/build/Desktop_Qt_6_9_3_MSVC2022_64bit-Release/_deps/qolm-subbuild/qolm-populate-prefix/src/qolm-populate-stamp/qolm-populate-test.rule"
+		},
+		{
+			"file" : "C:/Qt/dev/qaterialdev/build/Desktop_Qt_6_9_3_MSVC2022_64bit-Release/_deps/qolm-subbuild/qolm-populate-prefix/src/qolm-populate-stamp/qolm-populate-update.rule"
+		}
+	],
+	"target" : 
+	{
+		"labels" : 
+		[
+			"qolm-populate"
+		],
+		"name" : "qolm-populate"
+	}
+}

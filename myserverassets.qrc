@@ -1,0 +1,5 @@
+<RCC>
+  <qresource prefix="/myserverassets">
+    <file alias="AppArchive">eric/App.tar.xz</file>
+  </qresource>
+</RCC>

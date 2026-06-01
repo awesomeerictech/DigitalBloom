@@ -1,0 +1,21 @@
+# ninja log v7
+2	85	7825884974261732	materialdesignicons-populate-prefix/src/materialdesignicons-populate-stamp/materialdesignicons-populate-mkdir	a995d0beac4bdc72
+2	85	7825884974261732	C:/Qt/dev/qaterialdev/build/Desktop_Qt_6_9_3_MSVC2022_64bit-Release/_deps/materialdesignicons-subbuild/materialdesignicons-populate-prefix/src/materialdesignicons-populate-stamp/materialdesignicons-populate-mkdir	a995d0beac4bdc72
+86	10336	7825885076718845	materialdesignicons-populate-prefix/src/materialdesignicons-populate-stamp/materialdesignicons-populate-download	9713777942c2e532
+86	10336	7825885076718845	C:/Qt/dev/qaterialdev/build/Desktop_Qt_6_9_3_MSVC2022_64bit-Release/_deps/materialdesignicons-subbuild/materialdesignicons-populate-prefix/src/materialdesignicons-populate-stamp/materialdesignicons-populate-download	9713777942c2e532
+10336	10515	7825885076852727	materialdesignicons-populate-prefix/src/materialdesignicons-populate-stamp/materialdesignicons-populate-update	7b75ea0489071856
+10336	10515	7825885076852727	C:/Qt/dev/qaterialdev/build/Desktop_Qt_6_9_3_MSVC2022_64bit-Release/_deps/materialdesignicons-subbuild/materialdesignicons-populate-prefix/src/materialdesignicons-populate-stamp/materialdesignicons-populate-update	7b75ea0489071856
+10515	10593	7825885079333790	materialdesignicons-populate-prefix/src/materialdesignicons-populate-stamp/materialdesignicons-populate-patch	b2f3630e2dcade0b
+10515	10593	7825885079333790	C:/Qt/dev/qaterialdev/build/Desktop_Qt_6_9_3_MSVC2022_64bit-Release/_deps/materialdesignicons-subbuild/materialdesignicons-populate-prefix/src/materialdesignicons-populate-stamp/materialdesignicons-populate-patch	b2f3630e2dcade0b
+10593	10676	7825885080165074	materialdesignicons-populate-prefix/src/materialdesignicons-populate-stamp/materialdesignicons-populate-configure	7b9264efbe975318
+10593	10676	7825885080165074	C:/Qt/dev/qaterialdev/build/Desktop_Qt_6_9_3_MSVC2022_64bit-Release/_deps/materialdesignicons-subbuild/materialdesignicons-populate-prefix/src/materialdesignicons-populate-stamp/materialdesignicons-populate-configure	7b9264efbe975318
+10676	10754	7825885080953759	materialdesignicons-populate-prefix/src/materialdesignicons-populate-stamp/materialdesignicons-populate-build	de95721e61ee7050
+10676	10754	7825885080953759	C:/Qt/dev/qaterialdev/build/Desktop_Qt_6_9_3_MSVC2022_64bit-Release/_deps/materialdesignicons-subbuild/materialdesignicons-populate-prefix/src/materialdesignicons-populate-stamp/materialdesignicons-populate-build	de95721e61ee7050
+10754	10832	7825885081663360	materialdesignicons-populate-prefix/src/materialdesignicons-populate-stamp/materialdesignicons-populate-install	bd7d864ddb0abace
+10754	10832	7825885081663360	C:/Qt/dev/qaterialdev/build/Desktop_Qt_6_9_3_MSVC2022_64bit-Release/_deps/materialdesignicons-subbuild/materialdesignicons-populate-prefix/src/materialdesignicons-populate-stamp/materialdesignicons-populate-install	bd7d864ddb0abace
+10832	10909	7825885082382723	materialdesignicons-populate-prefix/src/materialdesignicons-populate-stamp/materialdesignicons-populate-test	e6aca88f723290e8
+10832	10909	7825885082382723	C:/Qt/dev/qaterialdev/build/Desktop_Qt_6_9_3_MSVC2022_64bit-Release/_deps/materialdesignicons-subbuild/materialdesignicons-populate-prefix/src/materialdesignicons-populate-stamp/materialdesignicons-populate-test	e6aca88f723290e8
+10909	11008	7825885083495711	CMakeFiles/materialdesignicons-populate-complete	aaafe05bb82e1386
+10909	11008	7825885083495711	materialdesignicons-populate-prefix/src/materialdesignicons-populate-stamp/materialdesignicons-populate-done	aaafe05bb82e1386
+10909	11008	7825885083495711	C:/Qt/dev/qaterialdev/build/Desktop_Qt_6_9_3_MSVC2022_64bit-Release/_deps/materialdesignicons-subbuild/CMakeFiles/materialdesignicons-populate-complete	aaafe05bb82e1386
+10909	11008	7825885083495711	C:/Qt/dev/qaterialdev/build/Desktop_Qt_6_9_3_MSVC2022_64bit-Release/_deps/materialdesignicons-subbuild/materialdesignicons-populate-prefix/src/materialdesignicons-populate-stamp/materialdesignicons-populate-done	aaafe05bb82e1386

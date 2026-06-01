@@ -1,0 +1,8 @@
+module Fluid.Templates
+linktarget fluidtemplates
+optional plugin fluidtemplates
+classname Fluid_TemplatesPlugin
+typeinfo fluidtemplates.qmltypes
+prefer :/qt/qml/Fluid/Templates/
+depends QtQuick
+

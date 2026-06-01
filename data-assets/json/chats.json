@@ -1,0 +1,45 @@
+{
+    "eric": [
+        {
+
+            "messageusers":"Eric",
+            "messages": "hi"
+        },
+        {
+
+           "messageusers":"Ann",
+           "messages": "hi too"
+        },
+        {
+
+             "messageusers":"Eric",
+             "messages": "welcome to dosai"
+        },
+        {
+             "messageusers":"Eric",
+              "messages": "dosai is a wonderful initiative to increase blood supply to our blood banks in Kenya"
+        },
+        {
+          "messageusers":"Ann",
+          "messages": "i have seen the app and i am impressed"
+        },
+        {
+          "messageusers":"Ann",
+          "messages": "how may i donate"
+        },
+        {
+          "messageusers":"Eric",
+          "messages": "create account and then just click donate button or contact us and we shall give you further instructions on where and how to do it"
+        },
+        {
+
+         "messageusers":"Ann",
+         "messages": "Thankyou Eric i love you"
+        },
+        {
+
+           "messageusers":"Eric",
+           "messages": "aww"
+        }
+    ]
+}

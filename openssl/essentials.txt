@@ -1,0 +1,110 @@
+
+// openssl on linux x86_64
+
+./Configure linux-x86_64  no-shared --release  --prefix=/home/ericiots/eric/opensslbin
+make -j3
+make install
+cd ..
+rm -rf openssl
+
+
+
+./Configure linux-x86_64  -shared --release  --prefix=/home/ericiots/eric/opensslbin
+make  CALC_VERSIONS="SHLIB_COMPAT=; SHLIB_SOVER=" MAKE="make -e" all
+make SHLIB_EXT=.so install_sw
+
+
+make -j$(nproc) SHLIB_VERSION_NUMBER= SHLIB_EXT=_1_1.so build_libs
+
+
+
+//Windows 
+
+Architecture	Target Architecture	Host Architecture
+x86	Default	Default
+amd64	Yes	Yes
+arm	Yes	No
+arm64	Yes	No
+
+
+C:/VISUAL_STUDIO/Common7/Tools/LaunchDevCmd.bat -arch=amd64
+
+C:/VISUAL_STUDIO/Common7/Tools/LaunchDevCmd.ps1 -arch=amd64
+
+C:/VISUAL_STUDIO/VC/Auxiliary/Build/vcvarsall.bat amd64
+
+$env:VCINSTALLDIR = $null
+
+$env:VCINSTALLDIR = "C:\VISUAL_STUDIO\VC"
+
+
+powershell -NoProfile -ExecutionPolicy Bypass -Command "& 'C:\... \Launch-VsDevShell.ps1' -Arch amd64 -HostArch amd64"
+
+Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass
+
+C:\VISUAL_STUDIO\Common7\Tools\Launch-VsDevShell.ps1 -Arch amd64 -HostArch amd64
+
+perl Configure  VC-WIN64A  --release  --prefix=C:/Qt/dev/DigitalBloom/opensslwin
+
+nmake    
+   
+nmake install
+
+nmake test 
+
+
+# safe quoting (single quotes) — run these inside PowerShell
+$env:ANDROID_NDK_ROOT = 'C:\androidsdk\ndk\29.0.14206865'
+$env:PATH = "$env:ANDROID_NDK_ROOT\toolchains\llvm\prebuilt\windows-x86_64\bin;$env:PATH"
+
+# verify
+Write-Host "NDK root: $env:ANDROID_NDK_ROOT"
+Write-Host "Toolchain bin: $env:ANDROID_NDK_ROOT\toolchains\llvm\prebuilt\windows-x86_64\bin"
+Write-Host "PATH starts with: $($env:PATH.Split(';')[0])"
+
+# then run Configure (ensure perl is on PATH)
+perl Configure android-arm -D__ANDROID_API__=23
+
+
+
+
+
+
+
+
+
+//openssl cross compile
+
+
+
+./Configure --cross-compile-prefix=x86_64-w64-mingw32- mingw64 no-shared --prefix=/root/win64/opensslbin --openssldir=/root/win64/opensslbin/ssl
+
+make  -j2  && make install
+
+
+
+cd ..
+rm -rf openssl
+
+// android
+
+sh openssl.sh 
+
+// Raspberry Pi
+
+./Configure linux-generic32  no-shared --release  --prefix=/opensslarm
+make install
+cd ..
+rm -rf openssl
+
+
+
+
+//raspberry brightness
+
+echo 255 > /sys/class/backlight/rpi_backlight/brightness
+
+//Distribution upgrade
+
+
+sudo apt-get dist-upgrade

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<messages>
+  <message id="logomenu1">
+    <div class="dl-wrapper">
+      <div class="dl-sidebar">
+        <div class="dl-logo" style="background-color: var(--bs-cyan);">
+         <!-- <img src="${logoimg}" /> -->
+          <img src="/icons/logo.png" />
+          <h1>Deliva Application</h1>
+        </div>
+        ${menu}
+      </div>
+      <div class="dl-open-menu">
+        ${open-menu}
+      </div>
+      <div class="dl-contents">
+        ${contents}
+      </div>
+      ${contents-cover class="dl-contents-cover"}
+    </div>
+  </message>
+</messages>

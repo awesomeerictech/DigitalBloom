@@ -1,0 +1,163 @@
+magick --% ic_launcher_round.png -resize "96x96^" -gravity center -crop "96x96+0+0" +repage ( +clone -write "ic_stat_logo_96x96.png" ) ( +clone -resize "72x72" -write "ic_stat_logo_72x72.png" ) ( +clone -resize "48x48" -write "ic_stat_logo_48x48.png" ) ( +clone -resize "36x36" -write "ic_stat_logo_36x36.png" ) ( +clone -resize "24x24" -write "ic_stat_logo_24x24.png" ) null:
+
+
+# Assuming your source image is a square (e.g., 1024x1024)
+magick icons -resize 16x16   myicon.iconset/icon_16x16.png
+magick icons -resize 32x32   myicon.iconset/icon_16x16@2x.png
+magick icons -resize 32x32   myicon.iconset/icon_32x32.png
+magick icons -resize 64x64   myicon.iconset/icon_32x32@2x.png
+magick icons -resize 128x128 myicon.iconset/icon_128x128.png
+magick icons -resize 256x256 myicon.iconset/icon_128x128@2x.png
+magick icons -resize 256x256 myicon.iconset/icon_256x256.png
+magick icons -resize 512x512 myicon.iconset/icon_256x256@2x.png
+magick icons -resize 512x512 myicon.iconset/icon_512x512.png
+magick icons -resize 1024x1024 myicon.iconset/icon_512x512@2x.png
+
+
+
+# Generate images for iPhone
+magick icons.png -resize 20x20  AppIcon.appiconset/icon-20x20@1x.png
+magick icons.png -resize 40x40  AppIcon.appiconset/icon-20x20@2x.png
+magick icons.png -resize 60x60  AppIcon.appiconset/icon-20x20@3x.png
+
+magick icons.png -resize 29x29  AppIcon.appiconset/icon-29x29@1x.png
+magick icons.png -resize 58x58  AppIcon.appiconset/icon-29x29@2x.png
+magick icons.png -resize 87x87  AppIcon.appiconset/icon-29x29@3x.png
+
+magick icons.png -resize 40x40  AppIcon.appiconset/icon-40x40@1x.png
+magick icons.png -resize 80x80  AppIcon.appiconset/icon-40x40@2x.png
+magick icons.png -resize 120x120 AppIcon.appiconset/icon-40x40@3x.png
+
+magick icons.png -resize 57x57  AppIcon.appiconset/icon-57x57@1x.png
+magick icons.png -resize 114x114 AppIcon.appiconset/icon-57x57@2x.png
+
+magick icons.png -resize 60x60  AppIcon.appiconset/icon-60x60@1x.png
+magick icons.png -resize 120x120 AppIcon.appiconset/icon-60x60@2x.png
+magick icons.png -resize 180x180 AppIcon.appiconset/icon-60x60@3x.png
+
+magick icons.png -resize 76x76  AppIcon.appiconset/icon-76x76@1x.png
+magick icons.png -resize 152x152 AppIcon.appiconset/icon-76x76@2x.png
+magick icons.png -resize 167x167 AppIcon.appiconset/icon-83.5x83.5@2x.png
+
+# Generate image for App Store
+magick icons.png -resize 1024x1024 AppIcon.appiconset/iconsx1024@1x.png
+
+
+{
+  "images": [
+    {
+      "size": "20x20",
+      "idiom": "iphone",
+      "filename": "icon-20x20@2x.png",
+      "scale": "2x"
+    },
+    {
+      "size": "20x20",
+      "idiom": "iphone",
+      "filename": "icon-20x20@3x.png",
+      "scale": "3x"
+    },
+    {
+      "size": "29x29",
+      "idiom": "iphone",
+      "filename": "icon-29x29@2x.png",
+      "scale": "2x"
+    },
+    {
+      "size": "29x29",
+      "idiom": "iphone",
+      "filename": "icon-29x29@3x.png",
+      "scale": "3x"
+    },
+    {
+      "size": "40x40",
+      "idiom": "iphone",
+      "filename": "icon-40x40@2x.png",
+      "scale": "2x"
+    },
+    {
+      "size": "40x40",
+      "idiom": "iphone",
+      "filename": "icon-40x40@3x.png",
+      "scale": "3x"
+    },
+    {
+      "size": "60x60",
+      "idiom": "iphone",
+      "filename": "icon-60x60@2x.png",
+      "scale": "2x"
+    },
+    {
+      "size": "60x60",
+      "idiom": "iphone",
+      "filename": "icon-60x60@3x.png",
+      "scale": "3x"
+    },
+    {
+      "size": "20x20",
+      "idiom": "ipad",
+      "filename": "icon-20x20@1x.png",
+      "scale": "1x"
+    },
+    {
+      "size": "20x20",
+      "idiom": "ipad",
+      "filename": "icon-20x20@2x.png",
+      "scale": "2x"
+    },
+    {
+      "size": "29x29",
+      "idiom": "ipad",
+      "filename": "icon-29x29@1x.png",
+      "scale": "1x"
+    },
+    {
+      "size": "29x29",
+      "idiom": "ipad",
+      "filename": "icon-29x29@2x.png",
+      "scale": "2x"
+    },
+    {
+      "size": "40x40",
+      "idiom": "ipad",
+      "filename": "icon-40x40@1x.png",
+      "scale": "1x"
+    },
+    {
+      "size": "40x40",
+      "idiom": "ipad",
+      "filename": "icon-40x40@2x.png",
+      "scale": "2x"
+    },
+    {
+      "size": "76x76",
+      "idiom": "ipad",
+      "filename": "icon-76x76@1x.png",
+      "scale": "1x"
+    },
+    {
+      "size": "76x76",
+      "idiom": "ipad",
+      "filename": "icon-76x76@2x.png",
+      "scale": "2x"
+    },
+    {
+      "size": "83.5x83.5",
+      "idiom": "ipad",
+      "filename": "icon-83.5x83.5@2x.png",
+      "scale": "2x"
+    },
+    {
+      "size": "1024x1024",
+      "idiom": "ios-marketing",
+      "filename": "iconsx1024@1x.png",
+      "scale": "1x"
+    }
+  ],
+  "info": {
+    "version": 1,
+    "author": "xcode"
+  }
+}
+
+

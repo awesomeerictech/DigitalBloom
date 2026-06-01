@@ -1,0 +1,171 @@
+set ANDROID_NDK_ROOT=/usr/local/custom-sdk/ndk/25.1.8937393
+mkdir _build_android
+cd _build_android
+/home/ericiots/eric/Qt/6.5.0/android_armv7/bin/qmake ../Digitalmenu.pro 
+
+https://developer.android.com/studio/publish/app-signing
+
+keytool -genkey -v -keystore YOUR_KEYSTORE_PATH -alias YOUR_KEY_ALIAS -keyalg RSA -keysize 2048 -validity 10000
+
+C:/android/jbr/bin/keytool -genkeypair -v -keystore erickey.keystore -alias ericalias -keyalg RSA -keysize 2048 -validity 10000
+
+C:/androidsdk/build-tools/36.1.0/apksigner sign --ks erickey.keystore --out my_signed_app.apk my_unsigned_app.apk
+
+apksigner verify -v my_signed_app.apk
+
+C:/jdk-17.0.16.8-hotspot/bin/keytool -genkey -keyalg RSA -keystore upload-key_playstore_pd1.keystore -alias dgblmlatest -storepass "@dgblm66#@!" -keypass "@dgblm66#@!" -dname "CN=org.stllimited.digitalbloom, OU=CB, O=STL, L=Nairobi, ST=ESTL, C=KE" -validity 10000
+
+C:/jdk-17.0.16.8-hotspot/bin/keytool -genkey -keyalg RSA -keystore upload-key_pd2.keystore -alias watchflower -storepass emgrange -keypass emgrange -dname "CN=org.stllimited.digitalbloom, OU=CB, O=STL, L=Nairobi, ST=ESTL, C=KE" -validity 10000
+
+C:/jdk-17.0.16.8-hotspot/bin/keytool -genkey -keyalg RSA -keystore upload-key_pd3.keystore -alias qmltemplate -storepass emgrange -keypass emgrange -dname "CN=org.stllimited.digitalbloom, OU=CB, O=STL, L=Nairobi, ST=ESTL, C=KE" -validity 10000
+
+C:/jdk-17.0.16.8-hotspot/bin/keytool -genkey -keyalg RSA -keystore upload-key_pd4.keystore -alias qmlscanner -storepass emgrange -keypass emgrange -dname "CN=org.stllimited.digitalbloom, OU=CB, O=STL, L=Nairobi, ST=ESTL, C=KE" -validity 10000
+
+C:/jdk-17.0.16.8-hotspot/bin/keytool -genkey -keyalg RSA -keystore upload-key_pd5.keystore -alias androidtools -storepass falsinsoft -keypass falsinsoft -dname "CN=org.stllimited.digitalbloom, OU=CB, O=STL, L=Nairobi, ST=ESTL, C=KE" -validity 10000
+
+# 2. Initialize the empty Git repository
+git init
+
+# 3. Create an initial file (e.g., a README or an empty placeholder file)
+# This is necessary because Git cannot commit an entirely empty repository
+touch README.md
+
+# 4. Stage the new file for commit
+git add .
+
+# 5. Commit the staged file. This creates your first revision.
+git commit -m "Initial commit"
+
+$env:VCINSTALLDIR = $null
+
+$env:VCINSTALLDIR = "C:\VISUAL_STUDIO\VC"
+
+C:/Qt/6.9.3/msvc2022_64/bin/windeployqt.exe --dir C:/Qt/dev/DigitalBloom/winapp  C:/Qt/dev/DigitalBloom/bin/DigitalBloom.exe
+
+pacman -S mingw-w64-x86_64-nsis
+
+export PATH="/C/msys64/mingw64/bin:$PATH"
+
+C:\Users\digital_bloom_ke\AppData\Roaming\stllimited\DigitalBloom
+
+$env:JAVA_HOME ="C:/android/jbr"
+
+C:\Qt\6.9.3\mingw_64\bin\androiddeployqt.exe --input C:/Qt/dev/qaterialdev/build/Android_Qt_6_9_3_Clang_arm64_v8a-Release/android-appqaterialdev-deployment-settings.json --output C:/Qt/dev/qaterialdev/build/Android_Qt_6_9_3_Clang_arm64_v8a-Release/android-build-appqaterialdev --android-platform android-36 --jdk C:/android/jbr --gradle --release --sign erickey.keystore ericalias --storepass ericme
+
+C:/androidsdk/platform-tools/adb.exe install C:/Qt/dev/qaterialdev/build/Android_Qt_6_9_3_Clang_arm64_v8a-Release/android-build-appqaterialdev//build/outputs/apk/release/android-build-appqaterialdev-release-signed.apk
+
+make -j3 
+
+make install INSTALL_ROOT=android/
+
+/home/ericiots/eric/Qt/6.5.0/gcc_64/bin/androiddeployqt --gradle --output android --verbose --input android-Digitalmenu-deployment-settings.json --release --sign erickey.keystore ericalias --storepass ericme
+
+
+C:\androidsdk\platform-tools\adb.exe  install  android-build-QtAndroidToolsDemo\build\outputs\apk\release/android-build-QtAndroidToolsDemo-release-signed.apk
+
+
+
+set ANDROID_NDK_ROOT=/usr/local/custom-sdk/ndk/25.1.8937393
+rm -rf _build_android
+mkdir _build_android
+cd _build_android
+/home/ericiots/eric/Qt/6.5.0/android_armv7/bin/qmake ../Digitalmenu.pro 
+
+
+
+
+make -j3 
+
+make install INSTALL_ROOT=android/
+
+
+/home/ericiots/eric/Qt/6.5.0/gcc_64/bin/androiddeployqt --gradle --aab --output android --verbose --input android-Digitalmenu-deployment-settings.json --release --sign erickey.keystore ericalias --storepass ericme --android-platform android-30 
+
+
+
+
+
+
+Step-by-Step Process to Upload App To Google Play Store
+
+1. Google Play Developer Console. ...
+2. Link Developer Account with Google Wallet Merchant Account. ...
+3.Create Application. ...
+4. App Store Listing. ...
+5. Upload App Bundles or APK To Google Play. ...
+6. Time For Content Rating. ...
+7. Fix App Pricing and Distribution. ...
+8. Finally, Publish the Application.
+
+
+An app for uploading menu items and their respective categories
+
+
+
+Digitalmenu is an App intended to be used by restaurants,hotels,eateries,clubs,bars,motels and other places where foodstuffs and drinks are sold or served, these users i mean hotels,bars etc are supposed to register a new account and verify their phone numbers using a code that will be messaged to them, after account registration they have the full rights to upload a menu item and their respective category and view them, once a user registers a new account they have the rights to even delete and update menu items belonging to them, after being contented that they have done the right thing these users can download the Qr image that was generated by the app automatically , print it and place it at a strategic position in their business places, customers can scan the Qr code using any Qr scanning app in the google play store and open the URL containing the menu items for that particular business, customers can even filter menu items based on their name and categories, that's all for Digitalmenu .
+
+
+
+readelf -h libcrypto_3.so
+
+make -j$(nproc) SHLIB_VERSION_NUMBER= build_libs
+
+mkdir -p ${out_path}
+cp libcrypto.so ${out_path}/libcrypto_3.so
+cp libssl.so ${out_path}/libssl_3.so
+
+cd ${out_path}
+patchelf --set-soname libcrypto_3.so libcrypto_3.so
+patchelf --set-soname libssl_3.so libssl_3.so
+patchelf --replace-needed libcrypto.so libcrypto_3.so libssl_3.so
+
+patchelf --replace-needed libcrypto.so.3 libcrypto_3.so libssl_3.so
+
+
+
+
+
+
+
+
+<receiver
+    android:name=".SampleDeviceAdminReceiver"
+    android:label="@string/sample_device_admin"
+    android:permission="android.permission.BIND_DEVICE_ADMIN" >
+    <meta-data
+        android:name="android.app.device_admin"
+        android:resource="@xml/device_admin_sample" />
+    <intent-filter>
+        <action android:name="android.app.action.DEVICE_ADMIN_ENABLED" />
+    </intent-filter>
+</receiver>
+
+
+<uses-permission android:name="android.permission.REQUEST_INSTALL_PACKAGES" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/usr/local/custom-sdk/platform-tools/adb logcat | grep -F "`adb shell ps | grep org.eXpesa.Digitalmenu  | tr -s [:space:] ' ' | cut -d' ' -f2`"
+
+
+
+

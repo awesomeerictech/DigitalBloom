@@ -1,0 +1,2 @@
+ARG POSTGRESQL_VERSION=latest
+FROM bitnami/postgresql:${POSTGRESQL_VERSION}

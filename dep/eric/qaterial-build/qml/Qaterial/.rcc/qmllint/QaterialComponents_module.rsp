@@ -1,0 +1,10 @@
+-I
+C:/Qt/dev/qaterialdev/build/Desktop_Qt_6_9_3_MSVC2022_64bit-Release/_deps/qaterial-build/qml
+-I
+C:/Qt/6.9.3/msvc2022_64/qml
+--resource
+C:/Qt/dev/qaterialdev/build/Desktop_Qt_6_9_3_MSVC2022_64bit-Release/_deps/qaterial-build/qml/Qaterial/.qt/rcc/qmake_Qaterial.qrc
+--resource
+C:/Qt/dev/qaterialdev/build/Desktop_Qt_6_9_3_MSVC2022_64bit-Release/_deps/qaterial-build/qml/Qaterial/.qt/rcc/QaterialComponents_raw_qml_0.qrc
+--module
+Qaterial

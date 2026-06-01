@@ -1,0 +1,11 @@
+module Fluid.Private
+linktarget fluidcontrolsprivate
+optional plugin fluidcontrolsprivate
+classname Fluid_PrivatePlugin
+typeinfo fluidcontrolsprivate.qmltypes
+prefer :/qt/qml/Fluid/Private/
+DateSelector 2.0 DateSelector.qml
+TimeSelector 2.0 TimeSelector.qml
+YearSelector 2.0 YearSelector.qml
+depends QtQuick
+

@@ -1,0 +1,7 @@
+[Desktop Entry]
+Type=Application
+Name=DigitalBloom
+Comment=Application for DigitalBloom Programme
+Exec=DigitalBloom
+Icon=DigitalBloom
+Categories=Utility;DataVisualization;Qt;

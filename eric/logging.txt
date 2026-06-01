@@ -1,0 +1,10 @@
+server.logger().configure("-*"); // Disables all logs
+
+Log Levels Reference
+ZLMediaKit uses the following log levels:
+0: LTrace (most detailed, verbose logging)
+1: LDebug
+2: LInfo
+3: LWarn
+4: LError (only critical errors are shown) 
+Setting the level to 4 will provide the quietest operation. 

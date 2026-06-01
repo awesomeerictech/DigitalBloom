@@ -1,0 +1,26 @@
+
+
+#ifndef _EXCEPTION_H
+#define _EXCEPTION_H
+
+#include <errno.h>
+#include <iostream>
+#include <string>
+
+
+namespace MPFD {
+
+class Exception {
+public:
+  Exception( std::string error );
+  Exception( const Exception &orig );
+  virtual ~Exception();
+
+  std::string GetError() const;
+
+private:
+  std::string Error;
+};
+}
+
+#endif /* _EXCEPTION_H */

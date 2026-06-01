@@ -1,0 +1,372 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<messages xmlns:if="Wt.WTemplate.conditions">
+
+ <message id="bootstrap-account-setup">
+  <head>
+    <!-- Required meta tags -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+
+  </head>
+ 
+  <body>
+
+    <header>
+      <nav class="navbar navbar-expand mycolors1 fixed-top">
+        <div class="container-fluid">
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav me-auto mb-2 mb-md-0">
+              <li class="nav-item">
+                  ${AnchorBPage}
+              </li>
+            </ul>
+          </div>
+          <a class="navbar-brand header_text mycolors2" href="#">Account set up page</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        </div>
+      </nav>
+    </header>
+
+    <section class="h-100" style="margin-top: 8rem;">
+      <div class="container h-100">
+        <div class="row justify-content-sm-center h-100">
+          <div class="col-xxl-4 col-xl-5 col-lg-5 col-md-7 col-sm-9">
+            <div class="text-center my-5">
+              <img src="/icons/logo.png" style="background-color: var(--bs-cyan);" alt="logo" width="100"/>
+            </div>
+            <div class="card shadow-lg">
+              <div class="card-body p-5">
+                <h1 class="fs-4 card-title fw-bold mb-4">Login</h1>
+                <form method="POST" class="needs-validation" novalidate="" autocomplete="off">
+                  <div class="col-12">
+                    <div class="input-group mb-3">
+                        <span class="input-group-text" id="basic-addon1">
+                          <i class="fas fa-user"></i>
+                        </span>
+                      ${username}
+                      <div class="invalid-feedback">
+                        Username is required
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-12">
+                    <div class="input-group mb-3">
+                    <div class="mb-2 w-100">
+                        <label class="text-muted" for="password">Password</label>
+                        ${AnchorRetrieve}
+                     </div>
+                      <span class="input-group-text" id="basic-addon2">
+                        <i class="fas fa-lock"></i>
+                      </span>
+                         ${password}
+                         ${hideshoweye1}
+                        <div class="invalid-feedback">
+                          Password is required
+                        </div>
+                    </div>
+                    
+                  </div>
+  
+                 
+  
+                  <div class="d-flex align-items-center">
+                    <div class="form-check">
+                      ${checklogin}
+                      <label for="remember" class="form-check-label">Remember Me</label>
+                    </div>
+                    ${loginbtn}
+                  </div>
+                </form>
+              </div>
+              <div class="card-footer py-3 border-0">
+                <div class="text-center">
+                  Don't have an account? ${AnchorRegister}
+                </div>
+              </div>
+            </div>
+            <div class="text-center mt-5 text-muted">
+              Copyright &copy; 2022 &mdash; Stratetactical .
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  
+    
+  </body>
+  
+</message>
+
+
+<message id="bootstrap-register">
+ 
+  <body>
+    <section class="h-100">
+      <div class="container h-100">
+        <div class="row justify-content-sm-center h-100">
+          <div class="col-xxl-4 col-xl-5 col-lg-5 col-md-7 col-sm-9">
+            <div class="text-center my-5">
+              <img src="/icons/logo.png" style="background-color: var(--bs-cyan);" alt="logo" width="100" />
+            </div>
+            <div class="card shadow-lg">
+              <div class="card-body p-5">
+                <h1 class="fs-4 card-title fw-bold mb-4">Register</h1>
+                <form method="POST" class="needs-validation" novalidate="" autocomplete="off">
+                 
+                  <div class="col-12">
+                    <label class="mb-2 text-muted" for="email">Username</label>
+                    <div class="input-group mb-3">
+                      <span class="input-group-text" id="basic-addon3">
+                        <i class="fas fa-user"></i>
+                      </span>
+                      ${username}
+                        <div class="invalid-feedback">
+                          Username is required
+                        </div>
+                    </div>
+                    
+                  </div>
+
+                  <div class="col-12">
+                    <label class="mb-2 text-muted" for="email">Email</label>
+                    <div class="input-group mb-3">
+                      <span class="input-group-text" id="basic-addon4">
+                        <i class="fas fa-envelope"></i>
+                      </span>
+                         ${email}
+                        <div class="invalid-feedback">
+                          A valid Email address is required 
+                        </div>
+                    </div>
+                    
+                  </div>
+  
+                  
+                 <div class="col-12">
+                   <label class="mb-2 text-muted" for="name">Password Hint</label>
+                    <div class="input-group mb-3">
+                      <span class="input-group-text" id="basic-addon6">
+                        <i class="fas fa-info"></i>
+                      </span>
+                        ${hint}
+                        ${hideshoweye2}
+                        <div class="invalid-feedback">
+                          Password hint is required
+                        </div>
+                    </div>
+                    
+                  </div>
+
+                  <div class="col-12">
+                    <label class="mb-2 text-muted" for="name">Phone Number</label>
+                    <div class="input-group mb-3">
+                      <span class="input-group-text" id="basic-addon7">
+                        <i class="fas fa-phone"></i>
+                      </span>
+                         ${phone}
+                        <div class="invalid-feedback">
+                          A valid phone number is required 
+                        </div>
+                    </div>
+                    
+                  </div>
+  
+                 
+
+                  <div class="col-12">
+                    <label class="mb-2 text-muted" for="password">Password</label>
+                    <div class="input-group mb-3">
+                      <span class="input-group-text" id="basic-addon8">
+                        <i class="fas fa-lock"></i>
+                      </span>
+                          ${password}
+                          ${hideshoweye3}
+                        <div class="invalid-feedback">
+                          Should be eight digits long having one special character and at least upper and lowecase letters 
+                        </div>
+                    </div>
+                    
+                  </div>
+
+
+                  <div class="col-12">
+                    <label class="mb-2 text-muted" for="password">Re-enter Password</label>
+                    <div class="input-group mb-3">
+                      <span class="input-group-text" id="basic-addon9">
+                        <i class="fas fa-brain"></i>
+                      </span>
+                         ${passwordreenter}
+                         ${hideshoweye4}
+                        <div class="invalid-feedback">
+                          The two passwords are not matching
+                        </div>
+                    </div>
+                    
+                  </div>
+
+                  
+                  <p class="form-text text-muted mb-3">
+                    By registering you agree with our terms and condition.
+                  </p>
+  
+                  <div class="align-items-center d-flex">
+                    ${registerbtn}
+                  </div>
+                </form>
+              </div>
+              <div class="card-footer py-3 border-0">
+                <div class="text-center">
+                  Already have an account? ${AnchorSetUp}
+                </div>
+              </div>
+            </div>
+            <div class="text-center mt-5 text-muted">
+              Copyright &copy; 2022 &mdash; Stratetactical . 
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  
+  </body>
+  
+</message>
+
+
+<message id="bootstrap-retrieve">
+
+  <body>
+    <section class="h-100">
+      <div class="container h-100">
+        <div class="row justify-content-sm-center h-100">
+          <div class="col-xxl-4 col-xl-5 col-lg-5 col-md-7 col-sm-9">
+            <div class="text-center my-5">
+              <img src="/icons/logo.png" style="background-color: var(--bs-cyan);" alt="logo" width="100" />
+            </div>
+            <div class="card shadow-lg">
+              <div class="card-body p-5">
+                <h1 class="fs-4 card-title fw-bold mb-4">Forgot Password</h1>
+                <form method="POST" class="needs-validation" novalidate="" autocomplete="off">
+                 
+                  <div class="col-12">
+                    <label class="mb-2 text-muted" for="email">Username</label>
+                    <div class="input-group mb-3">
+                      <span class="input-group-text" id="basic-addon10">
+                        <i class="fas fa-user"></i>
+                      </span>
+                      ${username}
+                        <div class="invalid-feedback">
+                          Username is required
+                        </div>
+                    </div>
+                    
+                  </div>
+
+                  <div class="col-12">
+                    <label class="mb-2 text-muted" for="name">Password Hint</label>
+                     <div class="input-group mb-3">
+                       <span class="input-group-text" id="basic-addon11">
+                         <i class="fas fa-info"></i>
+                       </span>
+                         ${hint}
+                         ${hideshoweye5}
+                         <div class="invalid-feedback">
+                           Password hint is required
+                         </div>
+                     </div>
+                     
+                  </div>
+
+                  
+  
+                  <div class="d-flex align-items-center">
+                   ${retrievebtn}
+                  </div>
+                </form>
+              </div>
+              <div class="card-footer py-3 border-0">
+                <div class="text-center">
+                  Remember your password?  ${AnchorSetUp}
+                </div>
+              </div>
+            </div>
+            <div class="text-center mt-5 text-muted">
+              Copyright &copy; 2022 &mdash; Stratetactical .
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  
+    
+  </body> 
+ 
+  
+</message>
+
+
+<message id="bootstrap-reset">
+
+  <body>
+    <section class="h-100">
+      <div class="container h-100">
+        <div class="row justify-content-sm-center h-100">
+          <div class="col-xxl-4 col-xl-5 col-lg-5 col-md-7 col-sm-9">
+            <div class="text-center my-5">
+              <img src="https://getbootstrap.com/docs/5.0/assets/brand/bootstrap-logo.svg" alt="logo" width="100" />
+            </div>
+            <div class="card shadow-lg">
+              <div class="card-body p-5">
+                <h1 class="fs-4 card-title fw-bold mb-4">Reset Password</h1>
+                <form method="POST" class="needs-validation" novalidate="" autocomplete="off">
+                  <div class="mb-3">
+                    <label class="mb-2 text-muted" for="password">New Password</label>
+                    <input id="password" type="password" class="form-control" name="password" value="" />
+                    <div class="invalid-feedback">
+                      Password is required	
+                    </div>
+                  </div>
+  
+                  <div class="mb-3">
+                    <label class="mb-2 text-muted" for="password-confirm">Confirm Password</label>
+                    <input id="password-confirm" type="password" class="form-control" name="password_confirm" />
+                      <div class="invalid-feedback">
+                      Please confirm your new password
+                      </div>
+                  </div>
+  
+                  <div class="d-flex align-items-center">
+                    <div class="form-check">
+                      <input type="checkbox" name="logout_devices" id="logout" class="form-check-input" />
+                      <label for="logout" class="form-check-label">Logout all devices</label>
+                    </div>
+                    <button type="submit" class="btn btn-primary ms-auto">
+                      Reset Password	
+                    </button>
+                  </div>
+                </form>
+              </div>
+            </div>
+            <div class="text-center mt-5 text-muted">
+              Copyright &copy; 2022 &mdash; Stratetactical .
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  
+  </body>
+
+</message>
+
+<message id="bootstrap-anotherview">
+
+<body>
+
+</body>
+
+</message>
+
+</messages>

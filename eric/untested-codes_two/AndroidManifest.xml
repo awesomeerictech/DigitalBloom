@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="org.stlltd.digitalbloom.app">
+
+    <!-- 1. PERMISSIONS REQUIRED -->
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS"/>
+
+    <!-- Required for API 34 (Android 14) and later: must declare a specific foregroundServiceType. -->
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE_DATA_SYNC" tools:node="required" />
+    
+    <application
+        android:allowBackup="true"
+        android:label="DigitalBloom"
+        android:icon="@mipmap/ic_launcher"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true">
+
+        <!-- Place your main activity declaration here (usually the Qt Activity) -->
+        <!-- <activity ...> </activity> -->
+
+        <!-- 2. SERVICE DECLARATION -->
+        <service
+            android:name="org.stlltd.digitalbloom.DigitalBloomService"
+            android:enabled="true"
+            android:exported="false"
+            android:stopWithTask="false">
+            
+            <!-- REQUIRED for API 34+ (Android 14). Specifies the type of foreground service. -->
+            <property
+                android:name="android.app.PROPERTY_DEFAULT_FOREGROUND_SERVICE_TYPE"
+                android:value="dataSync" />
+
+            <!-- REQUIRED for API 34+ (Android 14). Specifies the type of foreground service. -->
+            <meta-data
+                android:name="android.app.foregroundServiceType"
+                android:value="dataSync" />
+                
+        </service>
+        
+        <!-- 3. BROADCAST RECEIVER DECLARATION (for boot start) -->
+        <receiver
+            android:name="org.stlltd.digitalbloom.DigitalBloomBootReceiver"
+            android:enabled="true"
+            android:exported="false">
+            <intent-filter>
+                <!-- This filter catches the system event when the device boot is completed -->
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
+
+        <!-- 4. NATIVE LIBRARY DECLARATION -->
+        <meta-data android:name="android.app.lib_name" android:value="digitalbloom"/>
+
+    </application>
+</manifest>

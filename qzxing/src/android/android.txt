@@ -1,0 +1,6 @@
+rm -rf _build_android
+mkdir _build_android
+cd _build_android
+/home/ericiots/eric/qtandroidnewv8/bin/qmake ../QZXing.pro
+make -j3
+cd ..

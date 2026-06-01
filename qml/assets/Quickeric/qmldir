@@ -1,0 +1,20 @@
+module Quickeric
+
+App 1.0 App.qml
+HorizontalLine 1.0 HorizontalLine.qml
+NetworkErrors 1.0 NetworkErrors.qml
+Urls 1.0 Urls.qml
+VerticalLine 1.0 VerticalLine.qml
+Uploader 1.0 Uploader.qml
+Background 1.0 Background.qml
+ResourceApi 1.0 ResourceApi.qml
+SimplePromise 1.0 SimplePromise.qml
+Spacing 1.0 Spacing.qml
+Margins 1.0 Margins.qml
+Sizes 1.0 Sizes.qml
+Avatar 1.0 Avatar.qml
+Margins2 1.0 Margins2.qml
+Space 1.0 Space.qml
+
+
+

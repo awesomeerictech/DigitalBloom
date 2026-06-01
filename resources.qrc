@@ -1,0 +1,7 @@
+<RCC>
+    <qresource prefix="/">
+        <file>ssl/donate.crt</file>
+        <file>ssl/donate.key</file>
+        <file>ssl/DonaterootCA.crt</file>
+    </qresource>
+</RCC>

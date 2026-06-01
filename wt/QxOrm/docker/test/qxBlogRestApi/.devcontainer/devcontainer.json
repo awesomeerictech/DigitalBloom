@@ -1,0 +1,19 @@
+{
+   "name": "QxOrm library - C++ and Qt development environment - Project qxBlogRestApi",
+   "build": {
+      "dockerfile": "../Dockerfile",
+      "target": "dev"
+   },
+   "customizations": {
+      "vscode": {
+         "extensions": [
+            "ms-vscode.cpptools",
+            "ms-vscode.cmake-tools"
+         ]
+      }
+   },
+   "overrideCommand": false,
+   "forwardPorts": [ 9642, 9643 ],
+   "workspaceFolder": "/home/qxorm/src/QxOrm",
+   "remoteUser": "qxorm"
+}

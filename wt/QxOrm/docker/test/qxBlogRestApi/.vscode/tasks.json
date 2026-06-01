@@ -1,0 +1,19 @@
+{
+   "version": "2.0.0",
+   "tasks": [
+      {
+         "label": "Build QxOrm library (Debug mode)",
+         "type": "shell",
+         "command": "${QX_SCRIPTS}/build_qx.sh",
+         "args": [
+            "Debug",
+            "%%QX_CMAKE_OPTIONS_DEBUG%%"
+         ],
+         "problemMatcher": [ "$gcc" ],
+         "group": {
+            "kind": "build",
+            "isDefault": true
+         }
+      }
+   ]
+}

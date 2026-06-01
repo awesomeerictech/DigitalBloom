@@ -1,0 +1,36 @@
+
+set(SOURCES
+    ZXingQt.cpp
+    ZXingQt.h
+)
+
+if (ZXING_READERS)
+    set(SOURCES ${SOURCES}
+        ZXingQtVideoFilter.cpp
+        ZXingQtVideoFilter.h
+    )
+endif()
+
+if (ZXING_WRITERS)
+    set(SOURCES ${SOURCES}
+        ZXingQtImageProvider.cpp
+        ZXingQtImageProvider.h
+    )
+endif()
+
+add_library (ZXingQt ${SOURCES})
+
+#target_compile_features(ZXingQt PUBLIC cxx_std_20)
+
+set_target_properties(ZXingQt PROPERTIES
+    CXX_STANDARD 20
+    CXX_STANDARD_REQUIRED OFF
+)
+
+target_link_libraries (ZXingQt PRIVATE ZXing::ZXing)
+target_include_directories (ZXingQt PRIVATE ZXing::ZXing)
+
+find_package (Qt6 REQUIRED COMPONENTS Core Concurrent Quick Multimedia)
+target_link_libraries (ZXingQt PRIVATE Qt6::Core Qt6::Concurrent Qt6::Quick Qt6::Multimedia)
+
+target_include_directories (ZXingQt PUBLIC ${CMAKE_CURRENT_LIST_DIR})

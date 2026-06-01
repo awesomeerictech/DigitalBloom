@@ -1,0 +1,1352 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<messages xmlns:if="Wt.WTemplate.conditions">
+
+<message id="appview-view1">
+
+ 
+<body>
+   
+  
+  <header>
+    <!-- navbar-expand-md-->
+    <nav class="navbar navbar-expand mycolors1 fixed-top">
+      <div class="container-fluid">
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+          <ul class="navbar-nav me-auto mb-2 mb-md-0">
+            <li class="nav-item">
+                ${AnchorAllItems}
+            </li>
+          </ul>
+        </div>
+        <a class="navbar-brand header_text mycolors2" href="#">Help page</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      </div>
+    </nav>
+  </header>
+  
+  
+  <main style="margin-top: 7rem;">
+  
+    <section class="py-5 text-center container">
+      <div class="row py-lg-5">
+        <div class="col-lg-6 col-md-8 mx-auto">
+          <h1 class="blog-post-title mb-1">Deliva Application</h1>
+          <p class="lead text-muted">Any customer can request any item through this platform wherever they are ,whereas any business can sell it's products here!</p>
+          <article class="blog-post">
+            <h2 class="blog-post-title mb-1">How to use Deliva</h2>
+          <!--   <p class="blog-post-meta">October 13, 2022 by <a href="#">Eric M. M.</a></p> -->
+    
+            <p>Click the login button to register yourself as a business or customer, then populate your site with items in case you are a business or else request an item as a newly registered or regular customer. </p>
+            <ul>
+              <li>Login or create an account by clicking login button then register .</li>
+              <li>Before adding any item ensure that you have added your categories by clicking the Settings button so that you can have access to that page.</li> 
+              <li>Add new items or update existing ones</li> 
+              <li>If the business is yours this part in the link ?business=yourbusiness has yourbusiness corresponding to your username .</li>
+              <li>Access your items using this link https://deliva.stratetactical.com?business=mybusinessname , don't forget to replace mybusinessname with your real business name.</li>
+              <li>Request items as a newly registered or regular customer.</li>
+              <li>You will see this page if your business does not have any items or mybusinessname is invalid.</li>
+              <li>We recommend that you only utilize the navigation arrows provided by the application a good example is the back arrows in the app pages.</li>
+              <li>This application does not make use of cookies.</li>
+              <li>We hope you have mastered the art, now it's time to go ${myhelp2} </li>
+            </ul>
+          </article>
+          
+        </div>
+      </div>
+    </section>
+  
+  
+  
+  </main>
+
+
+  <footer class="text-muted py-5">
+    <div class="container">
+      <p class="float-end mb-1">
+        <a href="#">Back to top</a>
+      </p>
+      <p class="mb-1">Deliva &copy; Stratetactical</p>
+    </div>
+  </footer>
+  
+  
+ 
+     
+        
+</body>
+
+</message>
+
+
+<message id="appview-view2">
+<body>
+    
+<main>
+
+
+  <div class="album py-5 bg-light">
+    <div class="container">
+
+      <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+        
+        <div class="col">
+          <div class="card shadow-sm">
+            <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
+
+            <div class="card-body">
+              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-sm btn-outline-secondary">Update</button>
+                  <button type="button" class="btn btn-sm btn-outline-secondary">Delete</button>
+                </div>
+                <small class="text-muted">9 mins</small>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</main>
+
+<footer class="text-muted py-5">
+  <div class="container">
+    <p class="float-end mb-1">
+      <a href="#">Back to top</a>
+    </p>
+    <p class="mb-1">Deliva &copy; Stratetactical</p>
+    <p class="mb-0">Need help? <a href="/">Visit the helppage</a> or read our <a href="../getting-started/introduction/">getting started guide</a>.</p>
+  </div>
+</footer>
+
+
+   
+      
+</body> 
+
+
+</message>
+
+
+
+<message id="appview-view3">
+
+<body>
+    
+<main>
+
+
+  ${mygrid}
+
+</main>
+
+<footer class="text-muted py-5">
+  <div class="container">
+    <p class="float-end mb-1">
+      <a href="#">Back to top</a>
+    </p>
+    <p class="mb-1">Deliva &copy; Stratetactical</p>
+    <p class="mb-0">Need help? ${myhelp1}.</p>
+  </div>
+</footer>
+
+
+   
+      
+</body> 
+
+
+</message>
+
+  <message id="appview-view4">
+
+    <div class="scrollable">
+       <p class="card-text">${para}</p>
+     </div>
+                
+ 
+  </message>
+
+  <message id="appview-view5">
+
+ 
+    <small class="text-muted">${smalltxt}</small>        
+ 
+  </message> 
+
+  <message id="appview-view6">
+
+    <!-- <img src="${imgsrc}" class="img-content"/>   -->
+    <!-- <div class="img-content" > -->
+      <!-- <img src="${imgsrc}" /> -->
+      <img src="${imgsrc}" class="bd-placeholder-img card-img-top img-fluid" width="100%" height="334" preserveAspectRatio="xMidYMid slice" focusable="false" />  
+   <!-- </div> -->
+  </message> 
+
+  <message id="appview-view7">
+    <body>
+        ${myheader1}
+      <main>  
+
+        <section class="pt-5 pb-5"  style="margin-top: 7rem;">
+        <div class="container">
+          <div class="row">
+              <div class="col-6">
+                  <h3 class="mb-3">Favourite Items</h3>
+              </div>
+              <div class="col-6 text-right">
+                  <a class="btn btn-primary mb-3 mr-1 "  data-bs-target="#myCarousel" role="button" data-bs-slide="prev">
+                      <i class="fa fa-arrow-left"></i>
+                  </a>
+                  <a class="btn btn-primary mb-3 " data-bs-target="#myCarousel" role="button" data-bs-slide="next">
+                      <i class="fa fa-arrow-right"></i>
+                  </a>
+              </div>
+              <div class="col-12">
+                  <div id="myCarousel" class="carousel slide carousel-dark" data-bs-ride="carousel">
+  
+                      <div class="carousel-inner">
+                          <div class="carousel-item ${isactive} ">
+                              <div class="row d-flex justify-content-center text-center">
+  
+                                  <!-- <div class="col-md-4 mb-3">-->
+                                    <div class="col-md-4">
+                                      <div class="card ">
+                                              ${mediasrcaaa} 
+                                            <!-- <img src="${fav1}" class="img-fluid" /> -->
+                                          <div class="card-body">
+                                            <h1 class="display-8 fw-bold " style="color: #ebb523e5 !important;">${name1}.</h1>
+                                            <div class="scrollable">
+                                              <p class="display-8 fw-bold " style="color: #ebb523e5 !important;">${des1}.</p>
+                                            </div>
+                                            <p>${itemlinkaaa}</p>
+                                            <p>${itemlink1aaa}</p>
+                                          </div>
+  
+                                      </div>
+                                  </div>
+                                  
+                                 
+  
+                              </div>
+                          </div>
+                          <div class="carousel-item">
+                              <div class="row d-flex justify-content-center text-center">
+  
+                                  <div class="col-md-4">
+                                      <div class="card">
+                                              ${mediasrcaab} 
+                                             <!-- <img src="${fav2}" class="img-fluid"/> -->
+                                          <div class="card-body">
+                                            <h1 class="display-8 fw-bold " style="color: #ebb523e5 !important;" >${name2}.</h1>
+                                            <div class="scrollable">
+                                               <p class="display-8 fw-bold " style="color: #ebb523e5 !important;" >${des2}.</p>
+                                             </div>
+                                             <p>${itemlinkaab}</p>
+                                             <p>${itemlink2aab}</p>
+                                          </div>
+  
+                                      </div>
+                                  </div>
+                                  
+                                  
+  
+                              </div>
+                          </div>
+                          <div class="carousel-item">
+                              <div class="row d-flex justify-content-center text-center">
+  
+                                  <div class="col-md-4">
+                                      <div class="card">
+                                              ${mediasrcaac} 
+                                            <!-- <img src="${fav3}" class="img-fluid"/> -->
+                                          <div class="card-body">
+                                            <h1 class="display-8 fw-bold " style="color: #ebb523e5 !important;" >${name3}.</h1>
+                                            <div class="scrollable">
+                                              <p class="display-8 fw-bold " style="color: #ebb523e5 !important;">${des3}.</p>
+                                            </div>
+                                             <p>${itemlinkaac}</p>
+                                             <p>${itemlink3aac}</p>
+                                          </div>
+  
+                                       </div>
+                                  </div>
+                                  
+                                 
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+        </section>
+
+      <div style="margin-top: 2rem;">
+        ${myspinner1}
+        <section class="text-center container">
+          <div class="row">
+            <div class="col-lg-6 col-md-8 mx-auto">
+              <h1 class="fw-light mybreak-word">${bizname}</h1>
+              <p class="lead text-muted mybreak-word">${bizphone}.</p>
+            </div>
+          </div>
+        </section>
+       ${items}
+
+      </div>
+
+      </main>
+
+      <!-- &u=http://www.stratetactical.com/first=12&amp;sec=25&amp;position=2 -->
+
+      <footer class="text-muted blog-footer">
+        <p class="float-end mb-1">
+          <a href="#">Back to top</a>
+        </p>
+        <p class="mb-0">Need help? ${myhelp1} .</p>
+        <p>
+          <p class="mb-1">Deliva &copy; Stratetactical</p>
+        </p>
+      </footer>
+      
+      
+         
+            
+      </body> 
+      
+
+    
+  </message>
+
+  <message id="youtubeembed2">
+
+    
+
+
+      <div>
+          ${ordinaryimages}
+          ${youtubeembed1} 
+      </div>
+
+
+  </message>
+    <!--allowfullscreen="allowfullscreen" -->
+
+  <message id="youtubeembed1">
+      <iframe src="${standardizedmedia}" 
+         allowFullScreen="allowFullScreen"
+         mozallowfullscreen="mozallowfullscreen" 
+         msallowfullscreen="msallowfullscreen" 
+         oallowfullscreen="oallowfullscreen" 
+         webkitallowfullscreen="webkitallowfullscreen"> 
+     </iframe> 
+  </message>
+
+ <message id="ordinaryimages">
+
+   <img src="${imgsrc}" class="img-fluid card-img-top " width="100%" height="100%" > </img>  
+     
+  </message>
+
+  <message id="youtubeembed2aaa">
+
+    
+
+
+    <div>
+        ${ordinaryimagesaaa}
+        ${youtubeembed1aaa} 
+    </div>
+
+
+</message>
+  <!--allowfullscreen="allowfullscreen" -->
+
+<message id="youtubeembed1aaa">
+    <iframe src="${standardizedmediaaaa}"
+       allowFullScreen="allowFullScreen"
+       mozallowfullscreen="mozallowfullscreen" 
+       msallowfullscreen="msallowfullscreen" 
+       oallowfullscreen="oallowfullscreen" 
+       webkitallowfullscreen="webkitallowfullscreen"> 
+   </iframe> 
+</message>
+
+<message id="ordinaryimagesaaa">
+
+ <img src="${imgsrcaaa}" class="img-fluid" > </img>  
+   
+</message>
+
+
+<message id="youtubeembed2aab">
+
+    
+
+
+  <div>
+      ${ordinaryimagesaab}
+      ${youtubeembed1aab} 
+  </div>
+
+
+</message>
+<!--allowfullscreen="allowfullscreen" -->
+
+<message id="youtubeembed1aab">
+  <iframe src="${standardizedmediaaab}" 
+     allowFullScreen="allowFullScreen"
+     mozallowfullscreen="mozallowfullscreen" 
+     msallowfullscreen="msallowfullscreen" 
+     oallowfullscreen="oallowfullscreen" 
+     webkitallowfullscreen="webkitallowfullscreen"> 
+ </iframe> 
+</message>
+
+<message id="ordinaryimagesaab">
+
+<img src="${imgsrcaab}" class="img-fluid" > </img>  
+ 
+</message>
+
+<message id="youtubeembed2aac">
+
+    
+
+
+  <div>
+      ${ordinaryimagesaac}
+      ${youtubeembed1aac} 
+  </div>
+
+
+</message>
+<!--allowfullscreen="allowfullscreen" -->
+
+<message id="youtubeembed1aac">
+  <iframe src="${standardizedmediaaac}" 
+     allowFullScreen="allowFullScreen"
+     mozallowfullscreen="mozallowfullscreen" 
+     msallowfullscreen="msallowfullscreen" 
+     oallowfullscreen="oallowfullscreen" 
+     webkitallowfullscreen="webkitallowfullscreen"> 
+ </iframe> 
+</message>
+
+<message id="ordinaryimagesaac">
+
+<img src="${imgsrcaac}" class="img-fluid"> </img>  
+ 
+</message>
+  
+  <message id="appview-view8">
+
+    <div class="col">
+      <div class="card  shadow-sm">
+       <!-- <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false">
+          <title>Placeholder</title>
+          <rect width="100%" height="100%" fill="#55595c"/>
+          <text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text>
+        </svg>  -->
+        ${mediasrc}
+        <div class="card-body">
+            <h5 class="card-title">${itemname}</h5>
+                ${myparagraph} 
+          <div class="d-flex justify-content-between align-items-center">
+            <div class="btn-group">
+              ${btn1}
+              ${btn2}
+            </div>
+            <small class="text-muted">${smalltxt}</small>
+          </div>
+          <div class="card" style="margin-top: 1rem;">
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">${category}</li>
+              <li class="list-group-item">${quantity}</li>
+            </ul>
+          </div>
+        </div>
+        <div class="card-footer bg-dark text-center">    
+          <div class="scrollable">
+          <!--   <p style="color:white;">By ${username}</p> -->
+               ${btn3} 
+               ${btn4} 
+          </div>       
+         
+      </div>
+      </div>
+    </div> 
+
+  </message>
+
+  <message id="appview-view9">
+
+ 
+    <body>
+
+      <header>
+        <!-- navbar-expand-md-->
+        <nav class="navbar navbar-expand mycolors1 fixed-top">
+          <div class="container-fluid">
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+              <ul class="navbar-nav me-auto mb-2 mb-md-0">
+                <li class="nav-item">
+                    ${AnchorBnewPage}
+                    ${AnchorBupdatePage}
+                </li>
+              </ul>
+            </div>
+            <a class="navbar-brand header_text mycolors2" href="#">File upload page</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          </div>
+        </nav>
+      </header>
+  
+     
+      <main style="margin-top: 7rem;">
+      
+        <section class="py-5 text-center container">
+          <div class="row py-lg-5">
+            <div class="col-lg-6 col-md-8 mx-auto">
+              <h1 class="fw-light">Disclaimer!</h1>
+              <p class="lead text-muted">Only image,audio, video and CSV files are supported .We also don't support files above 5MiB in size. For images and video ensure that the width and the height of the canvas is uniform for all the media uploaded.It is not mandatory to upload a file during item update operation so it's tenable to click upload button and you are good to go.</p>
+            </div>
+          </div>
+        </section>
+      
+        <div class="album py-5 bg-light">
+          <fieldset class="example">
+            <legend>File Upload</legend>
+               ${uploadfile}
+          </fieldset>
+        </div>
+      
+      </main>
+      
+      <footer class="text-muted blog-footer">
+        <p class="float-end mb-1">
+          <a href="#">Back to top</a>
+        </p>
+        <p>
+          <p class="mb-1">Deliva &copy; Stratetactical</p>
+        </p>
+      </footer>
+      
+      
+         
+            
+    </body>
+    
+    </message>
+
+ 
+  
+    <message id="appview-view10">
+  
+   
+      <h1>${myitem}</h1>      
+   
+    </message>  
+
+
+    <message id="appview-view11">
+
+      <div class="scrollable">
+         <p >${mydes}</p>
+       </div>
+                  
+   
+    </message>
+    
+    <message id="appview-view12">
+  
+   
+      <p>${myprice}</p>       
+   
+    </message>  
+
+  <message id="appview-view13">
+  
+   
+     <div class="carousel-item active">
+        <img src="${imgsrc}" class="img-fluid" />
+        <!-- <div class="container">
+           <div class="carousel-caption text">
+             ${itemname}
+             ${des}
+             ${price}
+           </div>
+         </div> -->
+      </div>
+               
+   
+  </message>   
+  
+  <message id="appview-view14">
+
+  <body>
+
+    <header>
+      <!-- navbar-expand-md-->
+      <nav class="navbar navbar-expand mycolors1 fixed-top">
+        <div class="container-fluid">
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav me-auto mb-2 mb-md-0">
+              <li class="nav-item">
+                  ${AnchorBItemsPage}
+              </li>
+            </ul>
+          </div>
+          <a class="navbar-brand header_text mycolors2" href="#">${whichpage1}</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        </div>
+      </nav>
+    </header>
+
+    <section class="h-100" style="margin-top: 10rem;">
+
+  
+    <form>
+      
+      
+       <div class="form-outline mb-4">
+          <label class="form-label" for="${id:category}">Category</label>
+          ${category}
+       </div>
+
+        <div class="form-outline mb-4">
+          <label class="form-label" for="${id:item-name}">Item Name</label>
+              ${item-name}
+            <div class="form-text">
+                ${item-name-info}
+            </div>
+        </div>
+
+        <div class="form-outline mb-4">
+          <label class="form-label" for="${id:quantity}">Quantity</label>
+              ${quantity}
+            <div class="form-text">
+               ${quantity-info}
+            </div>
+        </div>
+
+        <div class="form-outline mb-4">
+          <label class="form-label" for="${id:price}">Price</label>
+              ${price}
+            <div class="form-text">
+               ${price-info}
+            </div>
+        </div>
+
+        <div class="form-outline mb-4">
+          <label class="form-label" for="${id:description}">Description</label>
+              ${description}
+            <div class="form-text">
+               ${description-info}
+            </div>
+        </div>
+
+            <div class="form-outline mb-4">
+               <label class="form-label" for="${id:standardized}">Standardized?</label>
+                    ${standardized}
+                <div class="form-text">
+                 ${standardized-info}
+                </div>
+             </div>
+
+              <div class="form-outline mb-4">
+                     <label class="form-label" for="${id:standardized-media}">Standardized media</label>
+                          ${standardized-media}
+                   <div class="form-text">
+                       ${standardized-media-info}
+                      </div>
+               </div>
+
+
+              <div class="form-outline mb-4">
+                  <label class="form-label" for="${id:item-uuid}">Item Uuid</label>
+                       ${item-uuid}
+                <div class="form-text">
+                    ${item-uuid-info}
+                   </div>
+              </div>
+
+              <div class="form-outline mb-4">
+                <label class="form-label" for="${id:manufacturer}">Manufacturer</label>
+                     ${manufacturer}
+               <div class="form-text">
+                  ${manufacturer-info}
+                 </div>
+            </div>
+
+            <div class="form-outline mb-4">
+              ${submit-button} <!--  <span class="help-inline">${submit-info}</span> -->
+          </div>
+    
+    </form>
+
+    </section>
+
+
+  </body>
+    
+              
+  
+ </message> 
+ 
+ 
+ <message id="appview-view15">
+  
+  
+  <div class="toast-container position-fixed top-0 end-0 p-3" style="margin-top: 2rem;">
+    <div class="toast show text-bg-success" role="alert" aria-live="assertive" aria-atomic="true">
+      <div class="toast-header"> 
+        <strong class="me-auto">Stratetactical</strong>
+        <small>login info</small>
+       <!--  <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button> -->
+      </div>
+      <div class="toast-body">
+        Login was successful!
+      </div>
+    </div>
+  </div>  
+    
+              
+  
+</message> 
+
+<message id="appview-view16">
+  
+ <div class="toast-container position-fixed top-0 end-0 p-3" style="margin-top: 2rem;">
+    <div class="toast show text-bg-danger" role="alert" aria-live="assertive" aria-atomic="true">
+      <div class="toast-header"> 
+        <strong class="me-auto">Stratetactical</strong>
+        <small>login info</small>
+       <!--  <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button> -->
+      </div>
+      <div class="toast-body">
+        Login failed! Wrong credentials.
+      </div>
+    </div>
+ </div>  
+      
+ 
+</message> 
+
+<message id="appview-view17">
+  
+  
+  <div class="toast-container position-fixed top-0 end-0 p-3" style="margin-top: 2rem;">
+    <div class="toast show text-bg-success" role="alert" aria-live="assertive" aria-atomic="true">
+      <div class="toast-header"> 
+        <strong class="me-auto">Stratetactical</strong>
+        <small>registration info</small>
+        <!-- <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button> -->
+      </div>
+      <div class="toast-body">
+        User registration was successful!
+      </div>
+    </div>
+  </div>  
+    
+              
+  
+</message> 
+
+<message id="appview-view18">
+  
+   <div class="toast-container position-fixed top-0 end-0 p-3" style="margin-top: 2rem;">
+      <div class="toast show text-bg-danger" role="alert" aria-live="assertive" aria-atomic="true">
+        <div class="toast-header"> 
+          <strong class="me-auto">Stratetactical</strong>
+          <small>registration info</small>
+         <!--  <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>  -->
+        </div>
+        <div class="toast-body">
+          Registration failed! User already exist.
+        </div>
+      </div>
+   </div>  
+        
+   
+</message>
+
+<message id="appview-view19">
+  
+  
+  <div class="toast-container position-fixed top-0 end-0 p-3" style="margin-top: 2rem;">
+    <div class="toast show text-bg-success" role="alert" aria-live="assertive" aria-atomic="true">
+      <div class="toast-header"> 
+        <strong class="me-auto">Stratetactical</strong>
+        <small>general info</small>
+       <!--  <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button> -->
+      </div>
+      <div class="toast-body">
+        ${mymsg}
+      </div>
+    </div>
+  </div>  
+    
+              
+  
+</message> 
+
+<message id="appview-view20">
+  
+  
+  <div class="toast-container position-fixed top-0 end-0 p-3" style="margin-top: 2rem;">
+    <div class="toast show text-bg-danger" role="alert" aria-live="assertive" aria-atomic="true">
+      <div class="toast-header"> 
+        <strong class="me-auto">Stratetactical</strong>
+        <small>general info</small>
+       <!--  <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button> -->
+      </div>
+      <div class="toast-body">
+        ${mymsg}
+      </div>
+    </div>
+  </div>  
+    
+              
+  
+</message> 
+
+
+<message id="appview-view21">
+  
+  
+  <div class="toast-container position-fixed top-0 end-0 p-3" style="margin-top: 2rem;">
+    <div class="toast show text-bg-success" role="alert" aria-live="assertive" aria-atomic="true">
+      <div class="toast-header"> 
+        <strong class="me-auto">Customer name: ${custname}</strong>
+        <small>customer info</small>
+       <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button> 
+      </div>
+      <div class="toast-body">
+        <strong class="me-auto">Phone: ${custphone} ,</strong>
+        <strong class="me-auto">Email: ${custemail} ,</strong>
+        <strong class="me-auto">Customer id: ${custid} ,</strong>
+      </div>
+    </div>
+  </div>  
+    
+              
+  
+</message> 
+
+<message id="appview-view22">
+  
+  
+  <div class="toast-container position-fixed top-0 end-0 p-3" style="margin-top: 2rem;">
+    <div class="toast show text-bg-success" role="alert" aria-live="assertive" aria-atomic="true">
+      <div class="toast-header"> 
+        <strong class="me-auto">Item name: ${itemname}</strong>
+        <small>item info</small>
+       <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button> 
+      </div>
+      <div class="toast-body">
+        <strong class="me-auto">Price: ${itemprice} ,</strong>
+        <strong class="me-auto">Quantity: ${itemquantity} ,</strong>
+        <strong class="me-auto">Category: ${itemcategory} ,</strong>
+        <strong class="me-auto">Item id: ${itemid}</strong>
+      </div>
+    </div>
+  </div>  
+    
+              
+  
+</message> 
+
+
+<message id="appview-view23">
+  
+  
+  <div class="toast-container position-fixed top-0 end-0 p-3" style="margin-top: 2rem;">
+    <div class="toast show text-bg-success" role="alert" aria-live="assertive" aria-atomic="true">
+      <div class="toast-header"> 
+        <strong class="me-auto">Stratetactical</strong>
+        <small>general info</small>
+        <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button> 
+      </div>
+      <div class="toast-body">
+        ${mymsg}
+      </div>
+    </div>
+  </div>  
+    
+              
+  
+</message> 
+
+<message id="appview-view24">
+
+  <header>
+    <!-- navbar-expand-md-->
+    <nav class="navbar navbar-expand mycolors1 fixed-top ">
+      <div class="container-fluid">
+        <a class="navbar-brand header_text mycolors2" href="#">All Items</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+          <ul class="navbar-nav me-auto mb-2 mb-md-0">
+            <li class="nav-item">
+               ${AnchorLogin}
+               ${AnchorSGO}
+             </li>
+          </ul>
+         
+           <div class="d-grid gap-2 d-md-flex" >
+              ${categoriesbtn}
+              ${requestsbtn}
+              <form class="d-flex" role="search" >
+                ${searchitems}
+              </form>
+         </div>
+          
+        </div>
+      </div>
+    </nav>
+  </header>
+
+
+</message>
+
+<message id="spinner1" >
+
+  <div class="spinner-grow text-primary" role="status">
+    <span class="visually-hidden">Loading...</span>
+  </div>
+
+  <div class="spinner-grow text-secondary" role="status">
+    <span class="visually-hidden">Loading...</span>
+  </div>
+
+  <div class="spinner-grow text-success" role="status">
+    <span class="visually-hidden">Loading...</span>
+  </div>
+
+  <div class="spinner-grow text-danger" role="status">
+    <span class="visually-hidden">Loading...</span>
+  </div>
+
+  <div class="spinner-grow text-warning" role="status">
+    <span class="visually-hidden">Loading...</span>
+  </div>
+
+  <div class="spinner-grow text-info" role="status">
+    <span class="visually-hidden">Loading...</span>
+  </div>
+<!-- six -->
+<div class="spinner-grow text-primary" role="status">
+  <span class="visually-hidden">Loading...</span>
+</div>
+
+<div class="spinner-grow text-secondary" role="status">
+  <span class="visually-hidden">Loading...</span>
+</div>
+
+<div class="spinner-grow text-success" role="status">
+  <span class="visually-hidden">Loading...</span>
+</div>
+
+<div class="spinner-grow text-danger" role="status">
+  <span class="visually-hidden">Loading...</span>
+</div>
+
+<div class="spinner-grow text-warning" role="status">
+  <span class="visually-hidden">Loading...</span>
+</div>
+
+<div class="spinner-grow text-info" role="status">
+  <span class="visually-hidden">Loading...</span>
+</div>
+<!-- six -->
+<div class="spinner-grow text-primary" role="status">
+  <span class="visually-hidden">Loading...</span>
+</div>
+
+<div class="spinner-grow text-secondary" role="status">
+  <span class="visually-hidden">Loading...</span>
+</div>
+
+<div class="spinner-grow text-success" role="status">
+  <span class="visually-hidden">Loading...</span>
+</div>
+
+<div class="spinner-grow text-danger" role="status">
+  <span class="visually-hidden">Loading...</span>
+</div>
+
+<div class="spinner-grow text-warning" role="status">
+  <span class="visually-hidden">Loading...</span>
+</div>
+
+<div class="spinner-grow text-info" role="status">
+  <span class="visually-hidden">Loading...</span>
+</div>
+<!-- six -->
+<div class="spinner-grow text-primary" role="status">
+  <span class="visually-hidden">Loading...</span>
+</div>
+
+<div class="spinner-grow text-secondary" role="status">
+  <span class="visually-hidden">Loading...</span>
+</div>
+
+<div class="spinner-grow text-success" role="status">
+  <span class="visually-hidden">Loading...</span>
+</div>
+
+<div class="spinner-grow text-danger" role="status">
+  <span class="visually-hidden">Loading...</span>
+</div>
+
+<div class="spinner-grow text-warning" role="status">
+  <span class="visually-hidden">Loading...</span>
+</div>
+
+<div class="spinner-grow text-info" role="status">
+  <span class="visually-hidden">Loading...</span>
+</div>
+<!-- six -->
+<div class="spinner-grow text-primary" role="status">
+  <span class="visually-hidden">Loading...</span>
+</div>
+
+<div class="spinner-grow text-secondary" role="status">
+  <span class="visually-hidden">Loading...</span>
+</div>
+
+<div class="spinner-grow text-success" role="status">
+  <span class="visually-hidden">Loading...</span>
+</div>
+
+<div class="spinner-grow text-danger" role="status">
+  <span class="visually-hidden">Loading...</span>
+</div>
+
+<div class="spinner-grow text-warning" role="status">
+  <span class="visually-hidden">Loading...</span>
+</div>
+
+<div class="spinner-grow text-info" role="status">
+  <span class="visually-hidden">Loading...</span>
+</div>
+<!-- six -->
+<div class="spinner-grow text-primary" role="status">
+  <span class="visually-hidden">Loading...</span>
+</div>
+
+<div class="spinner-grow text-secondary" role="status">
+  <span class="visually-hidden">Loading...</span>
+</div>
+
+<div class="spinner-grow text-success" role="status">
+  <span class="visually-hidden">Loading...</span>
+</div>
+
+<div class="spinner-grow text-danger" role="status">
+  <span class="visually-hidden">Loading...</span>
+</div>
+
+<div class="spinner-grow text-warning" role="status">
+  <span class="visually-hidden">Loading...</span>
+</div>
+
+<div class="spinner-grow text-info" role="status">
+  <span class="visually-hidden">Loading...</span>
+</div>
+<!-- six -->
+<div class="spinner-grow text-primary" role="status">
+  <span class="visually-hidden">Loading...</span>
+</div>
+
+<div class="spinner-grow text-secondary" role="status">
+  <span class="visually-hidden">Loading...</span>
+</div>
+
+<div class="spinner-grow text-success" role="status">
+  <span class="visually-hidden">Loading...</span>
+</div>
+
+<div class="spinner-grow text-danger" role="status">
+  <span class="visually-hidden">Loading...</span>
+</div>
+
+<div class="spinner-grow text-warning" role="status">
+  <span class="visually-hidden">Loading...</span>
+</div>
+
+<div class="spinner-grow text-info" role="status">
+  <span class="visually-hidden">Loading...</span>
+</div>
+<!-- six -->
+<div class="spinner-grow text-primary" role="status">
+  <span class="visually-hidden">Loading...</span>
+</div>
+
+<div class="spinner-grow text-secondary" role="status">
+  <span class="visually-hidden">Loading...</span>
+</div>
+
+<div class="spinner-grow text-success" role="status">
+  <span class="visually-hidden">Loading...</span>
+</div>
+
+<div class="spinner-grow text-danger" role="status">
+  <span class="visually-hidden">Loading...</span>
+</div>
+
+<div class="spinner-grow text-warning" role="status">
+  <span class="visually-hidden">Loading...</span>
+</div>
+
+<div class="spinner-grow text-info" role="status">
+  <span class="visually-hidden">Loading...</span>
+</div>
+<!-- six -->
+<div class="spinner-grow text-primary" role="status">
+  <span class="visually-hidden">Loading...</span>
+</div>
+
+<div class="spinner-grow text-secondary" role="status">
+  <span class="visually-hidden">Loading...</span>
+</div>
+
+<div class="spinner-grow text-success" role="status">
+  <span class="visually-hidden">Loading...</span>
+</div>
+
+<div class="spinner-grow text-danger" role="status">
+  <span class="visually-hidden">Loading...</span>
+</div>
+
+<div class="spinner-grow text-warning" role="status">
+  <span class="visually-hidden">Loading...</span>
+</div>
+
+<div class="spinner-grow text-info" role="status">
+  <span class="visually-hidden">Loading...</span>
+</div>
+<!-- six -->
+<div class="spinner-grow text-primary" role="status">
+  <span class="visually-hidden">Loading...</span>
+</div>
+
+<div class="spinner-grow text-secondary" role="status">
+  <span class="visually-hidden">Loading...</span>
+</div>
+
+<div class="spinner-grow text-success" role="status">
+  <span class="visually-hidden">Loading...</span>
+</div>
+
+<div class="spinner-grow text-danger" role="status">
+  <span class="visually-hidden">Loading...</span>
+</div>
+
+<div class="spinner-grow text-warning" role="status">
+  <span class="visually-hidden">Loading...</span>
+</div>
+
+<div class="spinner-grow text-info" role="status">
+  <span class="visually-hidden">Loading...</span>
+</div>
+<!-- six -->
+<div class="spinner-grow text-primary" role="status">
+  <span class="visually-hidden">Loading...</span>
+</div>
+
+<div class="spinner-grow text-secondary" role="status">
+  <span class="visually-hidden">Loading...</span>
+</div>
+
+<div class="spinner-grow text-success" role="status">
+  <span class="visually-hidden">Loading...</span>
+</div>
+
+<div class="spinner-grow text-danger" role="status">
+  <span class="visually-hidden">Loading...</span>
+</div>
+
+<div class="spinner-grow text-warning" role="status">
+  <span class="visually-hidden">Loading...</span>
+</div>
+
+<div class="spinner-grow text-info" role="status">
+  <span class="visually-hidden">Loading...</span>
+</div>
+<!-- six -->
+<div class="spinner-grow text-primary" role="status">
+  <span class="visually-hidden">Loading...</span>
+</div>
+
+<div class="spinner-grow text-secondary" role="status">
+  <span class="visually-hidden">Loading...</span>
+</div>
+
+<div class="spinner-grow text-success" role="status">
+  <span class="visually-hidden">Loading...</span>
+</div>
+
+<div class="spinner-grow text-danger" role="status">
+  <span class="visually-hidden">Loading...</span>
+</div>
+
+<div class="spinner-grow text-warning" role="status">
+  <span class="visually-hidden">Loading...</span>
+</div>
+
+<div class="spinner-grow text-info" role="status">
+  <span class="visually-hidden">Loading...</span>
+</div>
+<!-- six -->
+<div class="spinner-grow text-primary" role="status">
+  <span class="visually-hidden">Loading...</span>
+</div>
+
+<div class="spinner-grow text-secondary" role="status">
+  <span class="visually-hidden">Loading...</span>
+</div>
+
+<div class="spinner-grow text-success" role="status">
+  <span class="visually-hidden">Loading...</span>
+</div>
+
+<div class="spinner-grow text-danger" role="status">
+  <span class="visually-hidden">Loading...</span>
+</div>
+
+<div class="spinner-grow text-warning" role="status">
+  <span class="visually-hidden">Loading...</span>
+</div>
+
+<div class="spinner-grow text-info" role="status">
+  <span class="visually-hidden">Loading...</span>
+</div>
+<!-- six -->
+<div class="spinner-grow text-primary" role="status">
+  <span class="visually-hidden">Loading...</span>
+</div>
+
+<div class="spinner-grow text-secondary" role="status">
+  <span class="visually-hidden">Loading...</span>
+</div>
+
+<div class="spinner-grow text-success" role="status">
+  <span class="visually-hidden">Loading...</span>
+</div>
+
+<div class="spinner-grow text-danger" role="status">
+  <span class="visually-hidden">Loading...</span>
+</div>
+
+<div class="spinner-grow text-warning" role="status">
+  <span class="visually-hidden">Loading...</span>
+</div>
+
+<div class="spinner-grow text-info" role="status">
+  <span class="visually-hidden">Loading...</span>
+</div>
+<!-- six -->
+<div class="spinner-grow text-primary" role="status">
+  <span class="visually-hidden">Loading...</span>
+</div>
+
+<div class="spinner-grow text-secondary" role="status">
+  <span class="visually-hidden">Loading...</span>
+</div>
+
+<div class="spinner-grow text-success" role="status">
+  <span class="visually-hidden">Loading...</span>
+</div>
+
+<div class="spinner-grow text-danger" role="status">
+  <span class="visually-hidden">Loading...</span>
+</div>
+
+<div class="spinner-grow text-warning" role="status">
+  <span class="visually-hidden">Loading...</span>
+</div>
+
+<div class="spinner-grow text-info" role="status">
+  <span class="visually-hidden">Loading...</span>
+</div>
+<!-- six -->
+<div class="spinner-grow text-primary" role="status">
+  <span class="visually-hidden">Loading...</span>
+</div>
+
+<div class="spinner-grow text-secondary" role="status">
+  <span class="visually-hidden">Loading...</span>
+</div>
+
+<div class="spinner-grow text-success" role="status">
+  <span class="visually-hidden">Loading...</span>
+</div>
+
+<div class="spinner-grow text-danger" role="status">
+  <span class="visually-hidden">Loading...</span>
+</div>
+
+<div class="spinner-grow text-warning" role="status">
+  <span class="visually-hidden">Loading...</span>
+</div>
+
+<div class="spinner-grow text-info" role="status">
+  <span class="visually-hidden">Loading...</span>
+</div>
+<!-- six -->
+<div class="spinner-grow text-primary" role="status">
+  <span class="visually-hidden">Loading...</span>
+</div>
+
+<div class="spinner-grow text-secondary" role="status">
+  <span class="visually-hidden">Loading...</span>
+</div>
+
+<div class="spinner-grow text-success" role="status">
+  <span class="visually-hidden">Loading...</span>
+</div>
+
+<div class="spinner-grow text-danger" role="status">
+  <span class="visually-hidden">Loading...</span>
+</div>
+
+<div class="spinner-grow text-warning" role="status">
+  <span class="visually-hidden">Loading...</span>
+</div>
+
+<div class="spinner-grow text-info" role="status">
+  <span class="visually-hidden">Loading...</span>
+</div>
+<!-- six -->
+<div class="spinner-grow text-primary" role="status">
+  <span class="visually-hidden">Loading...</span>
+</div>
+
+<div class="spinner-grow text-secondary" role="status">
+  <span class="visually-hidden">Loading...</span>
+</div>
+
+<div class="spinner-grow text-success" role="status">
+  <span class="visually-hidden">Loading...</span>
+</div>
+
+
+  
+
+</message>
+
+
+</messages>

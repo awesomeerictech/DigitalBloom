@@ -1,0 +1,32 @@
+<RCC>
+    <qresource prefix="/qml">
+		<file>ui/MobileApplication.qml</file>
+        <file>ui/MobileHeader.qml</file>
+        <file>ui/MobileDrawer.qml</file>
+        <file>ui/MobilePermissions.qml</file>
+        <file>ui/DesktopApplication.qml</file>
+        <file>ui/DesktopSidebar.qml</file>
+        <file>ui/ScreenTutorial.qml</file>
+        <file>ui/ScreenMainMenu.qml</file>
+        <file>ui/ScreenSettings.qml</file>
+        <file>ui/ScreenAbout.qml</file>
+        <file>ui/ScreenAboutFormats.qml</file>
+        <file>ui/ScreenBarcodeReader.qml</file>
+        <file>ui/ScreenBarcodeHistory.qml</file>
+        <file>ui/ScreenBarcodeDetails.qml</file>
+        <file>ui/ScreenBarcodeWriter.qml</file>
+        <file>ui/Reader_QZXing.qml</file>
+        <file>ui/Reader_ZXingCpp.qml</file>
+        <file>ui/Writer_QZXing.qml</file>
+        <file>ui/Writer_ZXingCpp.qml</file>
+        <file>ui/Writer_Zint.qml</file>
+        <file>ui/popups/PopupBarcodeFullscreen.qml</file>
+        <file>ui/popups/PopupHistoryDelete.qml</file>
+        <file>ui/components/MenuDebug.qml</file>
+        <file>ui/components/MenuCamera.qml</file>
+        <file>ui/components/MenuFormats.qml</file>
+        <file>ui/components/MenuScreens.qml</file>
+        <file>ui/components/WidgetBarcodeHistory.qml</file>
+        <file>ui/components/WidgetBarcodeResult.qml</file>
+    </qresource>
+</RCC>

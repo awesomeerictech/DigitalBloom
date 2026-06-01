@@ -1,0 +1,406 @@
+# WtFindBoost.cmake - patched: in-tree Boost detection + filesystem-first include discovery
+# Improved include scanning and alias-resolving behavior
+
+SET(BOOST_WT_FOUND FALSE)
+SET(BOOST_WT_MT_FOUND FALSE)
+SET(BOOST_WTHTTP_FOUND FALSE)
+SET(BOOST_WTHTTP_MT_FOUND FALSE)
+SET(BOOST_SUPPORT_LIBRARIES "")
+
+IF(NOT DEFINED Boost_ADDITIONAL_VERSIONS)
+  SET(Boost_ADDITIONAL_VERSIONS
+    "1.66" "1.67" "1.68" "1.69" "1.70" "1.71" "1.72" "1.73" "1.74" "1.75"
+    "1.76" "1.77" "1.78" "1.79" "1.80" "1.81" "1.82" "1.83" "1.84" "1.85"
+    "1.86" "1.87" "1.88")
+ENDIF()
+
+SET(Boost_USE_MULTITHREADED ON)
+
+IF(DEFINED BOOST_PREFIX AND NOT DEFINED BOOST_ROOT)
+  SET(BOOST_ROOT ${BOOST_PREFIX})
+ENDIF()
+
+IF(WIN32)
+  IF(BOOST_DYNAMIC)
+    SET(Boost_USE_STATIC_LIBS OFF)
+  ELSE()
+    SET(Boost_USE_STATIC_LIBS ON)
+  ENDIF()
+ENDIF()
+
+SET(Boost_DEBUG ON)
+
+SET(Boost_COMPONENTS
+   accumulators
+algorithm
+align
+any
+array
+asio
+assert
+assign
+atomic
+beast
+bimap
+bind
+bloom
+callable_traits
+charconv
+chrono
+circular_buffer
+cobalt
+compat
+compute
+concept_check
+config
+container
+container_hash
+context
+contract
+conversion
+convert
+core
+coroutine
+coroutine2
+crc
+date_time
+describe
+detail
+dll
+dynamic_bitset
+endian
+exception
+fiber
+filesystem
+flyweight
+foreach
+format
+function
+function_types
+functional
+fusion
+geometry
+gil
+graph
+hana
+hash2
+headers
+heap
+histogram
+hof
+icl
+integer
+interprocess
+intrusive
+io
+iostreams
+iterator
+json
+lambda
+lambda2
+leaf
+lexical_cast
+locale
+lockfree
+log
+logic
+math
+metaparse
+move
+mp11
+mpl
+mqtt5
+msm
+multi_array
+multi_index
+multiprecision
+nowide
+numeric
+openmethod
+optional
+outcome
+parameter
+parser
+pfr
+phoenix
+poly_collection
+polygon
+pool
+predef
+preprocessor
+process
+program_options
+property_map
+property_tree
+proto
+ptr_container
+qvm
+random
+range
+ratio
+rational
+redis
+regex
+safe_numerics
+scope
+scope_exit
+serialization
+signals2
+smart_ptr
+sort
+spirit
+stacktrace
+statechart
+static_assert
+static_string
+stl_interfaces
+system
+unit_test_framework
+prg_exec_monitor
+test_exec_monitor
+thread
+throw_exception
+timer
+tokenizer
+tti
+tuple
+type_erasure
+type_index
+type_traits
+typeof
+units
+unordered
+url
+utility
+uuid
+variant
+variant2
+vmd
+wave
+winapi
+xpressive
+yap	
+)
+
+IF(WT_CPP17_FILESYSTEM_IMPLEMENTATION STREQUAL "boost")
+  LIST(APPEND Boost_COMPONENTS filesystem)
+ENDIF()
+
+IF(WIN32 AND BOOST_DYNAMIC AND BUILD_TESTS)
+  LIST(APPEND Boost_COMPONENTS unit_test_framework)
+ENDIF()
+
+set(_wt_in_tree_boost FALSE)
+set(_wt_boost_interface_includes "")
+set(_wt_boost_collected_libs "")
+
+foreach(_comp ${Boost_COMPONENTS})
+  if(TARGET Boost::${_comp})
+    set(_wt_in_tree_boost TRUE)
+    list(APPEND _wt_boost_collected_libs Boost::${_comp})
+    get_target_property(_incdirs Boost::${_comp} INTERFACE_INCLUDE_DIRECTORIES)
+    if(_incdirs)
+      list(APPEND _wt_boost_interface_includes ${_incdirs})
+    endif()
+  endif()
+endforeach()
+
+if(_wt_in_tree_boost)
+  message(STATUS "WtFindBoost: Boost:: targets detected (in-tree Boost). Using filesystem-first include discovery.")
+
+  set(Boost_FOUND TRUE CACHE INTERNAL "Found in-tree Boost")
+  set(BOOST_LIB_DIRS "")
+
+  set(_wt_libs "")
+  foreach(_lib accumulators algorithm align any array asio assert assign atomic beast bimap bind bloom callable_traits charconv chrono circular_buffer cobalt compat compute concept_check config container container_hash context contract conversion convert core coroutine coroutine2 crc date_time describe detail dll dynamic_bitset endian exception fiber filesystem flyweight foreach format function function_types functional fusion geometry gil graph hana hash2 headers heap histogram hof icl integer interprocess intrusive io iostreams iterator json lambda lambda2 leaf lexical_cast locale lockfree log logic math metaparse move mp11 mpl mqtt5 msm multi_array multi_index multiprecision nowide numeric openmethod optional outcome parameter parser pfr phoenix poly_collection polygon pool predef preprocessor process program_options property_map property_tree proto ptr_container qvm random range ratio rational redis regex safe_numerics scope scope_exit serialization signals2 smart_ptr sort spirit stacktrace statechart static_assert static_string stl_interfaces system unit_test_framework prg_exec_monitor test_exec_monitor thread throw_exception timer tokenizer tti tuple type_erasure type_index type_traits typeof units unordered url utility uuid variant variant2 vmd wave winapi xpressive yap)
+    if(TARGET Boost::${_lib})
+      list(APPEND _wt_libs Boost::${_lib})
+      string(TOUPPER ${_lib} _ULIB)
+      set(BOOST_${_ULIB}_LIB Boost::${_lib})
+    endif()
+  endforeach()
+
+  set(BOOST_WT_LIBRARIES ${_wt_libs})
+  set(BOOST_WTHTTP_LIBRARIES ${_wt_libs})
+
+  if(TARGET Boost::headers)
+    list(APPEND BOOST_WT_LIBRARIES Boost::headers)
+    list(APPEND BOOST_WTHTTP_LIBRARIES Boost::headers)
+  endif()
+
+  set(BOOST_WT_FOUND TRUE)
+  set(BOOST_WT_MT_FOUND TRUE)
+  set(BOOST_WTHTTP_FOUND TRUE)
+  set(BOOST_WTHTTP_MT_FOUND TRUE)
+
+  # --- Function to collect include directories ---
+  function(collect_module_includes _moddir _out_var)
+    if(NOT _moddir)
+      set(${_out_var} "" PARENT_SCOPE)
+      return()
+    endif()
+
+    set(_raw_list "")
+
+    if(EXISTS "${_moddir}/include" AND IS_DIRECTORY "${_moddir}/include")
+      list(APPEND _raw_list "${_moddir}/include")
+    endif()
+
+    file(GLOB_RECURSE _found_inc_dirs LIST_DIRECTORIES true "${_moddir}/**/include")
+    foreach(_d IN LISTS _found_inc_dirs)
+      if(IS_DIRECTORY "${_d}")
+        list(APPEND _raw_list "${_d}")
+      endif()
+    endforeach()
+
+    file(GLOB_RECURSE _found_headers "${_moddir}/**/*.hpp" "${_moddir}/**/*.h" "${_moddir}/**/*.ipp" "${_moddir}/**/*.inl")
+    foreach(_hdr IN LISTS _found_headers)
+      get_filename_component(_hdr_dir "${_hdr}" DIRECTORY)
+      if(_hdr_dir AND IS_DIRECTORY "${_hdr_dir}")
+        list(APPEND _raw_list "${_hdr_dir}")
+      endif()
+    endforeach()
+
+    file(GLOB _children LIST_DIRECTORIES true "${_moddir}/*")
+    foreach(_child IN LISTS _children)
+      if(IS_DIRECTORY "${_child}")
+        if(EXISTS "${_child}/include" AND IS_DIRECTORY "${_child}/include")
+          list(APPEND _raw_list "${_child}/include")
+        endif()
+        file(GLOB _child_hdrs "${_child}/*.{hpp,h,ipp,inl}")
+        if(_child_hdrs)
+          list(APPEND _raw_list "${_child}")
+        endif()
+      endif()
+    endforeach()
+
+    list(REMOVE_DUPLICATES _raw_list)
+
+    set(_noise_regex "/(doc|docs|example|examples|test|tests|bench|benchmark|benchmarks|\\.github|cmake_subdir_test|\\.git)/")
+
+    set(_final_list "")
+    foreach(_p IN LISTS _raw_list)
+      if(NOT _p)
+        continue()
+      endif()
+      if("${_p}" MATCHES "\\$<")
+        continue()
+      endif()
+
+      get_filename_component(_abs_p "${_p}" ABSOLUTE)
+
+      get_filename_component(_basename "${_abs_p}" NAME)
+      if(_basename STREQUAL "include")
+        if(IS_DIRECTORY "${_abs_p}")
+          list(APPEND _final_list "${_abs_p}")
+          continue()
+        endif()
+      endif()
+
+      if("${_abs_p}" MATCHES "${_noise_regex}")
+        continue()
+      endif()
+
+      file(GLOB _hdrs_direct "${_abs_p}/*.{hpp,h,ipp,inl}")
+      if(_hdrs_direct)
+        list(APPEND _final_list "${_abs_p}")
+        continue()
+      endif()
+
+      file(GLOB _immediate_children LIST_DIRECTORIES true "${_abs_p}/*")
+      set(_accepted FALSE)
+      foreach(_ch IN LISTS _immediate_children)
+        if(IS_DIRECTORY "${_ch}")
+          file(GLOB _child_hdrs "${_ch}/*.{hpp,h,ipp,inl}")
+          if(_child_hdrs)
+            set(_accepted TRUE)
+            break()
+          endif()
+        endif()
+      endforeach()
+      if(_accepted)
+        list(APPEND _final_list "${_abs_p}")
+      endif()
+    endforeach()
+
+    list(REMOVE_DUPLICATES _final_list)
+
+    set(_out_list "")
+    foreach(_q IN LISTS _final_list)
+      if(IS_DIRECTORY "${_q}")
+        get_filename_component(_realq "${_q}" REALPATH)
+        if(_realq AND IS_DIRECTORY "${_realq}")
+          list(APPEND _out_list "${_realq}")
+        endif()
+      endif()
+    endforeach()
+
+    list(REMOVE_DUPLICATES _out_list)
+    set(${_out_var} "${_out_list}" PARENT_SCOPE)
+  endfunction()
+
+  # Scan modules
+  set(_collected_includes_raw "")
+  foreach(_mod IN LISTS Boost_COMPONENTS)
+    string(STRIP "${_mod}" _mod_trim)
+    if(NOT _mod_trim)
+      continue()
+    endif()
+
+    set(_moddir "${CMAKE_SOURCE_DIR}/boost/libs/${_mod_trim}")
+    if(NOT EXISTS "${_moddir}")
+      set(_moddir_alt "${CMAKE_CURRENT_SOURCE_DIR}/boost/libs/${_mod_trim}")
+      if(EXISTS "${_moddir_alt}")
+        set(_moddir "${_moddir_alt}")
+      endif()
+    endif()
+
+    if(NOT EXISTS "${_moddir}")
+      message(STATUS "WtFindBoost: module not present, skipping: ${_mod_trim}")
+      continue()
+    endif()
+
+    collect_module_includes("${_moddir}" _module_incs)
+    foreach(_inc IN LISTS _module_incs)
+      list(APPEND _collected_includes_raw "${_inc}")
+    endforeach()
+  endforeach()
+
+  list(REMOVE_DUPLICATES _collected_includes_raw)
+
+  set(BOOST_INCLUDE_DIRS ${_collected_includes_raw} CACHE INTERNAL "Collected in-tree Boost include dirs (filtered)")
+
+  # Attach BOOST_INCLUDE_DIRS to Boost targets — resolve aliases to real targets when possible
+  foreach(_t IN LISTS BOOST_WT_LIBRARIES)
+    if(NOT _t OR NOT TARGET ${_t})
+      continue()
+    endif()
+
+    get_target_property(_aliased ${_t} ALIASED_TARGET)
+    if(DEFINED _aliased AND NOT "${_aliased}" STREQUAL "NOTFOUND")
+      set(_real_target ${_aliased})
+    else()
+      set(_real_target ${_t})
+    endif()
+
+    if(TARGET ${_real_target})
+      get_target_property(_real_aliased ${_real_target} ALIASED_TARGET)
+      if(DEFINED _real_aliased AND NOT "${_real_aliased}" STREQUAL "NOTFOUND")
+        message(STATUS "WtFindBoost: resolved target ${_t} -> ${_real_target} but it is still an ALIAS; skipping attach")
+        continue()
+      endif()
+
+      get_target_property(_t_type ${_real_target} TYPE)
+      if(DEFINED _t_type AND NOT "${_t_type}" STREQUAL "UNKNOWN")
+        message(VERBOSE "WtFindBoost: attaching BOOST_INCLUDE_DIRS to resolved target ${_real_target} (from ${_t}) type=${_t_type}")
+        target_include_directories(${_real_target} INTERFACE ${BOOST_INCLUDE_DIRS})
+      else()
+        message(STATUS "WtFindBoost: not attaching include dirs to ${_real_target} (unknown type)")
+      endif()
+    endif()
+  endforeach()
+
+  foreach(_inc IN LISTS BOOST_INCLUDE_DIRS)
+    message(STATUS "WtFindBoost: adding include dir => ${_inc}")
+  endforeach()
+endif()
